@@ -1,13 +1,13 @@
 import 'package:nexquub/utils/utils.dart';
 
-class TeleCueApp extends StatefulWidget {
-  const TeleCueApp({super.key});
+class NexQuubApp extends StatefulWidget {
+  const NexQuubApp({super.key});
 
   @override
-  State<TeleCueApp> createState() => _TeleCueAppState();
+  State<NexQuubApp> createState() => _NexQuubAppState();
 }
 
-class _TeleCueAppState extends State<TeleCueApp>
+class _NexQuubAppState extends State<NexQuubApp>
     with SignalsMixin, WidgetsBindingObserver {
   final themeViewModel = locator<ThemeViewModel>();
   final languageViewModel = locator<LanguageViewModel>();

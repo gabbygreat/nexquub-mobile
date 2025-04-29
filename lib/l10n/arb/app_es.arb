@@ -2,161 +2,13 @@
   "@@locale": "es",
   "nexquub": "NexQuub",
   "@nexquub": {
-    "description": "Project name"
+    "description": "Nombre del proyecto"
   },
-  "craftSpeechesWithEase": "Crea discursos\ncon facilidad",
-  "@craftSpeechesWithEase": {
-    "description": "Se muestra en la página de inicio para presentar la funcionalidad de la aplicación."
-  },
-  "typePasteOrImport": "Escribe, pega o importa tu guion, ajusta la velocidad y entrega tu mensaje sin que nadie se dé cuenta de que estás leyendo de un guion.",
-  "@typePasteOrImport": {
-    "description": "Instrucciones para los usuarios sobre cómo usar la aplicación."
-  },
-  "getStarted": "Empezar",
-  "@getStarted": {
-    "description": "Etiqueta de botón para iniciar una acción."
-  },
-  "alreadyHaveAnAccount": "¿Ya tienes una cuenta? Iniciar sesión",
-  "@alreadyHaveAnAccount": {
-    "description": "Mensaje para usuarios existentes que deben iniciar sesión."
-  },
-  "setYourOwnPreferences": "Configura tus propias preferencias",
-  "@setYourOwnPreferences": {
-    "description": "Título para la personalización de la configuración del usuario."
-  },
-  "haveAFontYou": "¿Tienes una fuente que prefieres? ¿Problemas de visión o prefieres texto grande? ¿Lees desde un espejo? Tenemos la solución.",
-  "@haveAFontYou": {
-    "description": "Anima a los usuarios a personalizar la configuración del texto."
-  },
-  "organisedAndInCloud": "Organizado y en la nube",
-  "@organisedAndInCloud": {
-    "description": "Título que resalta los beneficios del almacenamiento en la nube."
-  },
-  "haveYourScriptsAnd": "Tus guiones y grabaciones se guardarán automáticamente en la nube al iniciar sesión, para que puedas acceder fácilmente.",
-  "@haveYourScriptsAnd": {
-    "description": "Explicación de la función de almacenamiento en la nube."
-  },
-  "typeYourEmailHere": "Escribe tu correo electrónico aquí",
-  "@typeYourEmailHere": {
-    "description": "Texto de marcador de posición para el campo de correo electrónico."
-  },
-  "email": "Correo electrónico",
-  "@email": {
-    "description": "Etiqueta para el campo de correo electrónico."
-  },
-  "createPassword": "Crear contraseña",
-  "@createPassword": {
-    "description": "Etiqueta para el campo de creación de contraseña."
-  },
-  "password": "Contraseña",
-  "@password": {
-    "description": "Etiqueta para el campo de contraseña."
-  },
-  "confirmYourPassword": "Confirmar contraseña",
-  "@confirmYourPassword": {
-    "description": "Etiqueta para el campo de confirmación de contraseña."
-  },
-  "confirmPassword": "Confirmar contraseña",
-  "@confirmPassword": {
-    "description": "Etiqueta para el campo de confirmación de contraseña."
-  },
-  "createAccount": "Crear cuenta",
-  "@createAccount": {
-    "description": "Etiqueta de botón para crear una nueva cuenta."
-  },
-  "or": "O",
-  "@or": {
-    "description": "Texto separador para opciones alternativas de inicio de sesión."
-  },
-  "signInWithGoogle": "Iniciar sesión con Google",
-  "@signInWithGoogle": {
-    "description": "Etiqueta de botón para iniciar sesión con Google."
-  },
-  "signInWithApple": "Iniciar sesión con Apple",
-  "@signInWithApple": {
-    "description": "Etiqueta de botón para iniciar sesión con Apple."
-  },
-  "joinOurCommunityAnd": "¡Únete a nuestra comunidad y comienza tu viaje hacia los mejores videos!",
-  "@joinOurCommunityAnd": {
-    "description": "Anima a los usuarios a unirse a la plataforma."
-  },
-  "logIn": "Iniciar sesión",
-  "@logIn": {
-    "description": "Etiqueta de botón para iniciar sesión."
-  },
-  "forgotPassword": "¿Olvidaste tu contraseña?",
-  "@forgotPassword": {
-    "description": "Mensaje para usuarios que han olvidado su contraseña."
-  },
-  "home": "Inicio",
-  "@home": {
-    "description": "Etiqueta de navegación para la pantalla de inicio."
-  },
-  "settings": "Configuración",
-  "@settings": {
-    "description": "Etiqueta de navegación para la pantalla de configuración."
-  },
-  "allProjects": "Todos los proyectos",
-  "@allProjects": {
-    "description": "Etiqueta para mostrar todos los proyectos del usuario."
-  },
-  "scripts": "Guiones",
-  "@scripts": {
-    "description": "Etiqueta para funcionalidades relacionadas con guiones."
-  },
-  "ooopsYouDontHave": "¡Ups... No tienes proyectos aún!",
+  "ooopsYouDontHave": "Ooops.. aún no tienes ningún proyecto",
   "@ooopsYouDontHave": {
-    "description": "Mensaje cuando no se encuentran proyectos."
+    "description": "Mensaje mostrado cuando no se encuentran proyectos."
   },
-  "demoScript": "Guion de demostración",
-  "@demoScript": {
-    "description": "Etiqueta para ejemplo de guion de demostración."
-  },
-  "recordTesting": "Prueba de grabación",
-  "@recordTesting": {
-    "description": "Etiqueta para funcionalidades de prueba de grabación."
-  },
-  "speed5": "Velocidad: 5",
-  "@speed5": {
-    "description": "Etiqueta de visualización de velocidad de desplazamiento."
-  },
-  "start": "Comenzar",
-  "@start": {
-    "description": "Etiqueta de botón para iniciar una acción."
-  },
-  "mirrorTextHorizontally": "Reflejar texto horizontalmente",
-  "@mirrorTextHorizontally": {
-    "description": "Opción para reflejar el texto horizontalmente."
-  },
-  "mirrorTextVertically": "Reflejar texto verticalmente",
-  "@mirrorTextVertically": {
-    "description": "Opción para reflejar el texto verticalmente."
-  },
-  "bionicReading": "Lectura biónica",
-  "@bionicReading": {
-    "description": "Opción para activar la función de lectura biónica."
-  },
-  "defaultScrollSpeed": "Velocidad de desplazamiento predeterminada",
-  "@defaultScrollSpeed": {
-    "description": "Etiqueta para la configuración de velocidad de desplazamiento predeterminada."
-  },
-  "textSize": "Tamaño del texto",
-  "@textSize": {
-    "description": "Opción para ajustar el tamaño del texto."
-  },
-  "lineHeight": "Altura de línea",
-  "@lineHeight": {
-    "description": "Opción para ajustar la altura de línea."
-  },
-  "backgroundTransparency": "Transparencia de fondo",
-  "@backgroundTransparency": {
-    "description": "Opción para ajustar la transparencia del fondo."
-  },
-  "theme": "Tema",
-  "@theme": {
-    "description": "Etiqueta para la selección del tema."
-  },
-  "systemDefault": "Por defecto del sistema",
+  "systemDefault": "Configuración predeterminada del sistema",
   "@systemDefault": {
     "description": "Opción para usar la configuración predeterminada del sistema."
   },
@@ -168,45 +20,13 @@
   "@english": {
     "description": "Opción para el idioma inglés."
   },
-  "trash": "Papelera",
-  "@trash": {
-    "description": "Etiqueta para la sección de papelera."
-  },
-  "seeAllDeletedItems": "Ver todos los elementos eliminados de los últimos 30 días",
-  "@seeAllDeletedItems": {
-    "description": "Explicación sobre la función de la papelera."
-  },
-  "privacyPolicy": "Política de privacidad",
-  "@privacyPolicy": {
-    "description": "Enlace a la política de privacidad de la aplicación."
-  },
-  "sendFeedback": "Enviar comentarios",
-  "@sendFeedback": {
-    "description": "Etiqueta de botón para enviar comentarios."
-  },
-  "rateUs": "Califícanos",
-  "@rateUs": {
-    "description": "Etiqueta de botón para calificar la aplicación."
-  },
-  "logout": "Cerrar sesión",
-  "@logout": {
-    "description": "Etiqueta de botón para cerrar sesión."
-  },
-  "guestUser": "Usuario invitado",
-  "@guestUser": {
-    "description": "Etiqueta para usuario invitado."
-  },
-  "signIn": "Iniciar sesión",
-  "@signIn": {
-    "description": "Etiqueta de botón para iniciar sesión."
-  },
   "oopsUnexpectedError": "¡Ups! Ocurrió un error inesperado.",
   "@oopsUnexpectedError": {
-    "description": "Mensaje que se muestra cuando ocurre un error inesperado."
+    "description": "Mensaje mostrado cuando ocurre un error inesperado."
   },
   "details": "Detalles: {errorDetails}",
   "@details": {
-    "description": "Detalles del error mostrados en modo depuración.",
+    "description": "Mensaje de detalles del error mostrado en modo de depuración.",
     "placeholders": {
       "errorDetails": {
         "type": "String",
@@ -214,436 +34,83 @@
       }
     }
   },
-  "areYouSureDelete": "¿Estás seguro de que deseas eliminar {selections} archivo(s) seleccionado(s)?",
-  "@areYouSureDelete": {
-    "description": "Mensaje de confirmación para eliminar.",
-    "placeholders": {
-      "selections": {
-        "type": "int",
-        "example": "3"
-      }
-    }
-  },
-  "areYouSureToEditProfilePicture": "¿Estás seguro de que deseas editar la foto de perfil?",
-  "@areYouSureToEditProfilePicture": {
-    "description": "Mensaje de confirmación para editar la foto de perfil."
-  },
-  "areYouSureToEditUsername": "¿Estás seguro de que deseas editar el nombre de usuario?",
-  "@areYouSureToEditUsername": {
-    "description": "Mensaje de confirmación para editar el nombre de usuario."
-  },
-  "areYouSureToEditUsernameAndPicture": "¿Estás seguro de que deseas editar el nombre de usuario y la foto de perfil?",
-  "@areYouSureToEditUsernameAndPicture": {
-    "description": "Mensaje de confirmación para editar el nombre de usuario y la foto de perfil."
-  },
-  "youMustEditOne": "Debes editar al menos uno.",
-  "@youMustEditOne": {
-    "description": "Mensaje que se muestra cuando se debe editar al menos un campo."
-  },
-  "cannotLoadImage": "No se puede cargar la imagen.",
-  "@cannotLoadImage": {
-    "description": "Mensaje que se muestra cuando no se puede cargar la imagen."
-  },
-  "nothingToUpdate": "Nada que actualizar.",
-  "@nothingToUpdate": {
-    "description": "Mensaje que se muestra cuando no hay nada que actualizar."
-  },
-  "forgotPasswordx": "¿Olvidaste tu contraseña?",
-  "@forgotPasswordx": {
-    "description": "Mensaje para usuarios que han olvidado su contraseña."
-  },
-  "passwordMismatch": "Las contraseñas no coinciden",
-  "@passwordMismatch": {
-    "description": "Mensaje que se muestra cuando las contraseñas no coinciden."
-  },
-  "okay": "Aceptar",
-  "@okay": {
-    "description": "Etiqueta de botón para aceptar."
-  },
-  "dark": "Oscuro",
-  "@dark": {
-    "description": "Opción para el tema oscuro."
-  },
-  "light": "Claro",
-  "@light": {
-    "description": "Opción para el tema claro."
-  },
-  "textSettings": "Configuración de texto",
-  "@textSettings": {
-    "description": "Etiqueta para la configuración de texto."
-  },
-  "tapToPlayPause": "Toca para reproducir/pausar",
-  "@tapToPlayPause": {
-    "description": "Instrucción para tocar la pantalla para reproducir o pausar."
-  },
-  "fontTextSizeLineHeight": "Fuente, tamaño del texto, altura de línea",
-  "@fontTextSizeLineHeight": {
-    "description": "Opciones para ajustar la fuente, el tamaño del texto y la altura de línea."
-  },
-  "tappingScreenWhileScrollingWillPause": "Tocar la pantalla mientras se desplaza pausará",
-  "@tappingScreenWhileScrollingWillPause": {
-    "description": "Instrucción para pausar el desplazamiento tocando la pantalla."
-  },
-  "videoQuality": "Calidad de video",
-  "@videoQuality": {
-    "description": "Etiqueta para la configuración de calidad de video."
-  },
-  "selectOutputQuality": "Selecciona la calidad de salida",
-  "@selectOutputQuality": {
-    "description": "Instrucción para seleccionar la calidad de salida del video."
-  },
-  "sd": "SD",
-  "@sd": {
-    "description": "Opción para calidad de video SD."
-  },
-  "hd": "HD",
-  "@hd": {
-    "description": "Opción para calidad de video HD."
-  },
-  "fhd": "FHD",
-  "@fhd": {
-    "description": "Opción para calidad de video FHD."
-  },
-  "uhd4k": "UHD 4K",
-  "@uhd4k": {
-    "description": "Opción para calidad de video UHD 4K."
-  },
-  "seeAllDeletedItemsWithinPast30Days": "Ver todos los elementos eliminados en los últimos 30 días",
-  "@seeAllDeletedItemsWithinPast30Days": {
-    "description": "Explicación sobre la función de la papelera para ver elementos eliminados en los últimos 30 días."
-  },
-  "countdownTimer": "Temporizador de cuenta regresiva",
-  "@countdownTimer": {
-    "description": "Etiqueta para la configuración del temporizador de cuenta regresiva."
-  },
-  "chooseHowManySecsBeforeRecordingStarts": "Elige cuántos segundos antes de que comience la grabación",
-  "@chooseHowManySecsBeforeRecordingStarts": {
-    "description": "Instrucción para elegir el tiempo antes de que comience la grabación."
-  },
-  "goBack": "Regresar",
-  "@goBack": {
-    "description": "Etiqueta del botón para regresar."
-  },
-  "logInClose": "Cerrar sesión",
-  "@logInClose": {
-    "description": "Etiqueta de botón para cerrar sesión."
-  },
-  "next": "Siguiente",
-  "@next": {
-    "description": "Etiqueta de botón para ir a la siguiente página."
-  },
-  "createAFreeAccount": "Crear una cuenta gratuita",
-  "@createAFreeAccount": {
-    "description": "Etiqueta de botón para crear una cuenta gratuita."
-  },
-  "dontHaveAnAccount": "¿No tienes una cuenta?",
-  "@dontHaveAnAccount": {
-    "description": "Mensaje para usuarios que no tienen una cuenta."
-  },
-  "login": "Iniciar sesión",
-  "@login": {
-    "description": "Etiqueta de botón para iniciar sesión."
-  },
-  "createOne": "Crear una",
-  "@createOne": {
-    "description": "Etiqueta de botón para crear una cuenta."
-  },
-  "enterPassword": "Introducir contraseña",
-  "@enterPassword": {
-    "description": "Etiqueta para el campo de introducción de contraseña."
+  "incompleteLength": "Longitud de caracteres incompleta",
+  "@incompleteLength": {
+    "description": "Etiqueta para los campos de creación de contraseña."
   },
   "somethingWentWrong": "Algo salió mal",
   "@somethingWentWrong": {
-    "description": "Mensaje que se muestra cuando ocurre un error."
+    "description": "Etiqueta para error"
   },
-  "checkYourInternetConnection": "Verifica tu conexión a Internet",
+  "checkYourInternetConnection": "Verifica tu conexión a internet e inténtalo de nuevo",
   "@checkYourInternetConnection": {
-    "description": "Mensaje que se muestra cuando hay problemas de conexión a Internet."
+    "description": "Etiqueta para internet"
   },
   "requestTookTooLong": "La solicitud tardó demasiado",
   "@requestTookTooLong": {
-    "description": "Mensaje que se muestra cuando una solicitud tarda demasiado."
+    "description": "Etiqueta para solicitud larga"
   },
   "requestWasCancelled": "La solicitud fue cancelada",
   "@requestWasCancelled": {
-    "description": "Mensaje que se muestra cuando una solicitud es cancelada."
+    "description": "Etiqueta para solicitud cancelada"
   },
   "anUnxepectedErrorOccurred": "Ocurrió un error inesperado",
   "@anUnxepectedErrorOccurred": {
-    "description": "Mensaje que se muestra cuando ocurre un error inesperado."
+    "description": "Etiqueta para solicitud inesperada"
   },
   "emailAddressMustBeValid": "La dirección de correo electrónico debe ser válida",
   "@emailAddressMustBeValid": {
-    "description": "Mensaje que se muestra cuando la dirección de correo electrónico no es válida."
+    "description": "Validación de correo electrónico"
   },
-  "pleaseEnterAPassword": "Por favor, introduce una contraseña",
+  "pleaseEnterAPassword": "Por favor, ingresa tu contraseña",
   "@pleaseEnterAPassword": {
-    "description": "Mensaje que se muestra cuando no se ha introducido una contraseña."
+    "description": "Validación de contraseña"
   },
-  "there": "Allí",
-  "@there": {
-    "description": "Traducción de la palabra 'there'."
+  "goBack": "Regresar",
+  "@goBack": {
+    "description": "Etiqueta del botón para navegar hacia atrás."
   },
-  "recordings": "Grabaciones",
-  "@recordings": {
-    "description": "Etiqueta para funcionalidades relacionadas con grabaciones."
-  },
-  "hello": "Hola {name}",
-  "@hello": {
-    "description": "Traducción de la palabra 'hello'.",
-    "placeholders": {
-      "name": {
-        "type": "String",
-        "example": "John"
-      }
-    }
-  },
-  "newScript": "Nuevo guion",
-  "@newScript": {
-    "description": "Etiqueta para crear un nuevo guion."
-  },
-  "importFile": "Importar archivo",
-  "@importFile": {
-    "description": "Etiqueta para importar un archivo."
-  },
-  "scriptTitle": "Título del guion",
-  "@scriptTitle": {
-    "description": "Etiqueta para el título del guion."
-  },
-  "content": "Contenido",
-  "@content": {
-    "description": "Etiqueta para el contenido del guion."
-  },
-  "import": "Importar",
-  "@import": {
-    "description": "Etiqueta para el botón de importar."
-  },
-  "howAreYouDoing": "¿Cómo estás?",
-  "@howAreYouDoing": {
-    "description": "Traducción de la frase 'How are you doing?'."
-  },
-  "allowedFileExtension": "doc, docx, pdf, txt",
-  "@allowedFileExtension": {
-    "description": "Mensaje que indica la extensión de archivo permitida."
-  },
-  "save": "Guardar",
-  "@save": {
-    "description": "Etiqueta de botón para guardar."
-  },
-  "allowedFileExtensionError": "Error: Extensión de archivo no permitida",
-  "@allowedFileExtensionError": {
-    "description": "Mensaje que se muestra cuando la extensión del archivo no es permitida."
-  },
+  "passwordMismatch": "Las contraseñas no coinciden",
+  "@passwordMismatch": {},
   "languageEnglish": "Inglés",
   "languageGerman": "Alemán",
   "languageSpanish": "Español",
   "languageFrench": "Francés",
   "languageKorean": "Coreano",
-  "languageDutch": "Neerlandés",
+  "languageDutch": "Holandés",
   "languagePortuguese": "Portugués",
   "@languageEnglish": {
-    "description": "El nombre del idioma inglés en español"
+    "description": "El nombre del idioma inglés en inglés"
   },
   "@languageGerman": {
-    "description": "El nombre del idioma alemán en español"
+    "description": "El nombre del idioma alemán en inglés"
   },
   "@languageSpanish": {
-    "description": "El nombre del idioma español en español"
+    "description": "El nombre del idioma español en inglés"
   },
   "@languageFrench": {
-    "description": "El nombre del idioma francés en español"
+    "description": "El nombre del idioma francés en inglés"
   },
   "@languageKorean": {
-    "description": "El nombre del idioma coreano en español"
+    "description": "El nombre del idioma coreano en inglés"
   },
   "@languageDutch": {
-    "description": "El nombre del idioma neerlandés en español"
+    "description": "El nombre del idioma holandés en inglés"
   },
   "@languagePortuguese": {
-    "description": "El nombre del idioma portugués en español"
+    "description": "El nombre del idioma portugués en inglés"
   },
-  "editScript": "Editar guion",
-  "@editScript": {
-    "description": "Etiqueta para editar un guion."
-  },
-  "deleteScript": "Eliminar guion",
-  "@deleteScript": {
-    "description": "Etiqueta para eliminar un guion."
-  },
-  "edit": "Editar",
-  "@edit": {
-    "description": "Etiqueta de botón para editar."
-  },
+  "okay": "Aceptar",
+  "@okay": {},
   "cancel": "Cancelar",
-  "@cancel": {
-    "description": "Etiqueta de botón para cancelar."
-  },
-  "ok": "Aceptar",
-  "@ok": {
-    "description": "Etiqueta de botón para aceptar."
-  },
-  "areYouSureDeleteScript": "¿Estás seguro de que deseas eliminar este guion?",
-  "@areYouSureDeleteScript": {
-    "description": "Mensaje de confirmación para eliminar un guion."
-  },
-  "speed": "Velocidad",
-  "@speed": {
-    "description": "Etiqueta para la configuración de velocidad."
-  },
-  "recordVideo": "Grabar video",
-  "@recordVideo": {
-    "description": "Etiqueta para la funcionalidad de grabar video."
-  },
-  "backGroundTransparency": "Transparencia de fondo",
-  "@backGroundTransparency": {
-    "description": "Opción para ajustar la transparencia del fondo."
-  },
-  "cameraNotFound": "Cámara no encontrada",
-  "@cameraNotFound": {
-    "description": "Mensaje que se muestra cuando no se encuentra la cámara."
-  },
-  "noCameraAvailable": "No hay cámara disponible",
-  "@noCameraAvailable": {
-    "description": "Mensaje que se muestra cuando no hay cámaras disponibles."
-  },
-  "onlyOneCameraFound": "Solo se encontró una cámara",
-  "@onlyOneCameraFound": {
-    "description": "Mensaje que se muestra cuando solo se encuentra una cámara."
-  },
-  "storagePermissionDenied": "Permiso de almacenamiento denegado",
-  "@storagePermissionDenied": {
-    "description": "Mensaje que se muestra cuando se deniega el permiso de almacenamiento."
-  },
-  "permissionIsDenied": "Permiso denegado",
-  "@permissionIsDenied": {
-    "description": "Mensaje que se muestra cuando se deniega un permiso."
-  },
-  "permissionIsRestricted": "Permiso restringido",
-  "@permissionIsRestricted": {
-    "description": "Mensaje que se muestra cuando un permiso está restringido."
-  },
-  "preview": "Vista previa",
-  "@preview": {
-    "description": "Etiqueta para la funcionalidad de vista previa."
-  },
-  "shareVideo": "Compartir video",
-  "@shareVideo": {
-    "description": "Etiqueta para la funcionalidad de compartir video."
-  },
-  "thisVideoWasShared": "Este video fue compartido",
-  "@thisVideoWasShared": {
-    "description": "Mensaje que se muestra cuando un video ha sido compartido."
-  },
-  "failedToSaveVideo": "Error al guardar el video",
-  "@failedToSaveVideo": {
-    "description": "Mensaje que se muestra cuando no se puede guardar un video."
-  },
-  "selectAll": "Seleccionar todo",
-  "@selectAll": {
-    "description": "Etiqueta para seleccionar todos los elementos."
-  },
-  "unSelectAll": "Deseleccionar todo",
-  "@unSelectAll": {
-    "description": "Etiqueta para deseleccionar todos los elementos."
-  },
-  "enterOTP": "Introducir OTP",
-  "@enterOTP": {
-    "description": "Etiqueta para el campo de introducción de OTP."
-  },
-  "incompleteLength": "Longitud incompleta",
-  "@incompleteLength": {
-    "description": "Mensaje que se muestra cuando la longitud es incompleta."
-  },
-  "otp": "OTP",
-  "@otp": {
-    "description": "Etiqueta para el campo de OTP."
-  },
-  "onlyCharactersLength": "Solo caracteres de longitud",
+  "@cancel": {},
+  "onlyCharactersLength": "Solo se requieren {length} caracteres",
   "@onlyCharactersLength": {
-    "description": "Mensaje que se muestra cuando solo se permiten caracteres de una longitud específica."
-  },
-  "forgetPassword": "Olvidar contraseña",
-  "@forgetPassword": {
-    "description": "Etiqueta para el botón de olvidar contraseña."
-  },
-  "forgetPasswordQ": "¿Olvidaste tu contraseña?",
-  "@forgetPasswordQ": {
-    "description": "Mensaje para usuarios que han olvidado su contraseña."
-  },
-  "resetPassword": "Restablecer contraseña",
-  "@resetPassword": {
-    "description": "Etiqueta para el botón de restablecer contraseña."
-  },
-  "updatePassword": "Actualizar contraseña",
-  "@updatePassword": {
-    "description": "Etiqueta para el botón de actualizar contraseña."
-  },
-  "sendOTP": "Enviar OTP",
-  "@sendOTP": {
-    "description": "Etiqueta para el botón de enviar OTP."
-  },
-  "feedbackFromTelecue": "Comentarios de TeleCue",
-  "@feedbackFromTelecue": {
-    "description": "Etiqueta para los comentarios de TeleCue."
-  },
-  "demo": "Demostración",
-  "@demo": {
-    "description": "Etiqueta para la demostración."
-  },
-  "guest": "Invitado",
-  "@guest": {
-    "description": "Etiqueta para el usuario invitado."
-  },
-  "edited": "Editado",
-  "@edited": {
-    "description": "Etiqueta para indicar que algo ha sido editado."
-  },
-  "proceedToLogin": "Proceder a iniciar sesión",
-  "@proceedToLogin": {
-    "description": "Etiqueta para proceder a iniciar sesión."
-  },
-  "areYouSureLogout": "¿Estás seguro de que deseas cerrar sesión?",
-  "@areYouSureLogout": {
-    "description": "Mensaje de confirmación para cerrar sesión."
-  },
-  "areYouSureDeleteAccount": "¿Estás seguro de que deseas eliminar tu cuenta?",
-  "@areYouSureDeleteAccount": {
-    "description": "Mensaje de confirmación para eliminar la cuenta."
-  },
-  "deleteAccount": "Eliminar cuenta",
-  "@deleteAccount": {
-    "description": "Etiqueta para el botón de eliminar cuenta."
-  },
-  "lorem": "Lorem ipsum",
-  "@lorem": {
-    "description": "Texto de marcador de posición."
-  },
-  "useAsGuest": "Usar como invitado",
-  "@useAsGuest": {
-    "description": "Etiqueta para usar la aplicación como invitado."
-  },
-  "goToLogin": "Ir a iniciar sesión",
-  "@goToLogin": {
-    "description": "Etiqueta para ir a la pantalla de inicio de sesión."
-  },
-  "saveCondition": "Guardar condición",
-  "@saveCondition": {
-    "description": "Etiqueta para guardar la condición actual."
-  },
-  "recordWithoutScript": "Grabar sin guion",
-  "@recordWithoutScript": {
-    "description": "Etiqueta para la funcionalidad de grabar sin un guion."
-  },
-  "myProfile": "Mi perfil",
-  "@myProfile": {
-    "description": "Etiqueta para la sección de perfil del usuario."
-  },
-  "yourUsername": "Tu nombre de usuario",
-  "@yourUsername": {
-    "description": "Etiqueta para mostrar el nombre de usuario."
-  },
-  "saveChanges": "Guardar cambios",
-  "@saveChanges": {
-    "description": "Etiqueta para el botón de guardar cambios."
+    "placeholders": {
+      "length": {
+        "type": "int",
+        "example": "y"
+      }
+    }
   }
 }

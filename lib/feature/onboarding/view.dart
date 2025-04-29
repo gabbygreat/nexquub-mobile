@@ -24,16 +24,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     l10n = context.l10n;
     _viewModel.content = [
       OnboardingContent(
-        title: l10n.craftSpeechesWithEase,
-        description: l10n.typePasteOrImport,
+        title: 'l10n.craftSpeechesWithEase',
+        description: 'l10n.typePasteOrImport',
       ),
       OnboardingContent(
-        title: l10n.setYourOwnPreferences,
-        description: l10n.haveAFontYou,
+        title:' l10n.setYourOwnPreferences',
+        description: 'l10n.haveAFontYou',
       ),
       OnboardingContent(
-        title: l10n.organisedAndInCloud,
-        description: l10n.haveYourScriptsAnd,
+        title: 'l10n.organisedAndInCloud',
+        description: 'l10n.haveYourScriptsAnd',
       ),
     ];
 

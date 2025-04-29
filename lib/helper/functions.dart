@@ -225,7 +225,7 @@ Future<bool?> showConfirmationModal(
               context: context,
               onPressed: () => Navigator.pop(context, true),
               child: Text(
-                l10n.ok,
+                l10n.okay,
               ),
             ),
           ],

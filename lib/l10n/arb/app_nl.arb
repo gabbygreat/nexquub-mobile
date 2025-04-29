@@ -4,209 +4,29 @@
   "@nexquub": {
     "description": "Project name"
   },
-  "craftSpeechesWithEase": "Maak gemakkelijk\ntoespraken",
-  "@craftSpeechesWithEase": {
-    "description": "Wordt weergegeven op de startpagina om de functionaliteit van de app in te voeren."
-  },
-  "typePasteOrImport": "Typ, plak of importeer je script, pas de snelheid aan en lever je boodschap zonder dat iemand weet dat je van een script leest.",
-  "@typePasteOrImport": {
-    "description": "Instructies voor gebruikers over hoe de app te gebruiken."
-  },
-  "getStarted": "Begin nu",
-  "@getStarted": {
-    "description": "Call-to-action knoplabel."
-  },
-  "alreadyHaveAnAccount": "Heb je al een account? Inloggen",
-  "@alreadyHaveAnAccount": {
-    "description": "Prompt voor bestaande gebruikers om in te loggen."
-  },
-  "setYourOwnPreferences": "Stel je eigen voorkeuren in",
-  "@setYourOwnPreferences": {
-    "description": "Kop voor het aanpassen van gebruikersinstellingen."
-  },
-  "haveAFontYou": "Heb je een lettertype dat je liever gebruikt? Oogproblemen en hou van grote tekst? Gebruik je een spiegel om van af te lezen? Wij hebben het voor je.",
-  "@haveAFontYou": {
-    "description": "Moedigt gebruikers aan om tekstinstellingen aan te passen."
-  },
-  "organisedAndInCloud": "Georganiseerd en in de cloud",
-  "@organisedAndInCloud": {
-    "description": "Kop die de voordelen van cloudopslag benadrukt."
-  },
-  "haveYourScriptsAnd": "Laat je scripts en opnames automatisch opslaan in de cloud wanneer je inlogt, zodat ze gemakkelijk toegankelijk zijn",
-  "@haveYourScriptsAnd": {
-    "description": "Uitleg van de cloudopslagfunctie."
-  },
-  "typeYourEmailHere": "Typ je e-mail hier",
-  "@typeYourEmailHere": {
-    "description": "Plaatsaanduiding voor e-mailinvoervelden."
-  },
-  "email": "E-mail",
-  "@email": {
-    "description": "Label voor e-mailinvoervelden."
-  },
-  "createPassword": "Maak wachtwoord aan",
-  "@createPassword": {
-    "description": "Label voor wachtwoordaanmaakvelden."
-  },
-  "password": "Wachtwoord",
-  "@password": {
-    "description": "Label voor wachtwoordinvoervelden."
-  },
-  "confirmYourPassword": "Bevestig je wachtwoord",
-  "@confirmYourPassword": {
-    "description": "Label voor wachtwoordbevestigingsvelden."
-  },
-  "confirmPassword": "Bevestig wachtwoord",
-  "@confirmPassword": {
-    "description": "Label voor het bevestigen van het wachtwoordveld."
-  },
-  "createAccount": "Maak account aan",
-  "@createAccount": {
-    "description": "Knoplabel om een nieuw account te maken."
-  },
-  "or": "OF",
-  "@or": {
-    "description": "Dividertekst voor alternatieve inlogopties."
-  },
-  "signInWithGoogle": "Inloggen met Google",
-  "@signInWithGoogle": {
-    "description": "Knoplabel voor inloggen met Google."
-  },
-  "signInWithApple": "Inloggen met Apple",
-  "@signInWithApple": {
-    "description": "Knoplabel voor inloggen met Apple."
-  },
-  "joinOurCommunityAnd": "Word lid van onze gemeenschap en maak de beste video's!",
-  "@joinOurCommunityAnd": {
-    "description": "Moedigt gebruikers aan om lid te worden van het platform."
-  },
-  "logIn": "Inloggen",
-  "@logIn": {
-    "description": "Knoplabel voor inloggen."
-  },
-  "forgotPassword": "Wachtwoord vergeten?",
-  "@forgotPassword": {
-    "description": "Prompt voor gebruikers die hun wachtwoord vergeten zijn."
-  },
-  "home": "Home",
-  "@home": {
-    "description": "Navigatie label voor het startscherm."
-  },
-  "settings": "Instellingen",
-  "@settings": {
-    "description": "Navigatie label voor het instellingen scherm."
-  },
-  "allProjects": "Alle projecten",
-  "@allProjects": {
-    "description": "Label voor het weergeven van alle gebruikersprojecten."
-  },
-  "scripts": "Scripts",
-  "@scripts": {
-    "description": "Label voor scriptgerelateerde functies."
-  },
   "ooopsYouDontHave": "Oeps.. je hebt nog geen project",
   "@ooopsYouDontHave": {
-    "description": "Bericht dat wordt weergegeven wanneer er geen projecten worden gevonden."
-  },
-  "demoScript": "Demo script",
-  "@demoScript": {
-    "description": "Label voor een demo script voorbeeld."
-  },
-  "recordTesting": "Opnametest",
-  "@recordTesting": {
-    "description": "Label voor opname testfuncties."
-  },
-  "speed5": "Snelheid: 5",
-  "@speed5": {
-    "description": "Label voor de scrollsnelheidindicator."
-  },
-  "start": "Start",
-  "@start": {
-    "description": "Knoplabel om een actie te starten."
-  },
-  "mirrorTextHorizontally": "Spiegel tekst horizontaal",
-  "@mirrorTextHorizontally": {
-    "description": "Optie om tekst horizontaal te spiegelen."
-  },
-  "mirrorTextVertically": "Spiegel tekst verticaal",
-  "@mirrorTextVertically": {
-    "description": "Optie om tekst verticaal te spiegelen."
-  },
-  "bionicReading": "Bionisch lezen",
-  "@bionicReading": {
-    "description": "Optie voor de bionische leesfunctie."
-  },
-  "defaultScrollSpeed": "Standaard scrollsnelheid",
-  "@defaultScrollSpeed": {
-    "description": "Label voor de standaard scrollsnelheid instelling."
-  },
-  "textSize": "Tekstgrootte",
-  "@textSize": {
-    "description": "Optie om de tekstgrootte aan te passen."
-  },
-  "lineHeight": "Lijnhoogte",
-  "@lineHeight": {
-    "description": "Optie om de lijnhoogte aan te passen."
-  },
-  "backgroundTransparency": "Achtergrondtransparantie",
-  "@backgroundTransparency": {
-    "description": "Optie om de transparantie van de achtergrond aan te passen."
-  },
-  "theme": "Thema",
-  "@theme": {
-    "description": "Label voor thema-instellingen."
+    "description": "Message displayed when no projects are found."
   },
   "systemDefault": "Systeemstandaard",
   "@systemDefault": {
-    "description": "Optie om de standaardinstellingen van het systeem te gebruiken."
+    "description": "Option to use the system's default settings."
   },
   "language": "Taal",
   "@language": {
-    "description": "Label voor taalinstellingen."
+    "description": "Label for language settings."
   },
   "english": "Engels",
   "@english": {
-    "description": "Optie voor de Engelse taal."
-  },
-  "trash": "Prullenbak",
-  "@trash": {
-    "description": "Label voor het prullenbakgedeelte."
-  },
-  "seeAllDeletedItems": "Bekijk alle verwijderde items binnen de afgelopen 30 dagen",
-  "@seeAllDeletedItems": {
-    "description": "Beschrijving van de prullenbakfunctie."
-  },
-  "privacyPolicy": "Privacybeleid",
-  "@privacyPolicy": {
-    "description": "Link naar het privacybeleid van de app."
-  },
-  "sendFeedback": "Stuur feedback",
-  "@sendFeedback": {
-    "description": "Knoplabel voor het sturen van feedback."
-  },
-  "rateUs": "Beoordeel ons",
-  "@rateUs": {
-    "description": "Knoplabel voor het beoordelen van de app."
-  },
-  "logout": "Uitloggen",
-  "@logout": {
-    "description": "Knoplabel om uit te loggen."
-  },
-  "guestUser": "Gastgebruiker",
-  "@guestUser": {
-    "description": "Label voor gastgebruikers."
-  },
-  "signIn": "Inloggen",
-  "@signIn": {
-    "description": "Knoplabel voor inloggen."
+    "description": "Option for English language."
   },
   "oopsUnexpectedError": "Oeps! Er is een onverwachte fout opgetreden.",
   "@oopsUnexpectedError": {
-    "description": "Bericht dat wordt weergegeven wanneer een onverwachte fout optreedt."
+    "description": "Message displayed when an unexpected error occurs."
   },
   "details": "Details: {errorDetails}",
   "@details": {
-    "description": "Foutdetails die worden weergegeven in de debugmodus.",
+    "description": "Error details message displayed in debug mode.",
     "placeholders": {
       "errorDetails": {
         "type": "String",
@@ -214,191 +34,44 @@
       }
     }
   },
-  "goBack": "Ga terug",
-  "@goBack": {
-    "description": "Knoplabel om terug te navigeren."
-  },
-  "logInClose": "Sluit inloggen",
-  "@logInClose": {
-    "description": "Knoplabel om het inlogscherm te sluiten."
-  },
-  "next": "Volgende",
-  "@next": {
-    "description": "Knoplabel om naar de volgende stap te gaan."
-  },
-  "createAFreeAccount": "Maak een gratis account aan",
-  "@createAFreeAccount": {
-    "description": "Knoplabel om een gratis account aan te maken."
-  },
-  "dontHaveAnAccount": "Heb je geen account? Maak er een aan",
-  "@dontHaveAnAccount": {
-    "description": "Prompt voor nieuwe gebruikers om een account aan te maken."
-  },
-  "login": "Inloggen",
-  "@login": {
-    "description": "Knoplabel voor inloggen."
-  },
-  "createOne": "Maak er een aan",
-  "@createOne": {
-    "description": "Knoplabel om een nieuw account aan te maken."
-  },
-  "enterPassword": "Voer wachtwoord in",
-  "@enterPassword": {
-    "description": "Prompt voor gebruikers om hun wachtwoord in te voeren."
+  "incompleteLength": "Onvolledige lengte van tekens",
+  "@incompleteLength": {
+    "description": "Label for password creation fields."
   },
   "somethingWentWrong": "Er is iets misgegaan",
   "@somethingWentWrong": {
-    "description": "Bericht dat wordt weergegeven wanneer er iets misgaat."
+    "description": "Label for error"
   },
-  "checkYourInternetConnection": "Controleer je internetverbinding",
+  "checkYourInternetConnection": "Controleer je internetverbinding en probeer het opnieuw",
   "@checkYourInternetConnection": {
-    "description": "Bericht dat wordt weergegeven wanneer er een probleem is met de internetverbinding."
+    "description": "Label for internet"
   },
   "requestTookTooLong": "Het verzoek duurde te lang",
   "@requestTookTooLong": {
-    "description": "Bericht dat wordt weergegeven wanneer een verzoek te lang duurt."
+    "description": "Label for long request"
   },
   "requestWasCancelled": "Het verzoek is geannuleerd",
   "@requestWasCancelled": {
-    "description": "Bericht dat wordt weergegeven wanneer een verzoek is geannuleerd."
+    "description": "Label for cancelled request"
   },
   "anUnxepectedErrorOccurred": "Er is een onverwachte fout opgetreden",
   "@anUnxepectedErrorOccurred": {
-    "description": "Bericht dat wordt weergegeven wanneer een onverwachte fout optreedt."
+    "description": "Label for unexpected request"
   },
   "emailAddressMustBeValid": "E-mailadres moet geldig zijn",
   "@emailAddressMustBeValid": {
-    "description": "Bericht dat wordt weergegeven wanneer een ongeldig e-mailadres is ingevoerd."
+    "description": "Email validation"
   },
-  "pleaseEnterAPassword": "Voer een wachtwoord in",
+  "pleaseEnterAPassword": "Voer je wachtwoord in",
   "@pleaseEnterAPassword": {
-    "description": "Prompt voor gebruikers om een wachtwoord in te voeren."
+    "description": "Password validation"
   },
-  "there": "Daar",
-  "@there": {
-    "description": "Vertaling voor 'there'."
-  },
-  "recordings": "Opnames",
-  "@recordings": {
-    "description": "Label voor opnames."
-  },
-  "hello": "Hallo {name}",
-  "@hello": {
-    "placeholders": {
-      "name": {
-        "type": "String",
-        "example": "John"
-      }
-    }
-  },
-  "newScript": "Nieuw script",
-  "@newScript": {
-    "description": "Label voor het maken van een nieuw script."
-  },
-  "importFile": "Bestand importeren",
-  "@importFile": {
-    "description": "Label voor het importeren van een bestand."
-  },
-  "scriptTitle": "Scripttitel",
-  "@scriptTitle": {
-    "description": "Label voor de titel van het script."
-  },
-  "content": "Inhoud",
-  "@content": {
-    "description": "Label voor de inhoud van het script."
-  },
-  "import": "Importeren",
-  "@import": {
-    "description": "Knoplabel voor het importeren van een bestand."
-  },
-  "howAreYouDoing": "Hoe gaat het?",
-  "@howAreYouDoing": {
-    "description": "Vertaling voor 'how are you doing?'."
-  },
-  "allowedFileExtension": "doc, docx, pdf, txt",
-  "@allowedFileExtension": {
-    "description": "Bericht dat de toegestane bestandsextensie aangeeft."
-  },
-  "save": "Opslaan",
-  "@save": {
-    "description": "Knoplabel voor het opslaan van wijzigingen."
-  },
-  "allowedFileExtensionError": "Ongeldige bestandsextensie. Toegestane extensies zijn: doc, docx, pdf, txt",
-  "@allowedFileExtensionError": {
-    "description": "Bericht dat wordt weergegeven wanneer een bestand met een ongeldige extensie wordt geüpload."
-  },
-  "forgotPasswordx": "Wachtwoord vergeten?",
-  "@forgotPasswordx": {
-    "description": "Prompt voor gebruikers die hun wachtwoord vergeten zijn."
+  "goBack": "Ga terug",
+  "@goBack": {
+    "description": "Button label to navigate back."
   },
   "passwordMismatch": "Wachtwoorden komen niet overeen",
-  "@passwordMismatch": {
-    "description": "Bericht dat wordt weergegeven wanneer de wachtwoorden niet overeenkomen."
-  },
-  "okay": "Oké",
-  "@okay": {
-    "description": "Knoplabel voor bevestiging."
-  },
-  "dark": "Donker",
-  "@dark": {
-    "description": "Optie voor donkere modus."
-  },
-  "light": "Licht",
-  "@light": {
-    "description": "Optie voor lichte modus."
-  },
-  "textSettings": "Tekstinstellingen",
-  "@textSettings": {
-    "description": "Label voor tekstinstellingen."
-  },
-  "tapToPlayPause": "Tik om af te spelen/pauzeren",
-  "@tapToPlayPause": {
-    "description": "Instructie voor het afspelen/pauzeren van media."
-  },
-  "fontTextSizeLineHeight": "Lettertype, tekstgrootte, lijnhoogte",
-  "@fontTextSizeLineHeight": {
-    "description": "Opties voor lettertype, tekstgrootte en lijnhoogte."
-  },
-  "tappingScreenWhileScrollingWillPause": "Tik op het scherm tijdens het scrollen om te pauzeren",
-  "@tappingScreenWhileScrollingWillPause": {
-    "description": "Instructie voor het pauzeren van scrollen door op het scherm te tikken."
-  },
-  "videoQuality": "Videokwaliteit",
-  "@videoQuality": {
-    "description": "Label voor videokwaliteit instellingen."
-  },
-  "selectOutputQuality": "Selecteer uitvoerkwaliteit",
-  "@selectOutputQuality": {
-    "description": "Instructie voor het selecteren van de uitvoerkwaliteit."
-  },
-  "sd": "SD",
-  "@sd": {
-    "description": "Optie voor standaard definitie."
-  },
-  "hd": "HD",
-  "@hd": {
-    "description": "Optie voor hoge definitie."
-  },
-  "fhd": "FHD",
-  "@fhd": {
-    "description": "Optie voor volledige hoge definitie."
-  },
-  "uhd4k": "UHD 4K",
-  "@uhd4k": {
-    "description": "Optie voor ultra hoge definitie 4K."
-  },
-  "seeAllDeletedItemsWithinPast30Days": "Bekijk alle verwijderde items binnen de afgelopen 30 dagen",
-  "@seeAllDeletedItemsWithinPast30Days": {
-    "description": "Beschrijving van de prullenbakfunctie."
-  },
-  "countdownTimer": "Afteltimer",
-  "@countdownTimer": {
-    "description": "Label voor de afteltimer."
-  },
-  "chooseHowManySecsBeforeRecordingStarts": "Kies hoeveel seconden voordat de opname begint",
-  "@chooseHowManySecsBeforeRecordingStarts": {
-    "description": "Instructie voor het kiezen van de tijd voordat de opname begint."
-  },
+  "@passwordMismatch": {},
   "languageEnglish": "Engels",
   "languageGerman": "Duits",
   "languageSpanish": "Spaans",
@@ -407,250 +80,37 @@
   "languageDutch": "Nederlands",
   "languagePortuguese": "Portugees",
   "@languageEnglish": {
-    "description": "De naam van de Engelse taal in het Nederlands"
+    "description": "The name of the English language in English"
   },
   "@languageGerman": {
-    "description": "De naam van de Duitse taal in het Nederlands"
+    "description": "The name of the German language in English"
   },
   "@languageSpanish": {
-    "description": "De naam van de Spaanse taal in het Nederlands"
+    "description": "The name of the Spanish language in English"
   },
   "@languageFrench": {
-    "description": "De naam van de Franse taal in het Nederlands"
+    "description": "The name of the French language in English"
   },
   "@languageKorean": {
-    "description": "De naam van de Koreaanse taal in het Nederlands"
+    "description": "The name of the Korean language in English"
   },
   "@languageDutch": {
-    "description": "De naam van de Nederlandse taal in het Nederlands"
+    "description": "The name of the Dutch language in English"
   },
   "@languagePortuguese": {
-    "description": "De naam van de Portugese taal in het Nederlands"
+    "description": "The name of the Portuguese language in English"
   },
-  "editScript": "Script bewerken",
-  "@editScript": {
-    "description": "Label voor het bewerken van een script."
-  },
-  "deleteScript": "Script verwijderen",
-  "@deleteScript": {
-    "description": "Label voor het verwijderen van een script."
-  },
-  "edit": "Bewerken",
-  "@edit": {
-    "description": "Knoplabel voor bewerken."
-  },
+  "okay": "Oké",
+  "@okay": {},
   "cancel": "Annuleren",
-  "@cancel": {
-    "description": "Knoplabel voor annuleren."
-  },
-  "ok": "Oké",
-  "@ok": {
-    "description": "Knoplabel voor bevestiging."
-  },
-  "areYouSureDeleteScript": "Weet je zeker dat je dit script wilt verwijderen?",
-  "@areYouSureDeleteScript": {
-    "description": "Bericht dat wordt weergegeven om te bevestigen of de gebruiker het script wil verwijderen."
-  },
-  "speed": "Snelheid",
-  "@speed": {
-    "description": "Label voor snelheid."
-  },
-  "recordVideo": "Video opnemen",
-  "@recordVideo": {
-    "description": "Knoplabel voor het opnemen van een video."
-  },
-  "backGroundTransparency": "Achtergrondtransparantie",
-  "@backGroundTransparency": {
-    "description": "Optie om de transparantie van de achtergrond aan te passen."
-  },
-  "cameraNotFound": "Camera niet gevonden",
-  "@cameraNotFound": {
-    "description": "Bericht dat wordt weergegeven wanneer de camera niet wordt gevonden."
-  },
-  "noCameraAvailable": "Geen camera beschikbaar",
-  "@noCameraAvailable": {
-    "description": "Bericht dat wordt weergegeven wanneer er geen camera beschikbaar is."
-  },
-  "onlyOneCameraFound": "Slechts één camera gevonden",
-  "@onlyOneCameraFound": {
-    "description": "Bericht dat wordt weergegeven wanneer er slechts één camera wordt gevonden."
-  },
-  "storagePermissionDenied": "Opslagtoestemming geweigerd",
-  "@storagePermissionDenied": {
-    "description": "Bericht dat wordt weergegeven wanneer de opslagtoestemming is geweigerd."
-  },
-  "permissionIsDenied": "Toestemming is geweigerd",
-  "@permissionIsDenied": {
-    "description": "Bericht dat wordt weergegeven wanneer een toestemming is geweigerd."
-  },
-  "permissionIsRestricted": "Toestemming is beperkt",
-  "@permissionIsRestricted": {
-    "description": "Bericht dat wordt weergegeven wanneer een toestemming is beperkt."
-  },
-  "preview": "Voorbeeld",
-  "@preview": {
-    "description": "Knoplabel voor het bekijken van een voorbeeld."
-  },
-  "shareVideo": "Deel video",
-  "@shareVideo": {
-    "description": "Knoplabel voor het delen van een video."
-  },
-  "thisVideoWasShared": "Deze video is gedeeld",
-  "@thisVideoWasShared": {
-    "description": "Bericht dat wordt weergegeven wanneer een video is gedeeld."
-  },
-  "failedToSaveVideo": "Opslaan van video mislukt",
-  "@failedToSaveVideo": {
-    "description": "Bericht dat wordt weergegeven wanneer het opslaan van een video is mislukt."
-  },
-  "selectAll": "Alles selecteren",
-  "@selectAll": {
-    "description": "Knoplabel voor het selecteren van alle items."
-  },
-  "unSelectAll": "Alles deselecteren",
-  "@unSelectAll": {
-    "description": "Knoplabel voor het deselecteren van alle items."
-  },
-  "enterOTP": "Voer OTP in",
-  "@enterOTP": {
-    "description": "Prompt voor gebruikers om hun OTP in te voeren."
-  },
-  "incompleteLength": "Onvolledige lengte",
-  "@incompleteLength": {
-    "description": "Bericht dat wordt weergegeven wanneer de lengte onvolledig is."
-  },
-  "otp": "OTP",
-  "@otp": {
-    "description": "Label voor OTP invoervelden."
-  },
-  "onlyCharactersLength": "Alleen {length} tekens toegestaan",
+  "@cancel": {},
+  "onlyCharactersLength": "Alleen {length} tekens zijn vereist",
   "@onlyCharactersLength": {
-    "description": "Bericht dat wordt weergegeven wanneer alleen een bepaald aantal tekens is toegestaan.",
     "placeholders": {
       "length": {
-        "type": "int"
+        "type": "int",
+        "example": "y"
       }
     }
-  },
-  "forgetPassword": "Wachtwoord vergeten",
-  "@forgetPassword": {
-    "description": "Prompt voor gebruikers die hun wachtwoord vergeten zijn."
-  },
-  "forgetPasswordQ": "Wachtwoord vergeten?",
-  "@forgetPasswordQ": {
-    "description": "Vraag voor gebruikers die hun wachtwoord vergeten zijn."
-  },
-  "resetPassword": "Wachtwoord resetten",
-  "@resetPassword": {
-    "description": "Knoplabel voor het resetten van het wachtwoord."
-  },
-  "updatePassword": "Wachtwoord bijwerken",
-  "@updatePassword": {
-    "description": "Knoplabel voor het bijwerken van het wachtwoord."
-  },
-  "sendOTP": "Verzend OTP",
-  "@sendOTP": {
-    "description": "Knoplabel voor het verzenden van OTP."
-  },
-  "feedbackFromTelecue": "Feedback van TeleCue",
-  "@feedbackFromTelecue": {
-    "description": "Label voor feedback van TeleCue."
-  },
-  "demo": "Demo",
-  "@demo": {
-    "description": "Label voor demo."
-  },
-  "guest": "Gast",
-  "@guest": {
-    "description": "Label voor gastgebruikers."
-  },
-  "edited": "Bewerkt",
-  "@edited": {
-    "description": "Label voor bewerkte items."
-  },
-  "proceedToLogin": "Ga door naar inloggen",
-  "@proceedToLogin": {
-    "description": "Knoplabel om door te gaan naar inloggen."
-  },
-  "areYouSureLogout": "Weet je zeker dat je wilt uitloggen?",
-  "@areYouSureLogout": {
-    "description": "Bericht dat wordt weergegeven om te bevestigen of de gebruiker wil uitloggen."
-  },
-  "areYouSureDeleteAccount": "Weet je zeker dat je dit account wilt verwijderen?",
-  "@areYouSureDeleteAccount": {
-    "description": "Bericht dat wordt weergegeven om te bevestigen of de gebruiker het account wil verwijderen."
-  },
-  "deleteAccount": "Account verwijderen",
-  "@deleteAccount": {
-    "description": "Knoplabel om een account te verwijderen."
-  },
-  "lorem": "Lorem ipsum",
-  "@lorem": {
-    "description": "Voorbeeldtekst."
-  },
-  "useAsGuest": "Gebruik als gast",
-  "@useAsGuest": {
-    "description": "Knoplabel voor het gebruik van de app als gast."
-  },
-  "goToLogin": "Ga naar inloggen",
-  "@goToLogin": {
-    "description": "Knoplabel om naar het inlogscherm te gaan."
-  },
-  "saveCondition": "Voorwaarde opslaan",
-  "@saveCondition": {
-    "description": "Knoplabel voor het opslaan van een voorwaarde."
-  },
-  "recordWithoutScript": "Opnemen zonder script",
-  "@recordWithoutScript": {
-    "description": "Label voor de optie om op te nemen zonder script."
-  },
-  "myProfile": "Mijn profiel",
-  "@myProfile": {
-    "description": "Label voor de profielpagina."
-  },
-  "yourUsername": "Je gebruikersnaam",
-  "@yourUsername": {
-    "description": "Label voor het invoeren van de gebruikersnaam."
-  },
-  "saveChanges": "Wijzigingen opslaan",
-  "@saveChanges": {
-    "description": "Knoplabel voor het opslaan van wijzigingen."
-  },
-  "areYouSureDelete": "Weet je zeker dat je {selections} geselecteerde bestand{plural} wilt verwijderen?",
-  "@areYouSureDelete": {
-    "description": "Bericht dat wordt weergegeven om te bevestigen of de gebruiker iets wil verwijderen.",
-    "placeholders": {
-      "selections": {
-        "type": "int"
-      },
-      "plural": {
-        "type": "String",
-        "example": "en"
-      }
-    }
-  },
-  "areYouSureToEditProfilePicture": "Weet je zeker dat je je profielfoto wilt bewerken?",
-  "@areYouSureToEditProfilePicture": {
-    "description": "Bericht dat wordt weergegeven om te bevestigen of de gebruiker de profielfoto wil bewerken."
-  },
-  "areYouSureToEditUsername": "Weet je zeker dat je je gebruikersnaam wilt bewerken?",
-  "@areYouSureToEditUsername": {
-    "description": "Bericht dat wordt weergegeven om te bevestigen of de gebruiker de gebruikersnaam wil bewerken."
-  },
-  "areYouSureToEditUsernameAndPicture": "Weet je zeker dat je je gebruikersnaam en profielfoto wilt bewerken?",
-  "@areYouSureToEditUsernameAndPicture": {
-    "description": "Bericht dat wordt weergegeven om te bevestigen of de gebruiker de gebruikersnaam en profielfoto wil bewerken."
-  },
-  "youMustEditOne": "Je moet ten minste één veld bewerken.",
-  "@youMustEditOne": {
-    "description": "Bericht dat wordt weergegeven wanneer de gebruiker geen velden heeft bewerkt."
-  },
-  "cannotLoadImage": "Kan afbeelding niet laden",
-  "@cannotLoadImage": {
-    "description": "Bericht dat wordt weergegeven wanneer een afbeelding niet kan worden geladen."
-  },
-  "nothingToUpdate": "Niets om bij te werken",
-  "@nothingToUpdate": {
-    "description": "Bericht dat wordt weergegeven wanneer er niets is om bij te werken."
   }
 }

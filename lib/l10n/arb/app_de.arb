@@ -4,209 +4,29 @@
   "@nexquub": {
     "description": "Project name"
   },
-  "craftSpeechesWithEase": "Erstelle Reden\nmit Leichtigkeit",
-  "@craftSpeechesWithEase": {
-    "description": "Wird auf der Startseite angezeigt, um die Funktionalität der App einzuführen."
-  },
-  "typePasteOrImport": "Tippe, füge ein oder importiere dein Skript, passe die Geschwindigkeit an und halte deine Nachricht, ohne dass jemand merkt, dass du von einem Skript abliest.",
-  "@typePasteOrImport": {
-    "description": "Anweisungen für Benutzer, wie sie die App verwenden können."
-  },
-  "getStarted": "Jetzt starten",
-  "@getStarted": {
-    "description": "Call-to-Action Schaltflächenlabel."
-  },
-  "alreadyHaveAnAccount": "Hast du schon ein Konto? Anmelden",
-  "@alreadyHaveAnAccount": {
-    "description": "Aufforderung für bestehende Benutzer, sich anzumelden."
-  },
-  "setYourOwnPreferences": "Stelle deine eigenen Präferenzen ein",
-  "@setYourOwnPreferences": {
-    "description": "Überschrift für das Anpassen der Benutzereinstellungen."
-  },
-  "haveAFontYou": "Hast du eine Schriftart, die du bevorzugst? Augenprobleme und große Schrift mögen? Liest du von einem Spiegel ab? Wir haben die Lösung.",
-  "@haveAFontYou": {
-    "description": "Ermutigt Benutzer, die Texteinstellungen anzupassen."
-  },
-  "organisedAndInCloud": "Organisiert und in der Cloud",
-  "@organisedAndInCloud": {
-    "description": "Überschrift, die die Vorteile der Cloud-Speicherung hervorhebt."
-  },
-  "haveYourScriptsAnd": "Lass deine Skripte und Aufnahmen automatisch in der Cloud speichern, wenn du dich anmeldest, damit sie leicht zugänglich sind.",
-  "@haveYourScriptsAnd": {
-    "description": "Erklärung der Cloud-Speicherfunktion."
-  },
-  "typeYourEmailHere": "Gib hier deine E-Mail-Adresse ein",
-  "@typeYourEmailHere": {
-    "description": "Platzhaltertext für E-Mail-Eingabefelder."
-  },
-  "email": "E-Mail",
-  "@email": {
-    "description": "Beschriftung für E-Mail-Eingabefelder."
-  },
-  "createPassword": "Passwort erstellen",
-  "@createPassword": {
-    "description": "Beschriftung für Passworterstellfelder."
-  },
-  "password": "Passwort",
-  "@password": {
-    "description": "Beschriftung für Passworteingabefelder."
-  },
-  "confirmYourPassword": "Bestätige dein Passwort",
-  "@confirmYourPassword": {
-    "description": "Beschriftung für Passwortbestätigungsfelder."
-  },
-  "confirmPassword": "Passwort bestätigen",
-  "@confirmPassword": {
-    "description": "Beschriftung für das Bestätigungsfeld des Passworts."
-  },
-  "createAccount": "Konto erstellen",
-  "@createAccount": {
-    "description": "Schaltflächenlabel zum Erstellen eines neuen Kontos."
-  },
-  "or": "ODER",
-  "@or": {
-    "description": "Trenntext für alternative Anmeldeoptionen."
-  },
-  "signInWithGoogle": "Mit Google anmelden",
-  "@signInWithGoogle": {
-    "description": "Schaltflächenlabel für die Anmeldung mit Google."
-  },
-  "signInWithApple": "Mit Apple anmelden",
-  "@signInWithApple": {
-    "description": "Schaltflächenlabel für die Anmeldung mit Apple."
-  },
-  "joinOurCommunityAnd": "Tritt unserer Community bei und starte deine Reise zu den besten Videos!",
-  "@joinOurCommunityAnd": {
-    "description": "Ermutigt Benutzer, der Plattform beizutreten."
-  },
-  "logIn": "Einloggen",
-  "@logIn": {
-    "description": "Schaltflächenlabel zum Einloggen."
-  },
-  "forgotPassword": "Passwort vergessen?",
-  "@forgotPassword": {
-    "description": "Aufforderung für Benutzer, die ihr Passwort vergessen haben."
-  },
-  "home": "Startseite",
-  "@home": {
-    "description": "Navigationslabel für den Startbildschirm."
-  },
-  "settings": "Einstellungen",
-  "@settings": {
-    "description": "Navigationslabel für den Einstellungsbildschirm."
-  },
-  "allProjects": "Alle Projekte",
-  "@allProjects": {
-    "description": "Label für die Anzeige aller Benutzerprojekte."
-  },
-  "scripts": "Skripte",
-  "@scripts": {
-    "description": "Label für skriptbezogene Funktionen."
-  },
-  "ooopsYouDontHave": "Ups... du hast noch kein Projekt",
+  "ooopsYouDontHave": "Ooops.. Sie haben noch kein Projekt",
   "@ooopsYouDontHave": {
-    "description": "Nachricht, die angezeigt wird, wenn keine Projekte gefunden wurden."
-  },
-  "demoScript": "Demo-Skript",
-  "@demoScript": {
-    "description": "Label für ein Demo-Skript-Beispiel."
-  },
-  "recordTesting": "Aufnahmetest",
-  "@recordTesting": {
-    "description": "Label für Aufnahme-Testfunktionen."
-  },
-  "speed5": "Geschwindigkeit: 5",
-  "@speed5": {
-    "description": "Label für die Scrollgeschwindigkeitsanzeige."
-  },
-  "start": "Starten",
-  "@start": {
-    "description": "Schaltflächenlabel zum Starten einer Aktion."
-  },
-  "mirrorTextHorizontally": "Text horizontal spiegeln",
-  "@mirrorTextHorizontally": {
-    "description": "Option, den Text horizontal zu spiegeln."
-  },
-  "mirrorTextVertically": "Text vertikal spiegeln",
-  "@mirrorTextVertically": {
-    "description": "Option, den Text vertikal zu spiegeln."
-  },
-  "bionicReading": "Bionisches Lesen",
-  "@bionicReading": {
-    "description": "Option für die bionische Lese-Funktion."
-  },
-  "defaultScrollSpeed": "Standard-Scrollgeschwindigkeit",
-  "@defaultScrollSpeed": {
-    "description": "Label für die Standard-Scrollgeschwindigkeitseinstellung."
-  },
-  "textSize": "Textgröße",
-  "@textSize": {
-    "description": "Option, die Textgröße anzupassen."
-  },
-  "lineHeight": "Zeilenhöhe",
-  "@lineHeight": {
-    "description": "Option, die Zeilenhöhe anzupassen."
-  },
-  "backgroundTransparency": "Hintergrundtransparenz",
-  "@backgroundTransparency": {
-    "description": "Option, die Transparenz des Hintergrunds anzupassen."
-  },
-  "theme": "Thema",
-  "@theme": {
-    "description": "Label für die Thema-Auswahl."
+    "description": "Message displayed when no projects are found."
   },
   "systemDefault": "Systemstandard",
   "@systemDefault": {
-    "description": "Option, die Standard-Einstellungen des Systems zu verwenden."
+    "description": "Option to use the system's default settings."
   },
   "language": "Sprache",
   "@language": {
-    "description": "Label für Spracheinstellungen."
+    "description": "Label for language settings."
   },
   "english": "Englisch",
   "@english": {
-    "description": "Option für die englische Sprache."
-  },
-  "trash": "Papierkorb",
-  "@trash": {
-    "description": "Label für den Papierkorbbereich."
-  },
-  "seeAllDeletedItems": "Alle gelöschten Elemente der letzten 30 Tage anzeigen",
-  "@seeAllDeletedItems": {
-    "description": "Beschreibung der Papierkorb-Funktion."
-  },
-  "privacyPolicy": "Datenschutzrichtlinie",
-  "@privacyPolicy": {
-    "description": "Link zur Datenschutzrichtlinie der App."
-  },
-  "sendFeedback": "Feedback senden",
-  "@sendFeedback": {
-    "description": "Schaltflächenlabel zum Senden von Feedback."
-  },
-  "rateUs": "Bewerte uns",
-  "@rateUs": {
-    "description": "Schaltflächenlabel zum Bewerten der App."
-  },
-  "logout": "Ausloggen",
-  "@logout": {
-    "description": "Schaltflächenlabel zum Ausloggen."
-  },
-  "guestUser": "Gastbenutzer",
-  "@guestUser": {
-    "description": "Label für Gastbenutzer."
-  },
-  "signIn": "Anmelden",
-  "@signIn": {
-    "description": "Schaltflächenlabel zum Anmelden."
+    "description": "Option for English language."
   },
   "oopsUnexpectedError": "Oops! Ein unerwarteter Fehler ist aufgetreten.",
   "@oopsUnexpectedError": {
-    "description": "Nachricht, die angezeigt wird, wenn ein unerwarteter Fehler auftritt."
+    "description": "Message displayed when an unexpected error occurs."
   },
   "details": "Details: {errorDetails}",
   "@details": {
-    "description": "Fehlerdetails, die im Debug-Modus angezeigt werden.",
+    "description": "Error details message displayed in debug mode.",
     "placeholders": {
       "errorDetails": {
         "type": "String",
@@ -214,192 +34,44 @@
       }
     }
   },
-  "goBack": "Zurück",
-  "@goBack": {
-    "description": "Button-Beschriftung, um zurück zu navigieren."
-  },
-  "logInClose": "Anmeldung schließen",
-  "@logInClose": {
-    "description": "Schaltflächenlabel zum Schließen des Anmeldefensters."
-  },
-  "next": "Weiter",
-  "@next": {
-    "description": "Schaltflächenlabel zum Fortfahren."
-  },
-  "createAFreeAccount": "Erstelle ein kostenloses Konto",
-  "@createAFreeAccount": {
-    "description": "Schaltflächenlabel zum Erstellen eines kostenlosen Kontos."
-  },
-  "dontHaveAnAccount": "Hast du kein Konto?",
-  "@dontHaveAnAccount": {
-    "description": "Aufforderung für neue Benutzer, ein Konto zu erstellen."
-  },
-  "login": "Anmelden",
-  "@login": {
-    "description": "Schaltflächenlabel zum Anmelden."
-  },
-  "createOne": "Erstelle eins",
-  "@createOne": {
-    "description": "Aufforderung, ein Konto zu erstellen."
-  },
-  "enterPassword": "Passwort eingeben",
-  "@enterPassword": {
-    "description": "Aufforderung, das Passwort einzugeben."
+  "incompleteLength": "Unvollständige Zeichenlänge",
+  "@incompleteLength": {
+    "description": "Label for password creation fields."
   },
   "somethingWentWrong": "Etwas ist schief gelaufen",
   "@somethingWentWrong": {
-    "description": "Fehlermeldung, wenn etwas schief geht."
+    "description": "Label for error"
   },
-  "checkYourInternetConnection": "Überprüfe deine Internetverbindung",
+  "checkYourInternetConnection": "Überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut",
   "@checkYourInternetConnection": {
-    "description": "Aufforderung, die Internetverbindung zu überprüfen."
+    "description": "Label for internet"
   },
   "requestTookTooLong": "Die Anfrage hat zu lange gedauert",
   "@requestTookTooLong": {
-    "description": "Fehlermeldung, wenn die Anfrage zu lange dauert."
+    "description": "Label for long request"
   },
   "requestWasCancelled": "Die Anfrage wurde abgebrochen",
   "@requestWasCancelled": {
-    "description": "Fehlermeldung, wenn die Anfrage abgebrochen wurde."
+    "description": "Label for cancelled request"
   },
   "anUnxepectedErrorOccurred": "Ein unerwarteter Fehler ist aufgetreten",
   "@anUnxepectedErrorOccurred": {
-    "description": "Fehlermeldung, wenn ein unerwarteter Fehler auftritt."
+    "description": "Label for unexpected request"
   },
   "emailAddressMustBeValid": "Die E-Mail-Adresse muss gültig sein",
   "@emailAddressMustBeValid": {
-    "description": "Fehlermeldung, wenn die E-Mail-Adresse ungültig ist."
+    "description": "Email validation"
   },
-  "pleaseEnterAPassword": "Bitte ein Passwort eingeben",
+  "pleaseEnterAPassword": "Bitte geben Sie Ihr Passwort ein",
   "@pleaseEnterAPassword": {
-    "description": "Aufforderung, ein Passwort einzugeben."
+    "description": "Password validation"
   },
-  "there": "Dort",
-  "@there": {
-    "description": "Übersetzung für das Wort 'there'."
+  "goBack": "Zurück",
+  "@goBack": {
+    "description": "Button label to navigate back."
   },
-  "recordings": "Aufnahmen",
-  "@recordings": {
-    "description": "Übersetzung für das Wort 'recordings'."
-  },
-  "hello": "Hallo {name}",
-  "@hello": {
-    "description": "Übersetzung für das Wort 'hello'.",
-    "placeholders": {
-      "name": {
-        "type": "String",
-        "example": "John"
-      }
-    }
-  },
-  "newScript": "Neues Skript",
-  "@newScript": {
-    "description": "Label für die Erstellung eines neuen Skripts."
-  },
-  "importFile": "Datei importieren",
-  "@importFile": {
-    "description": "Label für die Importfunktion."
-  },
-  "scriptTitle": "Skripttitel",
-  "@scriptTitle": {
-    "description": "Label für den Titel eines Skripts."
-  },
-  "content": "Inhalt",
-  "@content": {
-    "description": "Label für den Inhalt eines Skripts."
-  },
-  "import": "Importieren",
-  "@import": {
-    "description": "Schaltflächenlabel für die Importfunktion."
-  },
-  "howAreYouDoing": "Wie geht es dir?",
-  "@howAreYouDoing": {
-    "description": "Übersetzung für die Frage 'Wie geht es dir?'."
-  },
-  "save": "Speichern",
-  "@save": {
-    "description": "Schaltflächenlabel zum Speichern."
-  },
-  "allowedFileExtension": "doc, docx, pdf, txt",
-  "@allowedFileExtension": {
-    "description": "Label für erlaubte Dateierweiterungen."
-  },
-  "allowedFileExtensionError": "Die Datei muss eine der folgenden Erweiterungen haben: doc, docx, pdf, txt",
-  "@allowedFileExtensionError": {
-    "description": "Fehlermeldung, wenn die Dateierweiterung nicht erlaubt ist."
-  },
-  "forgotPasswordx": "Passwort vergessen?",
-  "@forgotPasswordx": {
-    "description": "Aufforderung für Benutzer, die ihr Passwort vergessen haben."
-  },
-  "passwordMismatch": "Passwörter stimmen nicht überein",
-  "@passwordMismatch": {
-    "description": "Fehlermeldung, wenn die Passwörter nicht übereinstimmen."
-  },
-  "okay": "Okay",
-  "@okay": {
-    "description": "Schaltflächenlabel für Okay."
-  },
-  "dark": "Dunkel",
-  "@dark": {
-    "description": "Option für dunkles Thema."
-  },
-  "light": "Hell",
-  "@light": {
-    "description": "Option für helles Thema."
-  },
-  "textSettings": "Texteinstellungen",
-  "@textSettings": {
-    "description": "Label für Texteinstellungen."
-  },
-  "tapToPlayPause": "Tippen zum Abspielen/Pausieren",
-  "@tapToPlayPause": {
-    "description": "Anweisung zum Abspielen oder Pausieren durch Tippen."
-  },
-  "fontTextSizeLineHeight": "Schriftart, Textgröße, Zeilenhöhe",
-  "@fontTextSizeLineHeight": {
-    "description": "Optionen für Schriftart, Textgröße und Zeilenhöhe."
-  },
-  "tappingScreenWhileScrollingWillPause": "Durch Tippen auf den Bildschirm während des Scrollens wird das Scrollen pausiert.",
-  "@tappingScreenWhileScrollingWillPause": {
-    "description": "Anweisung, dass das Scrollen durch Tippen pausiert wird."
-  },
-  "videoQuality": "Videoqualität",
-  "@videoQuality": {
-    "description": "Label für die Videoqualität."
-  },
-  "selectOutputQuality": "Ausgabequalität auswählen",
-  "@selectOutputQuality": {
-    "description": "Aufforderung zur Auswahl der Ausgabequalität."
-  },
-  "sd": "SD",
-  "@sd": {
-    "description": "Option für Standard Definition."
-  },
-  "hd": "HD",
-  "@hd": {
-    "description": "Option für High Definition."
-  },
-  "fhd": "FHD",
-  "@fhd": {
-    "description": "Option für Full High Definition."
-  },
-  "uhd4k": "UHD 4K",
-  "@uhd4k": {
-    "description": "Option für Ultra High Definition 4K."
-  },
-  "seeAllDeletedItemsWithinPast30Days": "Alle gelöschten Elemente der letzten 30 Tage anzeigen",
-  "@seeAllDeletedItemsWithinPast30Days": {
-    "description": "Beschreibung der Papierkorb-Funktion."
-  },
-  "countdownTimer": "Countdown-Timer",
-  "@countdownTimer": {
-    "description": "Label für den Countdown-Timer."
-  },
-  "chooseHowManySecsBeforeRecordingStarts": "Wähle, wie viele Sekunden vor Beginn der Aufnahme",
-  "@chooseHowManySecsBeforeRecordingStarts": {
-    "description": "Aufforderung zur Auswahl der Sekunden vor Beginn der Aufnahme."
-  },
+  "passwordMismatch": "Passwort stimmt nicht überein",
+  "@passwordMismatch": {},
   "languageEnglish": "Englisch",
   "languageGerman": "Deutsch",
   "languageSpanish": "Spanisch",
@@ -408,251 +80,37 @@
   "languageDutch": "Niederländisch",
   "languagePortuguese": "Portugiesisch",
   "@languageEnglish": {
-    "description": "Der Name der englischen Sprache auf Deutsch"
+    "description": "The name of the English language in English"
   },
   "@languageGerman": {
-    "description": "Der Name der deutschen Sprache auf Deutsch"
+    "description": "The name of the German language in English"
   },
   "@languageSpanish": {
-    "description": "Der Name der spanischen Sprache auf Deutsch"
+    "description": "The name of the Spanish language in English"
   },
   "@languageFrench": {
-    "description": "Der Name der französischen Sprache auf Deutsch"
+    "description": "The name of the French language in English"
   },
   "@languageKorean": {
-    "description": "Der Name der koreanischen Sprache auf Deutsch"
+    "description": "The name of the Korean language in English"
   },
   "@languageDutch": {
-    "description": "Der Name der niederländischen Sprache auf Deutsch"
+    "description": "The name of the Dutch language in English"
   },
   "@languagePortuguese": {
-    "description": "Der Name der portugiesischen Sprache auf Deutsch"
+    "description": "The name of the Portuguese language in English"
   },
-  "editScript": "Skript bearbeiten",
-  "@editScript": {
-    "description": "Label für das Bearbeiten eines Skripts."
-  },
-  "deleteScript": "Skript löschen",
-  "@deleteScript": {
-    "description": "Label für das Löschen eines Skripts."
-  },
-  "edit": "Bearbeiten",
-  "@edit": {
-    "description": "Schaltflächenlabel zum Bearbeiten."
-  },
+  "okay": "Okay",
+  "@okay": {},
   "cancel": "Abbrechen",
-  "@cancel": {
-    "description": "Schaltflächenlabel zum Abbrechen."
-  },
-  "ok": "OK",
-  "@ok": {
-    "description": "Schaltflächenlabel für OK."
-  },
-  "areYouSureDeleteScript": "Bist du sicher, dass du dieses Skript löschen möchtest?",
-  "@areYouSureDeleteScript": {
-    "description": "Bestätigungsnachricht zum Löschen eines Skripts."
-  },
-  "speed": "Geschwindigkeit",
-  "@speed": {
-    "description": "Label für die Geschwindigkeitseinstellung."
-  },
-  "recordVideo": "Video aufnehmen",
-  "@recordVideo": {
-    "description": "Schaltflächenlabel zum Aufnehmen eines Videos."
-  },
-  "backGroundTransparency": "Hintergrundtransparenz",
-  "@backGroundTransparency": {
-    "description": "Option, die Transparenz des Hintergrunds anzupassen."
-  },
-  "cameraNotFound": "Kamera nicht gefunden",
-  "@cameraNotFound": {
-    "description": "Fehlermeldung, wenn keine Kamera gefunden wird."
-  },
-  "noCameraAvailable": "Keine Kamera verfügbar",
-  "@noCameraAvailable": {
-    "description": "Fehlermeldung, wenn keine Kamera verfügbar ist."
-  },
-  "onlyOneCameraFound": "Nur eine Kamera gefunden",
-  "@onlyOneCameraFound": {
-    "description": "Nachricht, wenn nur eine Kamera gefunden wird."
-  },
-  "storagePermissionDenied": "Speicherberechtigung verweigert",
-  "@storagePermissionDenied": {
-    "description": "Fehlermeldung, wenn die Speicherberechtigung verweigert wird."
-  },
-  "permissionIsDenied": "Berechtigung verweigert",
-  "@permissionIsDenied": {
-    "description": "Fehlermeldung, wenn die Berechtigung verweigert wird."
-  },
-  "permissionIsRestricted": "Berechtigung eingeschränkt",
-  "@permissionIsRestricted": {
-    "description": "Fehlermeldung, wenn die Berechtigung eingeschränkt ist."
-  },
-  "preview": "Vorschau",
-  "@preview": {
-    "description": "Label für die Vorschau-Funktion."
-  },
-  "shareVideo": "Video teilen",
-  "@shareVideo": {
-    "description": "Schaltflächenlabel zum Teilen eines Videos."
-  },
-  "thisVideoWasShared": "Dieses Video wurde geteilt",
-  "@thisVideoWasShared": {
-    "description": "Nachricht, die angezeigt wird, wenn ein Video geteilt wurde."
-  },
-  "failedToSaveVideo": "Video konnte nicht gespeichert werden",
-  "@failedToSaveVideo": {
-    "description": "Fehlermeldung, wenn das Video nicht gespeichert werden konnte."
-  },
-  "selectAll": "Alles auswählen",
-  "@selectAll": {
-    "description": "Schaltflächenlabel zum Auswählen aller Elemente."
-  },
-  "unSelectAll": "Auswahl aufheben",
-  "@unSelectAll": {
-    "description": "Schaltflächenlabel zum Aufheben der Auswahl aller Elemente."
-  },
- 
-  "enterOTP": "OTP eingeben",
-  "@enterOTP": {
-    "description": "Aufforderung, das OTP einzugeben."
-  },
-  "incompleteLength": "Unvollständige Länge",
-  "@incompleteLength": {
-    "description": "Fehlermeldung, wenn die Länge unvollständig ist."
-  },
-  "otp": "OTP",
-  "@otp": {
-    "description": "Label für OTP."
-  },
-  "onlyCharactersLength": "Nur {length} Zeichen",
+  "@cancel": {},
+  "onlyCharactersLength": "Nur {length} Zeichen sind erforderlich",
   "@onlyCharactersLength": {
-    "description": "Fehlermeldung, wenn nur eine bestimmte Anzahl von Zeichen erlaubt ist.",
     "placeholders": {
       "length": {
-        "type": "int"
+        "type": "int",
+        "example": "y"
       }
     }
-  },
-  "forgetPassword": "Passwort vergessen",
-  "@forgetPassword": {
-    "description": "Label für Passwort vergessen."
-  },
-  "forgetPasswordQ": "Passwort vergessen?",
-  "@forgetPasswordQ": {
-    "description": "Frage, ob das Passwort vergessen wurde."
-  },
-  "resetPassword": "Passwort zurücksetzen",
-  "@resetPassword": {
-    "description": "Label für Passwort zurücksetzen."
-  },
-  "updatePassword": "Passwort aktualisieren",
-  "@updatePassword": {
-    "description": "Label für Passwort aktualisieren."
-  },
-  "sendOTP": "OTP senden",
-  "@sendOTP": {
-    "description": "Schaltflächenlabel zum Senden des OTP."
-  },
-  "feedbackFromTelecue": "Feedback von TeleCue",
-  "@feedbackFromTelecue": {
-    "description": "Label für Feedback von TeleCue."
-  },
-  "demo": "Demo",
-  "@demo": {
-    "description": "Label für Demo."
-  },
-  "guest": "Gast",
-  "@guest": {
-    "description": "Label für Gast."
-  },
-  "edited": "Bearbeitet",
-  "@edited": {
-    "description": "Label für bearbeitete Elemente."
-  },
-  "proceedToLogin": "Weiter zur Anmeldung",
-  "@proceedToLogin": {
-    "description": "Schaltflächenlabel zum Fortfahren zur Anmeldung."
-  },
-  "areYouSureLogout": "Bist du sicher, dass du dich abmelden möchtest?",
-  "@areYouSureLogout": {
-    "description": "Bestätigungsnachricht zum Abmelden."
-  },
-  "areYouSureDeleteAccount": "Bist du sicher, dass du dein Konto löschen möchtest?",
-  "@areYouSureDeleteAccount": {
-    "description": "Bestätigungsnachricht zum Löschen des Kontos."
-  },
-  "deleteAccount": "Konto löschen",
-  "@deleteAccount": {
-    "description": "Schaltflächenlabel zum Löschen des Kontos."
-  },
-  "lorem": "Lorem ipsum",
-  "@lorem": {
-    "description": "Platzhaltertext."
-  },
-  "useAsGuest": "Als Gast verwenden",
-  "@useAsGuest": {
-    "description": "Schaltflächenlabel zum Verwenden der App als Gast."
-  },
-  "goToLogin": "Zur Anmeldung gehen",
-  "@goToLogin": {
-    "description": "Schaltflächenlabel zum Wechseln zur Anmeldeseite."
-  },
-  "saveCondition": "Bedingung speichern",
-  "@saveCondition": {
-    "description": "Schaltflächenlabel zum Speichern einer Bedingung."
-  },
-  "recordWithoutScript": "Ohne Skript aufnehmen",
-  "@recordWithoutScript": {
-    "description": "Schaltflächenlabel zum Aufnehmen ohne Skript."
-  },
-  "myProfile": "Mein Profil",
-  "@myProfile": {
-    "description": "Label für das Benutzerprofil."
-  },
-  "yourUsername": "Dein Benutzername",
-  "@yourUsername": {
-    "description": "Label für den Benutzernamen."
-  },
-  "saveChanges": "Änderungen speichern",
-  "@saveChanges": {
-    "description": "Schaltflächenlabel zum Speichern von Änderungen."
-  },
-  "areYouSureDelete": "Bist du sicher, dass du {selections} ausgewählte Datei{plural} löschen möchtest?",
-  "@areYouSureDelete": {
-    "description": "Bestätigungsnachricht zum Löschen.",
-    "placeholders": {
-      "selections": {
-        "type": "int"
-      },
-      "plural": {
-        "type": "String",
-        "example": "en"
-      }
-    }
-  },
-  "areYouSureToEditProfilePicture": "Bist du sicher, dass du dein Profilbild bearbeiten möchtest?",
-  "@areYouSureToEditProfilePicture": {
-    "description": "Bestätigungsnachricht zum Bearbeiten des Profilbilds."
-  },
-  "areYouSureToEditUsername": "Bist du sicher, dass du deinen Benutzernamen bearbeiten möchtest?",
-  "@areYouSureToEditUsername": {
-    "description": "Bestätigungsnachricht zum Bearbeiten des Benutzernamens."
-  },
-  "areYouSureToEditUsernameAndPicture": "Bist du sicher, dass du deinen Benutzernamen und dein Profilbild bearbeiten möchtest?",
-  "@areYouSureToEditUsernameAndPicture": {
-    "description": "Bestätigungsnachricht zum Bearbeiten des Benutzernamens und des Profilbilds."
-  },
-  "youMustEditOne": "Du musst mindestens eines bearbeiten.",
-  "@youMustEditOne": {
-    "description": "Fehlermeldung, wenn nichts bearbeitet wurde."
-  },
-  "cannotLoadImage": "Bild konnte nicht geladen werden.",
-  "@cannotLoadImage": {
-    "description": "Fehlermeldung, wenn das Bild nicht geladen werden kann."
-  },
-  "nothingToUpdate": "Nichts zu aktualisieren.",
-  "@nothingToUpdate": {
-    "description": "Fehlermeldung, wenn nichts zu aktualisieren ist."
   }
 }

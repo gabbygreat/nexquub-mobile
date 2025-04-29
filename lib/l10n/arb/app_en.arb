@@ -4,163 +4,9 @@
   "@nexquub": {
     "description": "Project name"
   },
-  "craftSpeechesWithEase": "Craft speeches\nwith ease",
-  "@craftSpeechesWithEase": {
-    "description": "Displayed on the homepage to introduce the app's functionality."
-  },
-  "typePasteOrImport": "Type, paste or import your script, adjust speed, and deliver your message without anyone knowing you’re reading from a script.",
-  "@typePasteOrImport": {
-    "description": "Instructions for users on how to use the app."
-  },
-  "getStarted": "Get started",
-  "@getStarted": {
-    "description": "Call-to-action button label."
-  },
-  "alreadyHaveAnAccount": "Already have an account? ",
-  "@alreadyHaveAnAccount": {
-    "description": "Prompt for existing users to log in."
-  },
-  "setYourOwnPreferences": "Set your own preferences",
-  "@setYourOwnPreferences": {
-    "description": "Header for customizing user settings."
-  },
-  "haveAFontYou": "Have a font you prefer using? Eye problems and love large text? Using a mirror to read off of? We’ve got you.",
-  "@haveAFontYou": {
-    "description": "Encourages users to customize text settings."
-  },
-  "organisedAndInCloud": "Organised and in cloud",
-  "@organisedAndInCloud": {
-    "description": "Header emphasizing cloud storage benefits."
-  },
-  "haveYourScriptsAnd": "Have your scripts and recordings automatically saved to cloud when you sign in, making it easily accessible",
-  "@haveYourScriptsAnd": {
-    "description": "Feature explanation for cloud storage."
-  },
-  "typeYourEmailHere": "Type your email here",
-  "@typeYourEmailHere": {
-    "description": "Placeholder text for email input fields."
-  },
-  "email": "Email",
-  "@email": {
-    "description": "Label for email input fields."
-  },
-  "createPassword": "Create password",
-  "@createPassword": {
-    "description": "Label for password creation fields."
-  },
-  "password": "Password",
-  "@password": {
-    "description": "Label for password input fields."
-  },
-  "confirmYourPassword": "Confirm your password",
-  "@confirmYourPassword": {
-    "description": "Label for confirming password fields."
-  },
-  "confirmPassword": "Confirm password",
-  "@confirmPassword": {
-    "description": "Label for confirm password field."
-  },
-  "createAccount": "Create account",
-  "@createAccount": {
-    "description": "Button label to create a new account."
-  },
-  "or": "OR",
-  "@or": {
-    "description": "Divider text for alternative sign-in options."
-  },
-  "signInWithGoogle": "Sign in with Google",
-  "@signInWithGoogle": {
-    "description": "Button label for signing in with Google."
-  },
-  "signInWithApple": "Sign in with Apple",
-  "@signInWithApple": {
-    "description": "Button label for signing in with Apple."
-  },
-  "joinOurCommunityAnd": "Join our community and be on your way to\nmaking the best videos!",
-  "@joinOurCommunityAnd": {
-    "description": "Encourages users to join the platform."
-  },
-  "logIn": "Log in",
-  "@logIn": {
-    "description": "Button label for logging in."
-  },
-  "logInClose": "Login",
-  "@logInClose": {
-    "description": "Button label for logging in."
-  },
-  "forgotPassword": "Forgot password?",
-  "@forgotPassword": {
-    "description": "Prompt for users who forgot their password."
-  },
-  "forgotPasswordx": "Forgot password",
-  "@forgotPasswordx": {},
-  "home": "Home",
-  "@home": {
-    "description": "Navigation label for home screen."
-  },
-  "settings": "Settings",
-  "@settings": {
-    "description": "Navigation label for settings screen."
-  },
-  "allProjects": "All projects",
-  "@allProjects": {
-    "description": "Label for displaying all user projects."
-  },
-  "scripts": "Scripts",
-  "@scripts": {
-    "description": "Label for script-related features."
-  },
   "ooopsYouDontHave": "Ooops.. you don't have any project yet",
   "@ooopsYouDontHave": {
     "description": "Message displayed when no projects are found."
-  },
-  "demoScript": "Demo script",
-  "@demoScript": {
-    "description": "Label for a demo script example."
-  },
-  "recordTesting": "Record testing",
-  "@recordTesting": {
-    "description": "Label for recording testing features."
-  },
-  "speed5": "Speed: 5",
-  "@speed5": {
-    "description": "Label for scroll speed indicator."
-  },
-  "start": "Start",
-  "@start": {
-    "description": "Button label for starting an action."
-  },
-  "mirrorTextHorizontally": "Mirror text horizontally",
-  "@mirrorTextHorizontally": {
-    "description": "Option to flip text horizontally."
-  },
-  "mirrorTextVertically": "Mirror text vertically",
-  "@mirrorTextVertically": {
-    "description": "Option to flip text vertically."
-  },
-  "bionicReading": "Bionic reading",
-  "@bionicReading": {
-    "description": "Option for bionic reading feature."
-  },
-  "defaultScrollSpeed": "Default scroll speed",
-  "@defaultScrollSpeed": {
-    "description": "Label for default scroll speed setting."
-  },
-  "textSize": "Text size",
-  "@textSize": {
-    "description": "Option to adjust text size."
-  },
-  "lineHeight": "Line height",
-  "@lineHeight": {
-    "description": "Option to adjust line height."
-  },
-  "backgroundTransparency": "Background transparency",
-  "@backgroundTransparency": {
-    "description": "Option to adjust the transparency of the background."
-  },
-  "theme": "Theme",
-  "@theme": {
-    "description": "Label for theme selection settings."
   },
   "systemDefault": "System default",
   "@systemDefault": {
@@ -173,38 +19,6 @@
   "english": "English",
   "@english": {
     "description": "Option for English language."
-  },
-  "trash": "Trash",
-  "@trash": {
-    "description": "Label for trash section."
-  },
-  "seeAllDeletedItems": "See all deleted items within the past 30 days",
-  "@seeAllDeletedItems": {
-    "description": "Description for trash feature."
-  },
-  "privacyPolicy": "Privacy Policy",
-  "@privacyPolicy": {
-    "description": "Link to the app's privacy policy."
-  },
-  "sendFeedback": "Send feedback",
-  "@sendFeedback": {
-    "description": "Button label for sending feedback."
-  },
-  "rateUs": "Rate us",
-  "@rateUs": {
-    "description": "Button label for rating the app."
-  },
-  "logout": "Logout",
-  "@logout": {
-    "description": "Button label to log out of the app."
-  },
-  "guestUser": "Guest user",
-  "@guestUser": {
-    "description": "Label for guest users."
-  },
-  "signIn": "Sign in",
-  "@signIn": {
-    "description": "Button label for signing in."
   },
   "oopsUnexpectedError": "Oops! An unexpected error occurred.",
   "@oopsUnexpectedError": {
@@ -220,36 +34,8 @@
       }
     }
   },
-  "goBack": "Go Back",
-  "@goBack": {
-    "description": "Button label to navigate back."
-  },
-  "next": "Next",
-  "@next": {
-    "description": "Button label move to next"
-  },
-  "createAFreeAccount": "Create a free account",
-  "@createAFreeAccount": {},
-  "dontHaveAnAccount": "Don’t have an account yet? ",
-  "@dontHaveAnAccount": {},
-  "login": "Login",
-  "@login": {},
-  "createOne": "Create one",
-  "@createOne": {},
-  "enterPassword": "Enter password",
-  "@enterPassword": {
-    "description": "Label for password creation fields."
-  },
-  "enterOTP": "Enter OTP",
-  "@enterOTP": {
-    "description": "Label for password creation fields."
-  },
   "incompleteLength": "Incomplete length of characters",
   "@incompleteLength": {
-    "description": "Label for password creation fields."
-  },
-  "otp": "OTP",
-  "@otp": {
     "description": "Label for password creation fields."
   },
   "somethingWentWrong": "Something went wrong",
@@ -280,93 +66,12 @@
   "@pleaseEnterAPassword": {
     "description": "Password validation"
   },
-  "there": "There",
-  "@there": {
-    "description": "Name placeholder"
-  },
-  "recordings": "Recordings",
-  "@recordings": {
-    "description": "Recording Tab bar"
-  },
-  "hello": "Hello, {name}",
-  "@hello": {
-    "placeholders": {
-      "name": {
-        "type": "String",
-        "example": "John"
-      }
-    }
-  },
-  "newScript": "New Script",
-  "@newScript": {
-    "description": "Recording Tab bar"
-  },
-  "importFile": "Import File",
-  "@importFile": {
-    "description": "Recording Tab bar"
-  },
-  "scriptTitle": "Script Title",
-  "@scriptTitle": {
-    "description": "Recording Tab bar"
-  },
-  "content": "Content",
-  "@content": {
-    "description": "Recording Tab bar"
-  },
-  "import": "Import",
-  "@import": {
-    "description": "Recording Tab bar"
-  },
-  "howAreYouDoing": "How are you doing today?",
-  "@howAreYouDoing": {
-    "description": "Recording Tab bar"
-  },
-  "allowedFileExtension": "doc, docx, pdf, txt",
-  "@allowedFileExtension": {
-    "description": "Allowed extension"
-  },
-  "allowedFileExtensionError": "Only doc, docx, pdf and txt files are allowed",
-  "@allowedFileExtensionError": {
-    "description": "Allowed extension Error"
-  },
-  "save": "Save",
-  "@save": {
-    "description": "Save text"
+  "goBack": "Go Back",
+  "@goBack": {
+    "description": "Button label to navigate back."
   },
   "passwordMismatch": "Password mismatch",
   "@passwordMismatch": {},
-  "okay": "Okay",
-  "@okay": {},
-  "dark": "Dark",
-  "@dark": {},
-  "light": "Light",
-  "@light": {},
-  "textSettings": "Text settings",
-  "@textSettings": {},
-  "tapToPlayPause": "Tap to play/pause",
-  "@tapToPlayPause": {},
-  "fontTextSizeLineHeight": "Font, text size, line height, scroll speed",
-  "@fontTextSizeLineHeight": {},
-  "tappingScreenWhileScrollingWillPause": "Tapping the screen while scrolling will pause",
-  "@tappingScreenWhileScrollingWillPause": {},
-  "videoQuality": "Video Quality",
-  "@videoQuality": {},
-  "selectOutputQuality": "Select output quality",
-  "@selectOutputQuality": {},
-  "sd": "SD",
-  "@sd": {},
-  "hd": "HD",
-  "@hd": {},
-  "fhd": "FHD",
-  "@fhd": {},
-  "uhd4k": "UHD(4K)",
-  "@uhd4k": {},
-  "seeAllDeletedItemsWithinPast30Days": "See all deleted items within the past 30 days",
-  "@seeAllDeletedItemsWithinPast30Days": {},
-  "countdownTimer": "Countdown timer",
-  "@countdownTimer": {},
-  "chooseHowManySecsBeforeRecordingStarts": "Choose how many secs before recording starts",
-  "@chooseHowManySecsBeforeRecordingStarts": {},
   "languageEnglish": "English",
   "languageGerman": "German",
   "languageSpanish": "Spanish",
@@ -395,60 +100,10 @@
   "@languagePortuguese": {
     "description": "The name of the Portuguese language in English"
   },
-  "editScript": "Edit script",
-  "@editScript": {},
-  "deleteScript": "Delete script",
-  "@deleteScript": {},
-  "edit": "Edit",
-  "@edit": {},
+  "okay": "Okay",
+  "@okay": {},
   "cancel": "Cancel",
   "@cancel": {},
-  "ok": "OK",
-  "@ok": {},
-  "areYouSureDeleteScript": "Are you sure you want to delete this script?",
-  "@areYouSureDeleteScript": {},
-  "speed": "Speed",
-  "@speed": {},
-  "recordVideo": "Record video",
-  "@recordVideo": {},
-  "backGroundTransparency": "Background transparency",
-  "@backGroundTransparency": {},
-  "cameraNotFound": "Camera not found",
-  "@cameraNotFound": {},
-  "noCameraAvailable": "No Camera available",
-  "@noCameraAvailable": {},
-  "onlyOneCameraFound": "Only one camera found",
-  "@onlyOneCameraFound": {},
-  "storagePermissionDenied": "Storage permission denied.\nFile not saved",
-  "@storagePermissionDenied": {},
-  "permissionIsDenied": "Permission is denied. Please enable it in settings.",
-  "@permissionIsDenied": {},
-  "permissionIsRestricted": "Permission is restricted. Unable to access videos.",
-  "@permissionIsRestricted": {},
-  "preview": "Preview video",
-  "@preview": {},
-  "shareVideo": "Share Video",
-  "@shareVideo": {},
-  "thisVideoWasShared": "This video was shared from the TeleCue Application",
-  "@thisVideoWasShared": {},
-  "failedToSaveVideo": "Failed to save video",
-  "@failedToSaveVideo": {},
-  "selectAll": "Select all",
-  "@selectAll": {},
-  "unSelectAll": "Unselect all",
-  "@unSelectAll": {},
-  "areYouSureDelete": "Are you sure you want to delete {selections} selected file{plural}",
-  "@areYouSureDelete": {
-    "placeholders": {
-      "selections": {
-        "type": "int",
-        "example": "y"
-      },
-      "plural": {
-        "type": "String"
-      }
-    }
-  },
   "onlyCharactersLength": "Only {length} characters are required'",
   "@onlyCharactersLength": {
     "placeholders": {
@@ -457,59 +112,5 @@
         "example": "y"
       }
     }
-  },
-  "forgetPassword": "Forgot password",
-  "@forgetPassword": {},
-  "forgetPasswordQ": "Forgot password?",
-  "@forgetPasswordQ": {},
-  "resetPassword": "Reset password",
-  "@resetPassword": {},
-  "updatePassword": "Update password",
-  "@updatePassword": {},
-  "sendOTP": "Send OTP",
-  "@sendOTP": {},
-  "feedbackFromTelecue": "Feedback from TeleCue",
-  "@feedbackFromTelecue": {},
-  "demo": "Demo",
-  "@demo": {},
-  "guest": "Guest",
-  "@guest": {},
-  "edited": "(edited)",
-  "@edited": {},
-  "proceedToLogin": "Proceed to login",
-  "@proceedToLogin": {},
-  "areYouSureLogout": "Are you sure you want to logout?",
-  "@areYouSureLogout": {},
-  "areYouSureDeleteAccount": "Are you sure you want to delete your account?",
-  "@areYouSureDeleteAccount": {},
-  "deleteAccount": "Delete your account",
-  "@deleteAccount": {},
-  "useAsGuest": "Use as guest",
-  "@useAsGuest": {},
-  "goToLogin": "Go to login",
-  "@goToLogin": {},
-  "recordWithoutScript": "Record without script",
-  "@recordWithoutScript": {},
-  "myProfile": "My Profile",
-  "@myProfile": {},
-  "yourUsername": "Your username",
-  "@yourUsername": {},
-  "saveChanges": "Save changes",
-  "@saveChanges": {},
-  "saveCondition": "If you’re not logged in, your scripts will be saved on your device but not on the server",
-  "@saveCondition": {},
-  "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum nisl et mi euismod sollicitudin. Nunc dapibus ligula a leo sagittis rutrum. Nulla sodales nulla eget tempor tristique. Proin dapibus pretium eros nec efficitur. Curabitur efficitur cursus hendrerit. Maecenas ut rutrum nibh. Morbi pharetra, nibh quis tincidunt facilisis, ex tortor sollicitudin ligula, ut lobortis lacus orci vestibulum lectus. Duis mattis velit est, et sodales odio elementum ac. Duis eros ante, lobortis suscipit lacinia vitae, ornare sed lacus. Etiam ligula nisl, tempor eu volutpat et, pretium sed nisl. Maecenas nunc felis, bibendum et nunc consequat, viverra commodo neque. Cras eu porta lacus. Pellentesque ultrices iaculis tortor, vitae tempor lacus dignissim et.",
-  "@lorem": {},
-  "areYouSureToEditProfilePicture": "Are you sure you want to update your profile picture",
-  "@areYouSureToEditProfilePicture": {},
-  "areYouSureToEditUsername": "Are you sure you want to update your username",
-  "@areYouSureToEditUsername": {},
-  "areYouSureToEditUsernameAndPicture": "Are you sure you want to update your username and profile picture",
-  "@areYouSureToEditUsernameAndPicture": {},
-  "youMustEditOne": "You must edit either a username or a profile image",
-  "@youMustEditOne": {},
-  "cannotLoadImage": "Cannot load image",
-  "@cannotLoadImage": {},
-  "nothingToUpdate": "Nothing to update",
-  "@nothingToUpdate": {}
+  }
 }
