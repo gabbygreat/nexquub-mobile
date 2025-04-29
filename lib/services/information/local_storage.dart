@@ -56,10 +56,10 @@ class LocalStorage implements ILocalStorage {
   @override
   Future<void> initialise() async {
     _storage = const FlutterSecureStorage(
-        // aOptions: AndroidOptions(
-        //   encryptedSharedPreferences: true,
-        // ),
-        );
+      aOptions: AndroidOptions(
+        encryptedSharedPreferences: true,
+      ),
+    );
     _prefs = await SharedPreferences.getInstance();
     await getUser();
   }
