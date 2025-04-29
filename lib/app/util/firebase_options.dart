@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -25,9 +28,15 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -40,19 +49,9 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDpnC2lYdCZmh5f5kr7bJCjZ0vB9_dGWdc',
-    appId: '1:891417909143:web:252201ddb37947308896d2',
-    messagingSenderId: '891417909143',
-    projectId: 'nexquub',
-    authDomain: 'nexquub.firebaseapp.com',
-    storageBucket: 'nexquub.firebasestorage.app',
-    measurementId: 'G-1NX68P1RB2',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBMqbmKczLQKXwOWCmEd6LuCHZiw-NbAOM',
-    appId: '1:891417909143:android:0d0040c66bb3d8158896d2',
+    appId: '1:891417909143:android:3b38181b6f8c35898896d2',
     messagingSenderId: '891417909143',
     projectId: 'nexquub',
     storageBucket: 'nexquub.firebasestorage.app',
@@ -60,29 +59,10 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyBTN5BC_C55cvWL8WTvAOr4g20XyYeahJw',
-    appId: '1:891417909143:ios:ceaf5078ae916e038896d2',
+    appId: '1:891417909143:ios:f1e9be31637117bf8896d2',
     messagingSenderId: '891417909143',
     projectId: 'nexquub',
     storageBucket: 'nexquub.firebasestorage.app',
-    iosBundleId: 'com.nexquub.mobile.nexquub',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBTN5BC_C55cvWL8WTvAOr4g20XyYeahJw',
-    appId: '1:891417909143:ios:ceaf5078ae916e038896d2',
-    messagingSenderId: '891417909143',
-    projectId: 'nexquub',
-    storageBucket: 'nexquub.firebasestorage.app',
-    iosBundleId: 'com.nexquub.mobile.nexquub',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDpnC2lYdCZmh5f5kr7bJCjZ0vB9_dGWdc',
-    appId: '1:891417909143:web:e4e2c8a5613d98a18896d2',
-    messagingSenderId: '891417909143',
-    projectId: 'nexquub',
-    authDomain: 'nexquub.firebaseapp.com',
-    storageBucket: 'nexquub.firebasestorage.app',
-    measurementId: 'G-30VF4J57ZW',
+    iosBundleId: 'com.nexquub.mobile',
   );
 }

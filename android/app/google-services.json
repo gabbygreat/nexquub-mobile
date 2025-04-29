@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:891417909143:android:0d0040c66bb3d8158896d2",
+        "mobilesdk_app_id": "1:891417909143:android:3b38181b6f8c35898896d2",
         "android_client_info": {
-          "package_name": "com.nexquub.mobile.nexquub"
+          "package_name": "com.nexquub.mobile"
         }
       },
       "oauth_client": [],
