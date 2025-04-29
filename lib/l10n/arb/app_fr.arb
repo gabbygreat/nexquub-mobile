@@ -1,0 +1,657 @@
+{
+  "@@locale": "fr",
+  "nexquub": "NexQuub",
+  "@nexquub": {
+    "description": "Project name"
+  },
+  "craftSpeechesWithEase": "Créez des\ndiscours facilement",
+  "@craftSpeechesWithEase": {
+    "description": "Affiché sur la page d'accueil pour présenter les fonctionnalités de l'application."
+  },
+  "typePasteOrImport": "Tapez, collez ou importez votre script, ajustez la vitesse et délivrez votre message sans que personne ne remarque que vous lisez.",
+  "@typePasteOrImport": {
+    "description": "Instructions pour les utilisateurs sur l'utilisation de l'application."
+  },
+  "getStarted": "Commencer",
+  "@getStarted": {
+    "description": "Étiquette de bouton pour démarrer une action."
+  },
+  "alreadyHaveAnAccount": "Vous avez déjà un compte ? Connectez-vous",
+  "@alreadyHaveAnAccount": {
+    "description": "Message pour les utilisateurs existants pour qu'ils se connectent."
+  },
+  "setYourOwnPreferences": "Réglez vos préférences",
+  "@setYourOwnPreferences": {
+    "description": "Titre pour personnaliser les paramètres de l'utilisateur."
+  },
+  "haveAFontYou": "Vous avez une police de caractère préférée ? Problèmes de vision ou préférez-vous du texte plus grand ? Nous avons la solution.",
+  "@haveAFontYou": {
+    "description": "Encourage les utilisateurs à personnaliser les paramètres de texte."
+  },
+  "organisedAndInCloud": "Organisé et dans le cloud",
+  "@organisedAndInCloud": {
+    "description": "Titre mettant en évidence les avantages du stockage cloud."
+  },
+  "haveYourScriptsAnd": "Vos scripts et enregistrements seront automatiquement enregistrés dans le cloud lorsque vous vous connectez, ce qui les rendra facilement accessibles.",
+  "@haveYourScriptsAnd": {
+    "description": "Explication sur la fonctionnalité de stockage dans le cloud."
+  },
+  "typeYourEmailHere": "Tapez votre e-mail ici",
+  "@typeYourEmailHere": {
+    "description": "Texte du champ de saisie de l'e-mail."
+  },
+  "email": "E-mail",
+  "@email": {
+    "description": "Étiquette pour le champ de saisie de l'e-mail."
+  },
+  "createPassword": "Créer un mot de passe",
+  "@createPassword": {
+    "description": "Étiquette pour le champ de création de mot de passe."
+  },
+  "password": "Mot de passe",
+  "@password": {
+    "description": "Étiquette pour le champ de mot de passe."
+  },
+  "confirmYourPassword": "Confirmer le mot de passe",
+  "@confirmYourPassword": {
+    "description": "Étiquette pour le champ de confirmation du mot de passe."
+  },
+  "confirmPassword": "Confirmer le mot de passe",
+  "@confirmPassword": {
+    "description": "Étiquette pour le champ de confirmation du mot de passe."
+  },
+  "createAccount": "Créer un compte",
+  "@createAccount": {
+    "description": "Étiquette de bouton pour créer un nouveau compte."
+  },
+  "or": "Ou",
+  "@or": {
+    "description": "Texte séparant les options alternatives de connexion."
+  },
+  "signInWithGoogle": "Se connecter avec Google",
+  "@signInWithGoogle": {
+    "description": "Étiquette de bouton pour se connecter avec Google."
+  },
+  "signInWithApple": "Se connecter avec Apple",
+  "@signInWithApple": {
+    "description": "Étiquette de bouton pour se connecter avec Apple."
+  },
+  "joinOurCommunityAnd": "Rejoignez notre communauté et commencez votre voyage vers les meilleures vidéos !",
+  "@joinOurCommunityAnd": {
+    "description": "Encourage les utilisateurs à rejoindre la plateforme."
+  },
+  "logIn": "Se connecter",
+  "@logIn": {
+    "description": "Étiquette de bouton pour se connecter."
+  },
+  "forgotPassword": "Mot de passe oublié ?",
+  "@forgotPassword": {
+    "description": "Message pour les utilisateurs ayant oublié leur mot de passe."
+  },
+  "home": "Accueil",
+  "@home": {
+    "description": "Étiquette de navigation pour l'écran d'accueil."
+  },
+  "settings": "Paramètres",
+  "@settings": {
+    "description": "Étiquette de navigation pour l'écran des paramètres."
+  },
+  "allProjects": "Tous les projets",
+  "@allProjects": {
+    "description": "Étiquette pour afficher tous les projets de l'utilisateur."
+  },
+  "scripts": "Scripts",
+  "@scripts": {
+    "description": "Étiquette pour les fonctionnalités liées aux scripts."
+  },
+  "ooopsYouDontHave": "Oups... Vous n'avez pas de projets pour le moment.",
+  "@ooopsYouDontHave": {
+    "description": "Message lorsque aucun projet n'est trouvé."
+  },
+  "demoScript": "Script de démonstration",
+  "@demoScript": {
+    "description": "Étiquette pour un script de démonstration."
+  },
+  "recordTesting": "Test d'enregistrement",
+  "@recordTesting": {
+    "description": "Étiquette pour les fonctionnalités de test d'enregistrement."
+  },
+  "speed5": "Vitesse : 5",
+  "@speed5": {
+    "description": "Étiquette de visualisation de la vitesse de défilement."
+  },
+  "start": "Commencer",
+  "@start": {
+    "description": "Étiquette de bouton pour démarrer une action."
+  },
+  "mirrorTextHorizontally": "Miroir du texte horizontalement",
+  "@mirrorTextHorizontally": {
+    "description": "Option pour refléter le texte horizontalement."
+  },
+  "mirrorTextVertically": "Miroir du texte verticalement",
+  "@mirrorTextVertically": {
+    "description": "Option pour refléter le texte verticalement."
+  },
+  "bionicReading": "Lecture bionique",
+  "@bionicReading": {
+    "description": "Option pour activer la lecture bionique."
+  },
+  "defaultScrollSpeed": "Vitesse de défilement par défaut",
+  "@defaultScrollSpeed": {
+    "description": "Étiquette pour la configuration de la vitesse de défilement par défaut."
+  },
+  "textSize": "Taille du texte",
+  "@textSize": {
+    "description": "Option pour ajuster la taille du texte."
+  },
+  "lineHeight": "Hauteur de ligne",
+  "@lineHeight": {
+    "description": "Option pour ajuster la hauteur de ligne."
+  },
+  "backgroundTransparency": "Transparence du fond",
+  "@backgroundTransparency": {
+    "description": "Option pour ajuster la transparence du fond."
+  },
+  "theme": "Thème",
+  "@theme": {
+    "description": "Étiquette pour la sélection du thème."
+  },
+  "systemDefault": "Par défaut du système",
+  "@systemDefault": {
+    "description": "Option pour utiliser les paramètres par défaut du système."
+  },
+  "language": "Langue",
+  "@language": {
+    "description": "Étiquette pour la configuration de la langue."
+  },
+  "english": "Anglais",
+  "@english": {
+    "description": "Option pour la langue anglaise."
+  },
+  "trash": "Corbeille",
+  "@trash": {
+    "description": "Étiquette pour la section de la corbeille."
+  },
+  "seeAllDeletedItems": "Voir tous les éléments supprimés des 30 derniers jours",
+  "@seeAllDeletedItems": {
+    "description": "Explication sur la fonctionnalité de la corbeille."
+  },
+  "privacyPolicy": "Politique de confidentialité",
+  "@privacyPolicy": {
+    "description": "Lien vers la politique de confidentialité de l'application."
+  },
+  "sendFeedback": "Envoyer des commentaires",
+  "@sendFeedback": {
+    "description": "Étiquette de bouton pour envoyer des commentaires."
+  },
+  "rateUs": "Évaluez-nous",
+  "@rateUs": {
+    "description": "Étiquette de bouton pour évaluer l'application."
+  },
+  "logout": "Déconnexion",
+  "@logout": {
+    "description": "Étiquette de bouton pour se déconnecter."
+  },
+  "guestUser": "Utilisateur invité",
+  "@guestUser": {
+    "description": "Étiquette pour utilisateur invité."
+  },
+  "signIn": "Se connecter",
+  "@signIn": {
+    "description": "Étiquette de bouton pour se connecter."
+  },
+  "oopsUnexpectedError": "Oups ! Une erreur inattendue est survenue.",
+  "@oopsUnexpectedError": {
+    "description": "Message affiché lorsqu'une erreur inattendue se produit."
+  },
+  "details": "Détails : {errorDetails}",
+  "@details": {
+    "description": "Détails de l'erreur affichés en mode débogage.",
+    "placeholders": {
+      "errorDetails": {
+        "type": "String",
+        "example": "NullPointerException"
+      }
+    }
+  },
+  "areYouSureDelete": "Êtes-vous sûr de vouloir supprimer {selections} fichier sélectionné{plural} ?",
+  "@areYouSureDelete": {
+    "description": "Message de confirmation pour la suppression.",
+    "placeholders": {
+      "selections": {
+        "type": "int"
+      },
+      "plural": {
+        "type": "String",
+        "example": "s"
+      }
+    }
+  },
+  "areYouSureToEditProfilePicture": "Êtes-vous sûr de vouloir modifier la photo de profil ?",
+  "@areYouSureToEditProfilePicture": {
+    "description": "Message de confirmation pour la modification de la photo de profil."
+  },
+  "areYouSureToEditUsername": "Êtes-vous sûr de vouloir modifier le nom d'utilisateur ?",
+  "@areYouSureToEditUsername": {
+    "description": "Message de confirmation pour la modification du nom d'utilisateur."
+  },
+  "areYouSureToEditUsernameAndPicture": "Êtes-vous sûr de vouloir modifier le nom d'utilisateur et la photo de profil ?",
+  "@areYouSureToEditUsernameAndPicture": {
+    "description": "Message de confirmation pour la modification du nom d'utilisateur et de la photo de profil."
+  },
+  "youMustEditOne": "Vous devez modifier au moins un champ.",
+  "@youMustEditOne": {
+    "description": "Message indiquant que l'utilisateur doit modifier au moins un champ."
+  },
+  "cannotLoadImage": "Impossible de charger l'image",
+  "@cannotLoadImage": {
+    "description": "Message affiché lorsque l'image ne peut pas être chargée."
+  },
+  "nothingToUpdate": "Rien à mettre à jour",
+  "@nothingToUpdate": {
+    "description": "Message affiché lorsqu'il n'y a rien à mettre à jour."
+  },
+  "goBack": "Retour",
+  "@goBack": {
+    "description": "Libellé du bouton pour revenir en arrière."
+  },
+  "logInClose": "Fermer la connexion",
+  "@logInClose": {
+    "description": "Libellé du bouton pour fermer la fenêtre de connexion."
+  },
+  "next": "Suivant",
+  "@next": {
+    "description": "Libellé du bouton pour passer à l'étape suivante."
+  },
+  "createAFreeAccount": "Créer un compte gratuit",
+  "@createAFreeAccount": {
+    "description": "Libellé du bouton pour créer un compte gratuit."
+  },
+  "dontHaveAnAccount": "Vous n'avez pas de compte ?",
+  "@dontHaveAnAccount": {
+    "description": "Message pour les utilisateurs qui n'ont pas encore de compte."
+  },
+  "login": "Connexion",
+  "@login": {
+    "description": "Libellé du bouton pour se connecter."
+  },
+  "createOne": "Créer un",
+  "@createOne": {
+    "description": "Libellé du bouton pour créer un compte."
+  },
+  "enterPassword": "Entrez le mot de passe",
+  "@enterPassword": {
+    "description": "Libellé du champ pour entrer le mot de passe."
+  },
+  "somethingWentWrong": "Quelque chose s'est mal passé",
+  "@somethingWentWrong": {
+    "description": "Message affiché lorsqu'une erreur se produit."
+  },
+  "checkYourInternetConnection": "Vérifiez votre connexion Internet",
+  "@checkYourInternetConnection": {
+    "description": "Message demandant à l'utilisateur de vérifier sa connexion Internet."
+  },
+  "requestTookTooLong": "La demande a pris trop de temps",
+  "@requestTookTooLong": {
+    "description": "Message affiché lorsque la demande prend trop de temps."
+  },
+  "requestWasCancelled": "La demande a été annulée",
+  "@requestWasCancelled": {
+    "description": "Message affiché lorsque la demande est annulée."
+  },
+  "anUnxepectedErrorOccurred": "Une erreur inattendue s'est produite",
+  "@anUnxepectedErrorOccurred": {
+    "description": "Message affiché lorsqu'une erreur inattendue se produit."
+  },
+  "emailAddressMustBeValid": "L'adresse e-mail doit être valide",
+  "@emailAddressMustBeValid": {
+    "description": "Message demandant à l'utilisateur de fournir une adresse e-mail valide."
+  },
+  "pleaseEnterAPassword": "Veuillez entrer un mot de passe",
+  "@pleaseEnterAPassword": {
+    "description": "Message demandant à l'utilisateur de fournir un mot de passe."
+  },
+  "there": "Là",
+  "@there": {
+    "description": "Message indiquant l'emplacement."
+  },
+  "recordings": "Enregistrements",
+  "@recordings": {
+    "description": "Étiquette pour les fonctionnalités liées aux enregistrements."
+  },
+  "hello": "Bonjour {name}",
+  "@hello": {
+    "description": "Message de salutation.",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John"
+      }
+    }
+  },
+  "newScript": "Nouveau script",
+  "@newScript": {
+    "description": "Étiquette pour créer un nouveau script."
+  },
+  "importFile": "Importer un fichier",
+  "@importFile": {
+    "description": "Étiquette pour importer un fichier."
+  },
+  "scriptTitle": "Titre du script",
+  "@scriptTitle": {
+    "description": "Étiquette pour le titre du script."
+  },
+  "content": "Contenu",
+  "@content": {
+    "description": "Étiquette pour le contenu du script."
+  },
+  "import": "Importer",
+  "@import": {
+    "description": "Étiquette de bouton pour importer."
+  },
+  "howAreYouDoing": "Comment ça va ?",
+  "@howAreYouDoing": {
+    "description": "Message de salutation informel."
+  },
+  "allowedFileExtension": "doc, docx, pdf, txt",
+  "@allowedFileExtension": {
+    "description": "Message indiquant les extensions de fichier autorisées."
+  },
+  "save": "Enregistrer",
+  "@save": {
+    "description": "Étiquette de bouton pour enregistrer."
+  },
+  "allowedFileExtensionError": "Erreur : extension de fichier non autorisée",
+  "@allowedFileExtensionError": {
+    "description": "Message affiché lorsque l'extension de fichier n'est pas autorisée."
+  },
+  "forgotPasswordx": "Mot de passe oublié",
+  "@forgotPasswordx": {
+    "description": "Message pour les utilisateurs ayant oublié leur mot de passe."
+  },
+  "passwordMismatch": "Les mots de passe ne correspondent pas",
+  "@passwordMismatch": {
+    "description": "Message affiché lorsque les mots de passe ne correspondent pas."
+  },
+  "okay": "D'accord",
+  "@okay": {
+    "description": "Libellé du bouton pour confirmer une action."
+  },
+  "dark": "Sombre",
+  "@dark": {
+    "description": "Option pour le thème sombre."
+  },
+  "light": "Clair",
+  "@light": {
+    "description": "Option pour le thème clair."
+  },
+  "textSettings": "Paramètres de texte",
+  "@textSettings": {
+    "description": "Titre pour les paramètres de texte."
+  },
+  "tapToPlayPause": "Appuyez pour lire/mettre en pause",
+  "@tapToPlayPause": {
+    "description": "Instruction pour lire ou mettre en pause."
+  },
+  "fontTextSizeLineHeight": "Police, taille du texte, hauteur de ligne",
+  "@fontTextSizeLineHeight": {
+    "description": "Options pour ajuster la police, la taille du texte et la hauteur de ligne."
+  },
+  "tappingScreenWhileScrollingWillPause": "Appuyer sur l'écran pendant le défilement mettra en pause",
+  "@tappingScreenWhileScrollingWillPause": {
+    "description": "Instruction pour mettre en pause le défilement en appuyant sur l'écran."
+  },
+  "videoQuality": "Qualité vidéo",
+  "@videoQuality": {
+    "description": "Option pour sélectionner la qualité vidéo."
+  },
+  "selectOutputQuality": "Sélectionnez la qualité de sortie",
+  "@selectOutputQuality": {
+    "description": "Instruction pour sélectionner la qualité de sortie."
+  },
+  "sd": "SD",
+  "@sd": {
+    "description": "Option pour la qualité vidéo SD."
+  },
+  "hd": "HD",
+  "@hd": {
+    "description": "Option pour la qualité vidéo HD."
+  },
+  "fhd": "FHD",
+  "@fhd": {
+    "description": "Option pour la qualité vidéo FHD."
+  },
+  "uhd4k": "UHD 4K",
+  "@uhd4k": {
+    "description": "Option pour la qualité vidéo UHD 4K."
+  },
+  "seeAllDeletedItemsWithinPast30Days": "Voir tous les éléments supprimés des 30 derniers jours",
+  "@seeAllDeletedItemsWithinPast30Days": {
+    "description": "Explication sur la fonctionnalité de la corbeille."
+  },
+  "countdownTimer": "Minuteur de compte à rebours",
+  "@countdownTimer": {
+    "description": "Option pour configurer un minuteur de compte à rebours."
+  },
+  "chooseHowManySecsBeforeRecordingStarts": "Choisissez combien de secondes avant le début de l'enregistrement",
+  "@chooseHowManySecsBeforeRecordingStarts": {
+    "description": "Instruction pour configurer le délai avant le début de l'enregistrement."
+  },
+  "languageEnglish": "Anglais",
+  "languageGerman": "Allemand",
+  "languageSpanish": "Espagnol",
+  "languageFrench": "Français",
+  "languageKorean": "Coréen",
+  "languageDutch": "Néerlandais",
+  "languagePortuguese": "Portugais",
+  "@languageEnglish": {
+    "description": "Le nom de la langue anglaise en français"
+  },
+  "@languageGerman": {
+    "description": "Le nom de la langue allemande en français"
+  },
+  "@languageSpanish": {
+    "description": "Le nom de la langue espagnole en français"
+  },
+  "@languageFrench": {
+    "description": "Le nom de la langue française en français"
+  },
+  "@languageKorean": {
+    "description": "Le nom de la langue coréenne en français"
+  },
+  "@languageDutch": {
+    "description": "Le nom de la langue néerlandaise en français"
+  },
+  "@languagePortuguese": {
+    "description": "Le nom de la langue portugaise en français"
+  },
+  "editScript": "Modifier le script",
+  "@editScript": {
+    "description": "Étiquette pour modifier un script."
+  },
+  "deleteScript": "Supprimer le script",
+  "@deleteScript": {
+    "description": "Étiquette pour supprimer un script."
+  },
+  "edit": "Modifier",
+  "@edit": {
+    "description": "Étiquette pour modifier."
+  },
+  "cancel": "Annuler",
+  "@cancel": {
+    "description": "Étiquette pour annuler une action."
+  },
+  "ok": "D'accord",
+  "@ok": {
+    "description": "Étiquette pour confirmer une action."
+  },
+  "areYouSureDeleteScript": "Êtes-vous sûr de vouloir supprimer ce script ?",
+  "@areYouSureDeleteScript": {
+    "description": "Message de confirmation pour la suppression d'un script."
+  },
+  "speed": "Vitesse",
+  "@speed": {
+    "description": "Étiquette pour la vitesse."
+  },
+  "recordVideo": "Enregistrer une vidéo",
+  "@recordVideo": {
+    "description": "Étiquette pour enregistrer une vidéo."
+  },
+  "backGroundTransparency": "Transparence de l'arrière-plan",
+  "@backGroundTransparency": {
+    "description": "Option pour ajuster la transparence de l'arrière-plan."
+  },
+  "cameraNotFound": "Caméra non trouvée",
+  "@cameraNotFound": {
+    "description": "Message affiché lorsque la caméra n'est pas trouvée."
+  },
+  "noCameraAvailable": "Aucune caméra disponible",
+  "@noCameraAvailable": {
+    "description": "Message affiché lorsqu'aucune caméra n'est disponible."
+  },
+  "onlyOneCameraFound": "Une seule caméra trouvée",
+  "@onlyOneCameraFound": {
+    "description": "Message affiché lorsqu'une seule caméra est trouvée."
+  },
+  "storagePermissionDenied": "Permission de stockage refusée",
+  "@storagePermissionDenied": {
+    "description": "Message affiché lorsque la permission de stockage est refusée."
+  },
+  "permissionIsDenied": "La permission est refusée",
+  "@permissionIsDenied": {
+    "description": "Message affiché lorsque la permission est refusée."
+  },
+  "permissionIsRestricted": "La permission est restreinte",
+  "@permissionIsRestricted": {
+    "description": "Message affiché lorsque la permission est restreinte."
+  },
+  "preview": "Aperçu",
+  "@preview": {
+    "description": "Étiquette pour afficher un aperçu."
+  },
+  "shareVideo": "Partager la vidéo",
+  "@shareVideo": {
+    "description": "Étiquette pour partager une vidéo."
+  },
+  "thisVideoWasShared": "Cette vidéo a été partagée",
+  "@thisVideoWasShared": {
+    "description": "Message affiché lorsque la vidéo a été partagée."
+  },
+  "failedToSaveVideo": "Échec de l'enregistrement de la vidéo",
+  "@failedToSaveVideo": {
+    "description": "Message affiché lorsque l'enregistrement de la vidéo échoue."
+  },
+  "selectAll": "Tout sélectionner",
+  "@selectAll": {
+    "description": "Étiquette pour sélectionner tous les éléments."
+  },
+  "unSelectAll": "Tout désélectionner",
+  "@unSelectAll": {
+    "description": "Étiquette pour désélectionner tous les éléments."
+  },
+  "enterOTP": "Entrez le code OTP",
+  "@enterOTP": {
+    "description": "Libellé pour entrer le code OTP."
+  },
+  "incompleteLength": "Longueur incomplète",
+  "@incompleteLength": {
+    "description": "Message affiché lorsque la longueur est incomplète."
+  },
+  "otp": "OTP",
+  "@otp": {
+    "description": "Libellé pour le code OTP."
+  },
+  "onlyCharactersLength": "Seulement {length} caractères",
+  "@onlyCharactersLength": {
+    "description": "Message affiché lorsque seulement un certain nombre de caractères est autorisé.",
+    "placeholders": {
+      "length": {
+        "type": "int"
+      }
+    }
+  },
+  "forgetPassword": "Mot de passe oublié",
+  "@forgetPassword": {
+    "description": "Libellé pour mot de passe oublié."
+  },
+  "forgetPasswordQ": "Mot de passe oublié ?",
+  "@forgetPasswordQ": {
+    "description": "Question pour mot de passe oublié."
+  },
+  "resetPassword": "Réinitialiser le mot de passe",
+  "@resetPassword": {
+    "description": "Libellé pour réinitialiser le mot de passe."
+  },
+  "updatePassword": "Mettre à jour le mot de passe",
+  "@updatePassword": {
+    "description": "Libellé pour mettre à jour le mot de passe."
+  },
+  "sendOTP": "Envoyer le code OTP",
+  "@sendOTP": {
+    "description": "Libellé pour envoyer le code OTP."
+  },
+  "feedbackFromTelecue": "Commentaires de TeleCue",
+  "@feedbackFromTelecue": {
+    "description": "Libellé pour les commentaires de TeleCue."
+  },
+  "demo": "Démo",
+  "@demo": {
+    "description": "Libellé pour la démo."
+  },
+  "guest": "Invité",
+  "@guest": {
+    "description": "Libellé pour l'utilisateur invité."
+  },
+  "edited": "Modifié",
+  "@edited": {
+    "description": "Libellé pour indiquer que quelque chose a été modifié."
+  },
+  "proceedToLogin": "Procéder à la connexion",
+  "@proceedToLogin": {
+    "description": "Libellé pour procéder à la connexion."
+  },
+  "areYouSureLogout": "Êtes-vous sûr de vouloir vous déconnecter ?",
+  "@areYouSureLogout": {
+    "description": "Message de confirmation pour la déconnexion."
+  },
+  "areYouSureDeleteAccount": "Êtes-vous sûr de vouloir supprimer votre compte ?",
+  "@areYouSureDeleteAccount": {
+    "description": "Message de confirmation pour la suppression du compte."
+  },
+  "deleteAccount": "Supprimer le compte",
+  "@deleteAccount": {
+    "description": "Libellé pour supprimer le compte."
+  },
+  "lorem": "Lorem ipsum",
+  "@lorem": {
+    "description": "Texte de remplissage."
+  },
+  "useAsGuest": "Utiliser comme invité",
+  "@useAsGuest": {
+    "description": "Libellé pour utiliser l'application comme invité."
+  },
+  "goToLogin": "Aller à la connexion",
+  "@goToLogin": {
+    "description": "Libellé pour aller à la page de connexion."
+  },
+  "saveCondition": "Enregistrer la condition",
+  "@saveCondition": {
+    "description": "Libellé pour enregistrer une condition."
+  },
+  "recordWithoutScript": "Enregistrer sans script",
+  "@recordWithoutScript": {
+    "description": "Libellé pour enregistrer une vidéo sans script."
+  },
+  "myProfile": "Mon profil",
+  "@myProfile": {
+    "description": "Libellé pour la section du profil utilisateur."
+  },
+  "yourUsername": "Votre nom d'utilisateur",
+  "@yourUsername": {
+    "description": "Libellé pour le champ du nom d'utilisateur."
+  },
+  "saveChanges": "Enregistrer les modifications",
+  "@saveChanges": {
+    "description": "Libellé pour le bouton d'enregistrement des modifications."
+  }
+}

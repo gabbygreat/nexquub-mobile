@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "891417909143",
+    "project_id": "nexquub",
+    "storage_bucket": "nexquub.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891417909143:android:0d0040c66bb3d8158896d2",
+        "android_client_info": {
+          "package_name": "com.nexquub.mobile.nexquub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMqbmKczLQKXwOWCmEd6LuCHZiw-NbAOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
