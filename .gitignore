@@ -49,4 +49,4 @@ app.*.map.json
 
 # Firebase Options
 # Generated files
-.lib/app/util/firebase_options.dart
+**/firebase_options.dart
