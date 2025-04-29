@@ -11,7 +11,6 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
   return runZonedGuarded(
     () async {
       WidgetsFlutterBinding.ensureInitialized();
-
       // Initialize Firebase
       await Firebase.initializeApp(
         options: DefaultFirebaseOptions.currentPlatform,
