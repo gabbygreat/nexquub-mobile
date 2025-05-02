@@ -10,6 +10,9 @@
 class FontFamily {
   FontFamily._();
 
+  /// Font family: ApfelGrotezk
+  static const String apfelGrotezk = 'ApfelGrotezk';
+
   /// Font family: PlusJakartaSans
   static const String plusJakartaSans = 'PlusJakartaSans';
 }

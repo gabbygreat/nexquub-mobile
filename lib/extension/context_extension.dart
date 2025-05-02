@@ -7,6 +7,17 @@ extension BuildContextExtension on BuildContext {
     return ScreenHelper.normalWidth(this);
   }
 
+  bool get isDark {
+    return Theme.of(this).brightness == Brightness.dark;
+  }
+
+  BoxDecoration get appDecoration {
+    return BoxDecoration(
+      gradient: isDark ? PakeColors.bgNight : null,
+      color: isDark ? null : PakeColors.bgLight,
+    );
+  }
+
   double get minWidth {
     return min(300, MediaQuery.sizeOf(this).width * 0.7);
   }
@@ -15,18 +26,7 @@ extension BuildContextExtension on BuildContext {
     return max(300, MediaQuery.sizeOf(this).width * 0.6);
   }
 
-  int get optimalCrossAxisCount {
-    final width = MediaQuery.sizeOf(this).width;
-
-    // Desired minimum width for each grid item
-    const double itemMinWidth = 110.0;
-
-    // Calculate how many items can fit
-    int count = (width / itemMinWidth).floor();
-
-    // Set sensible boundaries
-    count = count.clamp(2, 8);
-
-    return count;
+  double get maxConstrainWidth {
+    return 600 * 1.2;
   }
 }

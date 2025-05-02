@@ -112,5 +112,17 @@
         "example": "y"
       }
     }
-  }
+  },
+  "title1": "Input Anything. Understand Everything",
+  "@title1": {},
+  "description1": "From voice, text, scanned text, files even to images, Nexquub’s AI decodes and summarizes your content at the speed of thought.",
+  "@description1": {},
+  "title2": "Summarize YouTube and Local Videos Instantly",
+  "@title2": {},
+  "description2": "Paste YouTube link or upload a video file—our system turns them into text, and gives you a clear, quick summary without watching the whole thing.",
+  "@description2": {},
+  "title3": "Your AI Powered Assistant",
+  "@title3": {},
+  "description3": "Chat with our smart AI to extract insights from PDFs, videos, images, and more. Ask questions, request summaries, and get key information instantly",
+  "@description3": {}
 }

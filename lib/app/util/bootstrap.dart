@@ -2,11 +2,11 @@ import 'dart:async';
 import 'package:nexquub/utils/utils.dart';
 
 Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
-  ErrorWidget.builder = (FlutterErrorDetails flutterErrorDetails) {
-    return UserFacingError(
-      details: flutterErrorDetails,
-    );
-  };
+  // ErrorWidget.builder = (FlutterErrorDetails flutterErrorDetails) {
+  //   return UserFacingError(
+  //     details: flutterErrorDetails,
+  //   );
+  // };
 
   return runZonedGuarded(
     () async {

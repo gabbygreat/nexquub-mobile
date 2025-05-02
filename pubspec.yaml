@@ -5,13 +5,13 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.6.2
+  sdk: ^3.7.2
 
 dependencies:
   cupertino_icons: ^1.0.8
   dio: ^5.8.0+1
   docx_to_text: ^1.0.1
-  extended_image: ^9.1.0
+  extended_image: ^10.0.1
   file_picker: ^10.1.2
   firebase_analytics: ^11.4.5
   firebase_core: ^3.13.0
@@ -43,6 +43,7 @@ dependencies:
   shared_preferences: ^2.5.3
   sign_in_with_apple: ^7.0.1
   signals: ^6.0.2
+  smooth_page_indicator: ^1.2.1
   url_launcher: ^6.3.1
 
 dev_dependencies:
@@ -74,44 +75,57 @@ flutter:
     - family: PlusJakartaSans
       fonts:
 
-        - asset: fonts/PlusJakartaSans/PlusJakartaSans-ExtraLight.ttf
+        - asset: assets/fonts/PlusJakartaSans/PlusJakartaSans-ExtraLight.ttf
           weight: 200
-        - asset: fonts/PlusJakartaSans/PlusJakartaSans-ExtraLightItalic.ttf
+        - asset: assets/fonts/PlusJakartaSans/PlusJakartaSans-ExtraLightItalic.ttf
           weight: 200
           style: italic
 
-        - asset: fonts/PlusJakartaSans/PlusJakartaSans-Light.ttf
+        - asset: assets/fonts/PlusJakartaSans/PlusJakartaSans-Light.ttf
           weight: 300
-        - asset: fonts/PlusJakartaSans/PlusJakartaSans-LightItalic.ttf
+        - asset: assets/fonts/PlusJakartaSans/PlusJakartaSans-LightItalic.ttf
           weight: 300
           style: italic
         
-        - asset: fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf
+        - asset: assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf
           weight: 400
-        - asset: fonts/PlusJakartaSans/PlusJakartaSans-Italic.ttf
+        - asset: assets/fonts/PlusJakartaSans/PlusJakartaSans-Italic.ttf
           weight: 400
           style: italic
         
-        - asset: fonts/PlusJakartaSans/PlusJakartaSans-Medium.ttf
+        - asset: assets/fonts/PlusJakartaSans/PlusJakartaSans-Medium.ttf
           weight: 500
-        - asset: fonts/PlusJakartaSans/PlusJakartaSans-MediumItalic.ttf
+        - asset: assets/fonts/PlusJakartaSans/PlusJakartaSans-MediumItalic.ttf
           weight: 500
           style: italic
         
-        - asset: fonts/PlusJakartaSans/PlusJakartaSans-SemiBold.ttf
+        - asset: assets/fonts/PlusJakartaSans/PlusJakartaSans-SemiBold.ttf
           weight: 600
-        - asset: fonts/PlusJakartaSans/PlusJakartaSans-SemiBoldItalic.ttf
+        - asset: assets/fonts/PlusJakartaSans/PlusJakartaSans-SemiBoldItalic.ttf
           weight: 600
           style: italic
         
-        - asset: fonts/PlusJakartaSans/PlusJakartaSans-Bold.ttf
+        - asset: assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.ttf
           weight: 700
-        - asset: fonts/PlusJakartaSans/PlusJakartaSans-BoldItalic.ttf
+        - asset: assets/fonts/PlusJakartaSans/PlusJakartaSans-BoldItalic.ttf
           weight: 700
           style: italic
         
-        - asset: fonts/PlusJakartaSans/PlusJakartaSans-ExtraBold.ttf
+        - asset: assets/fonts/PlusJakartaSans/PlusJakartaSans-ExtraBold.ttf
           weight: 800
-        - asset: fonts/PlusJakartaSans/PlusJakartaSans-ExtraBoldItalic.ttf
+        - asset: assets/fonts/PlusJakartaSans/PlusJakartaSans-ExtraBoldItalic.ttf
           weight: 800
           style: italic
+      
+    - family: ApfelGrotezk
+      fonts:
+        - asset: assets/fonts/ApfelGrotezk/ApfelGrotezk-Regular.otf
+          weight: 400
+        - asset: assets/fonts/ApfelGrotezk/ApfelGrotezk-Mittel.otf
+          weight: 500
+        - asset: assets/fonts/ApfelGrotezk/ApfelGrotezk-Satt.otf
+          weight: 600
+        - asset: assets/fonts/ApfelGrotezk/ApfelGrotezk-Fett.otf
+          weight: 700
+        - asset: assets/fonts/ApfelGrotezk/ApfelGrotezk-Brukt.otf
+          weight: 800

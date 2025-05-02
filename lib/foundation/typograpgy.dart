@@ -2,38 +2,23 @@ import 'package:nexquub/utils/utils.dart';
 
 extension StyleExt on int {
   TextStyle get regular {
-    return TextStyle(
-      fontSize: spMin,
-      fontWeight: FontWeight.w400,
-    );
+    return TextStyle(fontSize: spMin, fontWeight: FontWeight.w400);
   }
 
   TextStyle get medium {
-    return TextStyle(
-      fontSize: spMin,
-      fontWeight: FontWeight.w500,
-    );
+    return TextStyle(fontSize: spMin, fontWeight: FontWeight.w500);
   }
 
   TextStyle get semiBold {
-    return TextStyle(
-      fontSize: spMin,
-      fontWeight: FontWeight.w600,
-    );
+    return TextStyle(fontSize: spMin, fontWeight: FontWeight.w600);
   }
 
   TextStyle get bold {
-    return TextStyle(
-      fontSize: spMin,
-      fontWeight: FontWeight.w700,
-    );
+    return TextStyle(fontSize: spMin, fontWeight: FontWeight.w700);
   }
 
   TextStyle get extraBold {
-    return TextStyle(
-      fontSize: spMin,
-      fontWeight: FontWeight.w800,
-    );
+    return TextStyle(fontSize: spMin, fontWeight: FontWeight.w800);
   }
 }
 
@@ -46,15 +31,15 @@ extension TypoColor on TextStyle {
   }
 
   TextStyle get italics {
-    return copyWith(
-      fontStyle: FontStyle.italic,
-    );
+    return copyWith(fontStyle: FontStyle.italic);
   }
 
   TextStyle get plusJakartaSans {
-    return copyWith(
-      fontFamily: FontFamily.plusJakartaSans,
-    );
+    return copyWith(fontFamily: FontFamily.plusJakartaSans);
+  }
+
+  TextStyle get apfelGrotezk {
+    return copyWith(fontFamily: FontFamily.apfelGrotezk);
   }
 
   // Neutral Dark

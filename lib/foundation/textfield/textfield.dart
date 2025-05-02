@@ -34,7 +34,7 @@ class PakeTextInput extends StatefulWidget {
     this.onTapOutside,
     this.prefixIcon,
     this.hintText,
-    this.labelText,
+    this.titleText,
     this.suffixIcon,
     this.titleRight,
     this.validator,
@@ -74,7 +74,7 @@ class PakeTextInput extends StatefulWidget {
     this.onTapOutside,
     this.prefixIcon,
     this.hintText,
-    this.labelText,
+    this.titleText,
     this.suffixIcon,
     this.titleRight,
     this.validator,
@@ -114,7 +114,7 @@ class PakeTextInput extends StatefulWidget {
     this.onTapOutside,
     this.prefixIcon,
     this.hintText,
-    this.labelText,
+    this.titleText,
     this.suffixIcon,
     this.titleRight,
     this.validator,
@@ -153,7 +153,7 @@ class PakeTextInput extends StatefulWidget {
   final void Function(PointerDownEvent)? onTapOutside;
   final Widget? prefixIcon;
   final String? hintText;
-  final String? labelText;
+  final String? titleText;
   final Widget? suffixIcon;
   final Widget? titleRight;
   final FormValidation? validator;
@@ -261,48 +261,29 @@ class _PakeTextInputState extends State<PakeTextInput> {
         prefixIcon: widget.prefixIcon,
         suffixIcon: widget.suffixIcon,
         hintText: widget.hintText,
-        labelText: widget.labelText,
         floatingLabelStyle: PakeTextStyle.bodyText14.red100.of(context),
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 1.2,
-            color: PakeColors.red100,
-          ),
+          borderSide: BorderSide(width: 1.2, color: PakeColors.red100),
           borderRadius: BorderRadius.circular(4),
         ),
         border: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 1.2,
-            color: PakeColors.red100,
-          ),
+          borderSide: BorderSide(width: 1.2, color: PakeColors.red100),
           borderRadius: BorderRadius.circular(4),
         ),
         focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 1.52,
-            color: PakeColors.red100,
-          ),
+          borderSide: BorderSide(width: 1.52, color: PakeColors.red100),
           borderRadius: BorderRadius.circular(4),
         ),
         errorBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 1.2,
-            color: PakeColors.red100,
-          ),
+          borderSide: BorderSide(width: 1.2, color: PakeColors.red100),
           borderRadius: BorderRadius.circular(4),
         ),
         disabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 1.2,
-            color: PakeColors.red100,
-          ),
+          borderSide: BorderSide(width: 1.2, color: PakeColors.red100),
           borderRadius: BorderRadius.circular(4),
         ),
         focusedErrorBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            width: 1.2,
-            color: PakeColors.red100,
-          ),
+          borderSide: BorderSide(width: 1.2, color: PakeColors.red100),
           borderRadius: BorderRadius.circular(4),
         ),
       ),

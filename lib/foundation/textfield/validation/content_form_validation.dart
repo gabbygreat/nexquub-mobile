@@ -1,11 +1,13 @@
 import 'package:nexquub/utils/utils.dart';
 
 class ContentFormValidation extends FormValidation {
+  final String message;
+
+  ContentFormValidation({required this.message});
   @override
   String? validate(BuildContext context, String value) {
-    final l10n = context.l10n;
     if (!value.hasValue) {
-      return l10n.pleaseEnterAPassword;
+      return message;
     }
     return null;
   }

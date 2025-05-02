@@ -7,26 +7,22 @@ import 'package:nexquub/utils/utils.dart';
 class AppDio with DioMixin implements Dio {
   AppDio._() {
     options = BaseOptions(
-      baseUrl: const String.fromEnvironment(
-        AppConstant.baseUrl,
-      ),
+      baseUrl: const String.fromEnvironment(AppConstant.baseUrl),
       contentType: Headers.jsonContentType,
-      connectTimeout: const Duration(seconds: 50),
-      sendTimeout: const Duration(seconds: 50),
-      receiveTimeout: const Duration(seconds: 50),
+      connectTimeout: const Duration(seconds: 30),
+      sendTimeout: const Duration(seconds: 30),
+      receiveTimeout: const Duration(seconds: 30),
     );
 
-    interceptors.addAll(
-      [
-        PrettyDioLogger(
-          requestHeader: true,
-          requestBody: true,
-          enabled: kDebugMode,
-          logPrint: (message) => kLog(message),
-        ),
-        RequestInterceptor(),
-      ],
-    );
+    interceptors.addAll([
+      PrettyDioLogger(
+        requestHeader: true,
+        requestBody: true,
+        enabled: kDebugMode,
+        logPrint: (message) => kLog(message),
+      ),
+      RequestInterceptor(),
+    ]);
 
     httpClientAdapter = IOHttpClientAdapter();
   }

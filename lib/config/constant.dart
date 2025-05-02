@@ -2,7 +2,8 @@ class AppConstant {
   static const useCache = 'use-cache';
   static const dontShowLoader = 'do-not-show-loader';
 
-  static const baseUrl = 'BASE_URL';
+  static const nexquub = 'NexQuub';
+  static const baseUrl = 'BASE_URL2';
   static const email = 'EMAIL';
   static const playstore = 'PLAYSTORE';
   static const appstore = 'APPSTORE';

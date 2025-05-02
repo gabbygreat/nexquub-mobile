@@ -6,23 +6,12 @@ import 'package:flutter/foundation.dart';
 import 'package:lottie/lottie.dart';
 import 'package:nexquub/utils/utils.dart';
 
-void kLog(
-  Object message, {
-  StackTrace? stackTrace,
-  bool logCrash = false,
-}) {
+void kLog(Object message, {StackTrace? stackTrace, bool logCrash = false}) {
   if (kDebugMode) {
-    log(
-      '$message',
-      name: 'APP LOG',
-      stackTrace: stackTrace,
-    );
+    log('$message', name: 'APP LOG', stackTrace: stackTrace);
   } else {
     if (logCrash) {
-      locator<CrashlyticsService>().logError(
-        message,
-        stackTrace!,
-      );
+      locator<CrashlyticsService>().logErrors(message, stackTrace!);
     }
   }
 }
@@ -58,10 +47,7 @@ Future<void> showFormattedError({
               maxWidth: MediaQuery.sizeOf(context).width * 0.4,
             ),
             child: Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 10,
-                vertical: 12,
-              ),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -75,10 +61,7 @@ Future<void> showFormattedError({
                     ),
                     5.sbH,
                   ],
-                  Text(
-                    formattedError.message,
-                    textAlign: TextAlign.center,
-                  ),
+                  Text(formattedError.message, textAlign: TextAlign.center),
                   20.sbH,
                   PakeButton.secondaryButton44.filled(
                     text: context.l10n.okay,
@@ -111,10 +94,7 @@ Future<void> showSuccessMessage({
       return PopScope(
         canPop: barrierDismissible,
         child: BackdropFilter(
-          filter: ImageFilter.blur(
-            sigmaX: 10,
-            sigmaY: 10,
-          ),
+          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
           child: Dialog(
             child: ConstrainedBox(
               constraints: BoxConstraints(
@@ -136,16 +116,10 @@ Future<void> showSuccessMessage({
                       width: 100,
                     ),
                     5.sbH,
-                    Text(
-                      message,
-                      textAlign: TextAlign.center,
-                    ),
+                    Text(message, textAlign: TextAlign.center),
                     if (subMessage != null) ...[
                       5.sbH,
-                      Text(
-                        subMessage,
-                        textAlign: TextAlign.center,
-                      ),
+                      Text(subMessage, textAlign: TextAlign.center),
                     ],
                     20.sbH,
                     PakeButton.secondaryButton44.filled(
@@ -183,16 +157,10 @@ Future<bool?> showConfirmationModal(
       case TargetPlatform.fuchsia:
       case TargetPlatform.linux:
       case TargetPlatform.windows:
-        return TextButton(
-          onPressed: onPressed,
-          child: child,
-        );
+        return TextButton(onPressed: onPressed, child: child);
       case TargetPlatform.iOS:
       case TargetPlatform.macOS:
-        return CupertinoDialogAction(
-          onPressed: onPressed,
-          child: child,
-        );
+        return CupertinoDialogAction(onPressed: onPressed, child: child);
     }
   }
 
@@ -202,14 +170,9 @@ Future<bool?> showConfirmationModal(
     context: context,
     builder: (context) {
       return BackdropFilter(
-        filter: ImageFilter.blur(
-          sigmaX: 3,
-          sigmaY: 3,
-        ),
+        filter: ImageFilter.blur(sigmaX: 3, sigmaY: 3),
         child: AlertDialog.adaptive(
-          title: Text(
-            message,
-          ),
+          title: Text(message),
           actions: [
             adaptiveAction(
               context: context,
@@ -217,16 +180,12 @@ Future<bool?> showConfirmationModal(
                 Navigator.pop(context, false);
                 secondaryAction?.call();
               },
-              child: Text(
-                secondaryText ?? l10n.cancel,
-              ),
+              child: Text(secondaryText ?? l10n.cancel),
             ),
             adaptiveAction(
               context: context,
               onPressed: () => Navigator.pop(context, true),
-              child: Text(
-                l10n.okay,
-              ),
+              child: Text(l10n.okay),
             ),
           ],
         ),

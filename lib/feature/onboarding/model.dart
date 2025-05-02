@@ -1,11 +1,13 @@
 part of 'viewmodel.dart';
 
 class OnboardingContent {
-  String title;
-  String description;
+  final String title;
+  final String description;
+  final AssetGenImage image;
 
   OnboardingContent({
     required this.description,
     required this.title,
+    required this.image,
   });
 }

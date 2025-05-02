@@ -7,8 +7,7 @@ class NexQuubApp extends StatefulWidget {
   State<NexQuubApp> createState() => _NexQuubAppState();
 }
 
-class _NexQuubAppState extends State<NexQuubApp>
-    with SignalsMixin, WidgetsBindingObserver {
+class _NexQuubAppState extends State<NexQuubApp> with WidgetsBindingObserver {
   final themeViewModel = locator<ThemeViewModel>();
   final languageViewModel = locator<LanguageViewModel>();
 
@@ -32,12 +31,11 @@ class _NexQuubAppState extends State<NexQuubApp>
 
   @override
   Widget build(BuildContext context) {
-    final isDarkMode = themeViewModel.isDarkMode.watch(context) ??
+    final isDarkMode =
+        themeViewModel.isDarkMode.watch(context) ??
         MediaQuery.platformBrightnessOf(context) == Brightness.dark;
     final locale = languageViewModel.locale.watch(context);
     final hasLanguage = languageViewModel.hasLanguage;
-
-    final l10n = context.l10n;
 
     return ScreenUtilInit(
       designSize: const Size(430, 932),
@@ -46,7 +44,7 @@ class _NexQuubAppState extends State<NexQuubApp>
           theme: AppTheme.instance.lightTheme,
           darkTheme: AppTheme.instance.darkTheme,
           locale: locale == null && !hasLanguage ? Locale('en') : locale,
-          title: l10n.nexquub,
+          title: AppConstant.nexquub,
           scrollBehavior: MyBehavior(),
           themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
           localizationsDelegates: AppLocalizations.localizationsDelegates,

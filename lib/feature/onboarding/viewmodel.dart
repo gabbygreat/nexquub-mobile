@@ -10,7 +10,7 @@ class OnboardingViewModel {
   late PageController pageController;
   late List<OnboardingContent> content;
   late ValueNotifier<int> pageIndex;
-  // final NavigationService _navigationService = locator<NavigationService>();
+  final NavigationService _navigationService = locator<NavigationService>();
   ILocalStorage storage = locator<ILocalStorage>();
 
   void onPageChanged(int index) {
@@ -31,6 +31,9 @@ class OnboardingViewModel {
 
   void goToLoginScreen() {
     // _navigationService.goNamed(LoginScreen.name);
+  }
+  void goToSignupScreen() {
+    _navigationService.goNamed(SignupScreen.name);
   }
 
   Future<void> _unsetFirstTime() async {

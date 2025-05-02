@@ -1,29 +1,15 @@
 part of 'button.dart';
 
-enum PakeButtonSize {
-  small,
-  medium,
-  large,
-  big;
-}
+enum PakeButtonSize { small, medium, large, big }
 
 class PakeButtonBuilder {
-  PakeButtonBuilder._({
-    required this.size,
-  });
+  PakeButtonBuilder._({required this.size});
 
-  PakeButtonBuilder.defaultValue()
-      : this._(
-          size: PakeButtonSize.medium,
-        );
+  PakeButtonBuilder.defaultValue() : this._(size: PakeButtonSize.medium);
   final PakeButtonSize size;
 
-  PakeButtonBuilder copyWith({
-    PakeButtonSize? size,
-  }) {
-    return PakeButtonBuilder._(
-      size: size ?? this.size,
-    );
+  PakeButtonBuilder copyWith({PakeButtonSize? size}) {
+    return PakeButtonBuilder._(size: size ?? this.size);
   }
 }
 
@@ -39,7 +25,7 @@ class PakeButtonAppearanceBuilder {
     bool expand = true,
     Widget? icon,
     Widget? secondaryIcon,
-    Color borderColor = const Color(0xFFC1C7CD),
+    Color borderColor = const Color(0xFF003D98),
     PakeButtonPosition buttonPosition = PakeButtonPosition.left,
     EdgeInsets? buttonPadding,
     double? radius,
@@ -66,7 +52,7 @@ class PakeButtonAppearanceBuilder {
     Key? key,
     bool disabled = false,
     bool expand = true,
-    Color fillColor = const Color(0xFF0F62FE),
+    Color fillColor = const Color(0xFF003D98),
     Widget? icon,
     Widget? secondaryIcon,
     PakeButtonPosition buttonPosition = PakeButtonPosition.left,

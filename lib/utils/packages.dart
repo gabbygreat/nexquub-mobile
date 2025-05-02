@@ -16,3 +16,4 @@ export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:flutter_svg/flutter_svg.dart';
 export 'package:go_router/go_router.dart';
 export 'package:signals/signals_flutter.dart';
+export 'package:nexquub/l10n/generated/app_localizations.dart';

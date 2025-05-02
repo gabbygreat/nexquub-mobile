@@ -1,0 +1,9 @@
+{
+  "BASE_URL1": "https://churchofjesus.thepakegroup.com/",
+  "BASE_URL2": "http://localhost:3333/",
+  "BASE_URL3": "http://192.168.16.221:3333/",
+  "PLAYSTORE": "https://play.google.com/store/apps/details?id=com.thepakegroup.churchofjesus",
+  "APPSTORE": "https://apps.apple.com/app/church-of-jesus/id6469453607",
+  "APPLE_GID": "678720644074-sjbi1afmrc2s00tpd6an0am00al2su35.apps.googleusercontent.com",
+  "LOCAL_KEY": "6tapkYSuMeyRd5ZpcffOlZvca_52-lQpyUELP_DLmnY="
+}
