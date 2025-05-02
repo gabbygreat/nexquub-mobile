@@ -321,14 +321,14 @@ class _BasePakeButtonState extends State<BasePakeButton> {
       isFilled = widget.isFilled;
     }
     if (isFilled) {
-      textColor = PakeColors.coolGray10;
+      textColor = PakeColors.red100;
     }
     if (widget.hasBorder) {
-      textColor = PakeColors.coolGray60;
+      textColor = PakeColors.red100;
     }
 
     if (disabled) {
-      textColor = PakeColors.coolGray10;
+      textColor = PakeColors.red100;
     }
     if (disabled) {
       onTap = null;
@@ -371,8 +371,8 @@ class _BasePakeButtonState extends State<BasePakeButton> {
             decoration: BoxDecoration(
               color: disabled
                   ? isDark
-                      ? PakeColors.coolGray50
-                      : PakeColors.coolGray20
+                      ? PakeColors.red100
+                      : PakeColors.red100
                   : isFilled
                       ? widget.fillColor
                       : null,

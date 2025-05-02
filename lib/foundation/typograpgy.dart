@@ -1,5 +1,42 @@
 import 'package:nexquub/utils/utils.dart';
 
+extension StyleExt on int {
+  TextStyle get regular {
+    return TextStyle(
+      fontSize: spMin,
+      fontWeight: FontWeight.w400,
+    );
+  }
+
+  TextStyle get medium {
+    return TextStyle(
+      fontSize: spMin,
+      fontWeight: FontWeight.w500,
+    );
+  }
+
+  TextStyle get semiBold {
+    return TextStyle(
+      fontSize: spMin,
+      fontWeight: FontWeight.w600,
+    );
+  }
+
+  TextStyle get bold {
+    return TextStyle(
+      fontSize: spMin,
+      fontWeight: FontWeight.w700,
+    );
+  }
+
+  TextStyle get extraBold {
+    return TextStyle(
+      fontSize: spMin,
+      fontWeight: FontWeight.w800,
+    );
+  }
+}
+
 extension TypoColor on TextStyle {
   TextStyle get underline {
     return copyWith(
@@ -14,61 +51,87 @@ extension TypoColor on TextStyle {
     );
   }
 
-  // Cool Gray Colors
-  TextStyle get coolGray10 => copyWith(color: PakeColors.coolGray10);
-  TextStyle get coolGray20 => copyWith(color: PakeColors.coolGray20);
-  TextStyle get coolGray30 => copyWith(color: PakeColors.coolGray30);
-  TextStyle get coolGray40 => copyWith(color: PakeColors.coolGray40);
-  TextStyle get coolGray50 => copyWith(color: PakeColors.coolGray50);
-  TextStyle get coolGray60 => copyWith(color: PakeColors.coolGray60);
-  TextStyle get coolGray70 => copyWith(color: PakeColors.coolGray70);
-  TextStyle get coolGray80 => copyWith(color: PakeColors.coolGray80);
-  TextStyle get coolGray90 => copyWith(color: PakeColors.coolGray90);
-  TextStyle get coolGray100 => copyWith(color: PakeColors.coolGray100);
+  TextStyle get plusJakartaSans {
+    return copyWith(
+      fontFamily: FontFamily.plusJakartaSans,
+    );
+  }
 
-  // Orange Colors
-  TextStyle get orange10 => copyWith(color: PakeColors.orange10);
-  TextStyle get orange20 => copyWith(color: PakeColors.orange20);
-  TextStyle get orange30 => copyWith(color: PakeColors.orange30);
-  TextStyle get orange40 => copyWith(color: PakeColors.orange40);
-  TextStyle get orange50 => copyWith(color: PakeColors.orange50);
-  TextStyle get orange60 => copyWith(color: PakeColors.orange60);
-  TextStyle get orange70 => copyWith(color: PakeColors.orange70);
-  TextStyle get orange80 => copyWith(color: PakeColors.orange80);
-  TextStyle get orange90 => copyWith(color: PakeColors.orange90);
-  TextStyle get orange100 => copyWith(color: PakeColors.orange100);
+  // Neutral Dark
+  TextStyle get neutralDark50 => copyWith(color: PakeColors.neutralDark50);
+  TextStyle get neutralDark100 => copyWith(color: PakeColors.neutralDark100);
+  TextStyle get neutralDark200 => copyWith(color: PakeColors.neutralDark200);
+  TextStyle get neutralDark300 => copyWith(color: PakeColors.neutralDark300);
+  TextStyle get neutralDark400 => copyWith(color: PakeColors.neutralDark400);
+  TextStyle get neutralDark500 => copyWith(color: PakeColors.neutralDark500);
+  TextStyle get neutralDark600 => copyWith(color: PakeColors.neutralDark600);
+  TextStyle get neutralDark700 => copyWith(color: PakeColors.neutralDark700);
+  TextStyle get neutralDark800 => copyWith(color: PakeColors.neutralDark800);
 
-  // Blue Colors
-  TextStyle get blue10 => copyWith(color: PakeColors.blue10);
-  TextStyle get blue20 => copyWith(color: PakeColors.blue20);
-  TextStyle get blue30 => copyWith(color: PakeColors.blue30);
-  TextStyle get blue40 => copyWith(color: PakeColors.blue40);
-  TextStyle get blue50 => copyWith(color: PakeColors.blue50);
-  TextStyle get blue60 => copyWith(color: PakeColors.blue60);
-  TextStyle get blue70 => copyWith(color: PakeColors.blue70);
-  TextStyle get blue80 => copyWith(color: PakeColors.blue80);
-  TextStyle get blue90 => copyWith(color: PakeColors.blue90);
-  TextStyle get blue100 => copyWith(color: PakeColors.blue100);
+  // Neutral Light
+  TextStyle get neutralLight50 => copyWith(color: PakeColors.neutralLight50);
+  TextStyle get neutralLight100 => copyWith(color: PakeColors.neutralLight100);
+  TextStyle get neutralLight200 => copyWith(color: PakeColors.neutralLight200);
+  TextStyle get neutralLight300 => copyWith(color: PakeColors.neutralLight300);
+  TextStyle get neutralLight400 => copyWith(color: PakeColors.neutralLight400);
+  TextStyle get neutralLight500 => copyWith(color: PakeColors.neutralLight500);
+  TextStyle get neutralLight600 => copyWith(color: PakeColors.neutralLight600);
+  TextStyle get neutralLight700 => copyWith(color: PakeColors.neutralLight700);
+  TextStyle get neutralLight800 => copyWith(color: PakeColors.neutralLight800);
 
-  // Red Colors
-  TextStyle get red10 => copyWith(color: PakeColors.red10);
-  TextStyle get red20 => copyWith(color: PakeColors.red20);
-  TextStyle get red30 => copyWith(color: PakeColors.red30);
-  TextStyle get red40 => copyWith(color: PakeColors.red40);
+  // Primary Dark
+  TextStyle get primaryDark100 => copyWith(color: PakeColors.primaryDark100);
+  TextStyle get primaryDark200 => copyWith(color: PakeColors.primaryDark200);
+  TextStyle get primaryDark300 => copyWith(color: PakeColors.primaryDark300);
+  TextStyle get primaryDark400 => copyWith(color: PakeColors.primaryDark400);
+  TextStyle get primaryDark500 => copyWith(color: PakeColors.primaryDark500);
+  TextStyle get primaryDark600 => copyWith(color: PakeColors.primaryDark600);
+  TextStyle get primaryDark700 => copyWith(color: PakeColors.primaryDark700);
+  TextStyle get primaryDark800 => copyWith(color: PakeColors.primaryDark800);
+  TextStyle get primaryDark900 => copyWith(color: PakeColors.primaryDark900);
+
+  // Primary Light
+  TextStyle get primaryLight100 => copyWith(color: PakeColors.primaryLight100);
+  TextStyle get primaryLight200 => copyWith(color: PakeColors.primaryLight200);
+  TextStyle get primaryLight300 => copyWith(color: PakeColors.primaryLight300);
+  TextStyle get primaryLight400 => copyWith(color: PakeColors.primaryLight400);
+  TextStyle get primaryLight500 => copyWith(color: PakeColors.primaryLight500);
+  TextStyle get primaryLight600 => copyWith(color: PakeColors.primaryLight600);
+  TextStyle get primaryLight700 => copyWith(color: PakeColors.primaryLight700);
+  TextStyle get primaryLight800 => copyWith(color: PakeColors.primaryLight800);
+  TextStyle get primaryLight900 => copyWith(color: PakeColors.primaryLight900);
+
+  // Red
   TextStyle get red50 => copyWith(color: PakeColors.red50);
-  TextStyle get red60 => copyWith(color: PakeColors.red60);
-  TextStyle get red70 => copyWith(color: PakeColors.red70);
-  TextStyle get red80 => copyWith(color: PakeColors.red80);
-  TextStyle get red90 => copyWith(color: PakeColors.red90);
   TextStyle get red100 => copyWith(color: PakeColors.red100);
+  TextStyle get red200 => copyWith(color: PakeColors.red200);
+  TextStyle get red400 => copyWith(color: PakeColors.red400);
+  TextStyle get red500 => copyWith(color: PakeColors.red500);
+  TextStyle get red900 => copyWith(color: PakeColors.red900);
 
-  // Additional Colors
-  TextStyle get whiteLinearForWhiteMode =>
-      copyWith(color: PakeColors.whiteLinearForWhiteMode);
-  TextStyle get darkBlue => copyWith(color: PakeColors.darkBlue);
-  TextStyle get blurBackground => copyWith(color: PakeColors.blurbackground);
-  TextStyle get pureWhite => copyWith(color: PakeColors.pureWhite);
-  TextStyle get primary => copyWith(color: PakeColors.primary);
+  // Green
+  TextStyle get green50 => copyWith(color: PakeColors.green50);
+  TextStyle get green100 => copyWith(color: PakeColors.green100);
+  TextStyle get green200 => copyWith(color: PakeColors.green200);
+  TextStyle get green500 => copyWith(color: PakeColors.green500);
+  TextStyle get green600 => copyWith(color: PakeColors.green600);
+  TextStyle get green900 => copyWith(color: PakeColors.green900);
+
+  // Warning
+  TextStyle get warning50 => copyWith(color: PakeColors.warning50);
+  TextStyle get warning100 => copyWith(color: PakeColors.warning100);
+  TextStyle get warning200 => copyWith(color: PakeColors.warning200);
+  TextStyle get warning300 => copyWith(color: PakeColors.warning300);
+  TextStyle get warning400 => copyWith(color: PakeColors.warning400);
+  TextStyle get warning500 => copyWith(color: PakeColors.warning500);
+  TextStyle get warning600 => copyWith(color: PakeColors.warning600);
+  TextStyle get warning700 => copyWith(color: PakeColors.warning700);
+  TextStyle get warning800 => copyWith(color: PakeColors.warning800);
+  TextStyle get warning900 => copyWith(color: PakeColors.warning900);
+
+  // Fixed
+  TextStyle get bgLight => copyWith(color: PakeColors.bgLight);
+  TextStyle get bnbBg => copyWith(color: PakeColors.bnbBg);
 
   TextStyle of(BuildContext context, {Color? blackColor}) {
     final isDark = Theme.of(context).brightness == Brightness.dark;

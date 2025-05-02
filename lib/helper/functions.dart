@@ -82,7 +82,7 @@ Future<void> showFormattedError({
                   20.sbH,
                   PakeButton.secondaryButton44.filled(
                     text: context.l10n.okay,
-                    fillColor: PakeColors.blue60,
+                    fillColor: PakeColors.red100,
                     onPressed: () {
                       Navigator.of(context).pop(true);
                     },
@@ -150,7 +150,7 @@ Future<void> showSuccessMessage({
                     20.sbH,
                     PakeButton.secondaryButton44.filled(
                       text: context.l10n.okay,
-                      fillColor: PakeColors.blue60,
+                      fillColor: PakeColors.red100,
                       onPressed: () {
                         Navigator.of(context).pop(true);
                       },

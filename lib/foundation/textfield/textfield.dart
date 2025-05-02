@@ -244,8 +244,8 @@ class _PakeTextInputState extends State<PakeTextInput> {
       autovalidateMode: widget.autovalidateMode,
       onFieldSubmitted: widget.onSubmitted,
       enabled: widget.enabled,
-      style: PakeTextStyle.caption.coolGray100.of(context),
-      cursorColor: PakeColors.coolGray30,
+      style: PakeTextStyle.caption.red100.of(context),
+      cursorColor: PakeColors.red100,
       decoration: InputDecoration(
         errorText: _errorText,
         errorMaxLines: 2,
@@ -256,52 +256,52 @@ class _PakeTextInputState extends State<PakeTextInput> {
           top: fieldSize,
           bottom: fieldSize,
         ),
-        hintStyle: PakeTextStyle.caption.coolGray40.of(context),
+        hintStyle: PakeTextStyle.caption.red100.of(context),
         fillColor: widget.fillColor,
         prefixIcon: widget.prefixIcon,
         suffixIcon: widget.suffixIcon,
         hintText: widget.hintText,
         labelText: widget.labelText,
-        floatingLabelStyle: PakeTextStyle.bodyText14.coolGray100.of(context),
+        floatingLabelStyle: PakeTextStyle.bodyText14.red100.of(context),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(
             width: 1.2,
-            color: PakeColors.coolGray30,
+            color: PakeColors.red100,
           ),
           borderRadius: BorderRadius.circular(4),
         ),
         border: OutlineInputBorder(
           borderSide: BorderSide(
             width: 1.2,
-            color: PakeColors.coolGray30,
+            color: PakeColors.red100,
           ),
           borderRadius: BorderRadius.circular(4),
         ),
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(
             width: 1.52,
-            color: PakeColors.coolGray40,
+            color: PakeColors.red100,
           ),
           borderRadius: BorderRadius.circular(4),
         ),
         errorBorder: OutlineInputBorder(
           borderSide: BorderSide(
             width: 1.2,
-            color: PakeColors.red60,
+            color: PakeColors.red100,
           ),
           borderRadius: BorderRadius.circular(4),
         ),
         disabledBorder: OutlineInputBorder(
           borderSide: BorderSide(
             width: 1.2,
-            color: PakeColors.coolGray10,
+            color: PakeColors.red100,
           ),
           borderRadius: BorderRadius.circular(4),
         ),
         focusedErrorBorder: OutlineInputBorder(
           borderSide: BorderSide(
             width: 1.2,
-            color: PakeColors.red60,
+            color: PakeColors.red100,
           ),
           borderRadius: BorderRadius.circular(4),
         ),

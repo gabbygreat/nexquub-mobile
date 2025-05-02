@@ -69,3 +69,49 @@ flutter:
     - assets/images/
     - assets/vectors/
     - assets/animation/
+
+  fonts:
+    - family: PlusJakartaSans
+      fonts:
+
+        - asset: fonts/PlusJakartaSans/PlusJakartaSans-ExtraLight.ttf
+          weight: 200
+        - asset: fonts/PlusJakartaSans/PlusJakartaSans-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+
+        - asset: fonts/PlusJakartaSans/PlusJakartaSans-Light.ttf
+          weight: 300
+        - asset: fonts/PlusJakartaSans/PlusJakartaSans-LightItalic.ttf
+          weight: 300
+          style: italic
+        
+        - asset: fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf
+          weight: 400
+        - asset: fonts/PlusJakartaSans/PlusJakartaSans-Italic.ttf
+          weight: 400
+          style: italic
+        
+        - asset: fonts/PlusJakartaSans/PlusJakartaSans-Medium.ttf
+          weight: 500
+        - asset: fonts/PlusJakartaSans/PlusJakartaSans-MediumItalic.ttf
+          weight: 500
+          style: italic
+        
+        - asset: fonts/PlusJakartaSans/PlusJakartaSans-SemiBold.ttf
+          weight: 600
+        - asset: fonts/PlusJakartaSans/PlusJakartaSans-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        
+        - asset: fonts/PlusJakartaSans/PlusJakartaSans-Bold.ttf
+          weight: 700
+        - asset: fonts/PlusJakartaSans/PlusJakartaSans-BoldItalic.ttf
+          weight: 700
+          style: italic
+        
+        - asset: fonts/PlusJakartaSans/PlusJakartaSans-ExtraBold.ttf
+          weight: 800
+        - asset: fonts/PlusJakartaSans/PlusJakartaSans-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic

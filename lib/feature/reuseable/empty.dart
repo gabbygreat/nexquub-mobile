@@ -19,7 +19,7 @@ class EmptyContent extends StatelessWidget {
           8.sbH,
           Text(
             l10n.ooopsYouDontHave,
-            style: PakeTextStyle.bodyText14.coolGray80.of(context),
+            style: PakeTextStyle.bodyText14.red100.of(context),
           ),
         ],
       ),
