@@ -1,24 +1,20 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'otp_expiry_response.dart';
+part of 'request_otp_payload.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-OTPExpiryResponse _$OTPExpiryResponseFromJson(Map<String, dynamic> json) =>
-    OTPExpiryResponse(
-      otpExpiry: (json['otpExpiry'] as num).toInt(),
+RequestOTPPayload _$RequestOTPPayloadFromJson(Map<String, dynamic> json) =>
+    RequestOTPPayload(
       email: json['email'] as String,
       type: $enumDecode(_$OTPVerificationTypeEnumMap, json['type']),
-      verificationCode: json['verificationCode'] as String?,
     );
 
-Map<String, dynamic> _$OTPExpiryResponseToJson(OTPExpiryResponse instance) =>
+Map<String, dynamic> _$RequestOTPPayloadToJson(RequestOTPPayload instance) =>
     <String, dynamic>{
-      'otpExpiry': instance.otpExpiry,
       'email': instance.email,
-      'verificationCode': instance.verificationCode,
       'type': _$OTPVerificationTypeEnumMap[instance.type]!,
     };
 

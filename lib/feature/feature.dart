@@ -9,3 +9,5 @@ export 'forgot_password/forgot_password.dart';
 export 'home/home.dart';
 export 'main/main.dart';
 export 'library/library.dart';
+export 'chat/chat.dart';
+export 'settings/settings.dart';

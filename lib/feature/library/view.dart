@@ -29,6 +29,19 @@ class _LibraryScreenState extends State<LibraryScreen> {
   Widget build(BuildContext context) {
     l10n = context.l10n;
 
-    return Scaffold(body: Placeholder());
+    return Scaffold(
+      body: Container(
+        decoration: context.boxDecoration,
+        child: Center(
+          child: EmptyContent(
+            animation: Assets.animation.books,
+            text: 'Nothing Here Yet',
+            description:
+                'Upload a file or add an item to build your personal library.',
+            onTap: () {},
+          ),
+        ),
+      ),
+    );
   }
 }

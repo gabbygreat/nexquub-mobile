@@ -37,21 +37,29 @@ class _VerifyOTPScreenState extends State<VerifyOTPScreen> {
       title: 'Let’s verify its you',
       focusNodes: _viewModel.focusNodes,
       description:
-          'Enter the 4 digit code sent to golibe.f@gmail.com to set up your account',
+          'Enter the 4 digit code sent to ${widget.response.email} to set up your account',
       children: [
         PakeTextInput.pin(
           controller: _viewModel.pinController,
+          validator: _viewModel.passwordValidation,
           focusNode: _viewModel.focusNodes[0],
+        ),
+        10.sbH,
+        Align(
+          alignment: Alignment.centerRight,
+          child: OtpCountDown(
+            notifier: _viewModel.isLoading,
+            response: widget.response,
+            updateIsExpired: _viewModel.updateIsExpired,
+          ),
         ),
         40.sbH,
         MultiValueListenableBuilder(
-          valueListenables: [_viewModel.pinController],
+          valueListenables: [_viewModel.pinController, _viewModel.isExpired],
           builder: (context, listenable, _) {
             final password = listenable[0] as TextEditingValue;
-            bool enable = _viewModel.passwordValidation.validateText(
-              context,
-              password.text,
-            );
+            final expired = listenable[1] as bool;
+            bool enable = password.text.length == 4 && !expired;
             return StateButton(
               valueListenable: _viewModel.isLoading,
               child: PakeButton.filled(

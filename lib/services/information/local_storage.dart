@@ -19,6 +19,7 @@ abstract class ILocalStorage {
   String? getLocale();
   Future<void> saveUser({required LoginDataResponse value});
   Future<void> unSaveUser();
+  Future<void> logoutUser();
   Future<bool> hasLocalData();
   Future<UserResponse?> getUser();
   void updateUser({String? username, String? profilePicture});
@@ -125,6 +126,12 @@ class LocalStorage implements ILocalStorage {
     locator<AuthService>().logout();
     userInfo = null;
     await _storage.delete(key: _user);
+    await _storage.delete(key: _token);
+  }
+  @override
+  Future<void> logoutUser() async {
+    locator<AuthService>().logout();
+    userInfo = null;
     await _storage.delete(key: _token);
   }
 

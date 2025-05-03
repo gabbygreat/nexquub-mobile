@@ -15,6 +15,9 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsAnimationGen {
   const $AssetsAnimationGen();
 
+  /// File path: assets/animation/books.json
+  String get books => 'assets/animation/books.json';
+
   /// File path: assets/animation/confetti.json
   String get confetti => 'assets/animation/confetti.json';
 
@@ -34,7 +37,15 @@ class $AssetsAnimationGen {
   String get rocket => 'assets/animation/rocket.json';
 
   /// List of all assets
-  List<String> get values => [confetti, empty, error, info, noInternet, rocket];
+  List<String> get values => [
+    books,
+    confetti,
+    empty,
+    error,
+    info,
+    noInternet,
+    rocket,
+  ];
 }
 
 class $AssetsImagesGen {
@@ -78,6 +89,13 @@ class $AssetsImagesGen {
 class $AssetsVectorsGen {
   const $AssetsVectorsGen();
 
+  /// File path: assets/vectors/ai-chat-selected.svg
+  SvgGenImage get aiChatSelected =>
+      const SvgGenImage('assets/vectors/ai-chat-selected.svg');
+
+  /// File path: assets/vectors/ai-chat.svg
+  SvgGenImage get aiChat => const SvgGenImage('assets/vectors/ai-chat.svg');
+
   /// File path: assets/vectors/apple-dark.svg
   SvgGenImage get appleDark =>
       const SvgGenImage('assets/vectors/apple-dark.svg');
@@ -105,11 +123,34 @@ class $AssetsVectorsGen {
   /// File path: assets/vectors/google.svg
   SvgGenImage get google => const SvgGenImage('assets/vectors/google.svg');
 
+  /// File path: assets/vectors/home-selected.svg
+  SvgGenImage get homeSelected =>
+      const SvgGenImage('assets/vectors/home-selected.svg');
+
+  /// File path: assets/vectors/home.svg
+  SvgGenImage get home => const SvgGenImage('assets/vectors/home.svg');
+
+  /// File path: assets/vectors/library-selected.svg
+  SvgGenImage get librarySelected =>
+      const SvgGenImage('assets/vectors/library-selected.svg');
+
+  /// File path: assets/vectors/library.svg
+  SvgGenImage get library => const SvgGenImage('assets/vectors/library.svg');
+
   /// File path: assets/vectors/linkedin.svg
   SvgGenImage get linkedin => const SvgGenImage('assets/vectors/linkedin.svg');
 
+  /// File path: assets/vectors/setting-selected.svg
+  SvgGenImage get settingSelected =>
+      const SvgGenImage('assets/vectors/setting-selected.svg');
+
+  /// File path: assets/vectors/setting.svg
+  SvgGenImage get setting => const SvgGenImage('assets/vectors/setting.svg');
+
   /// List of all assets
   List<SvgGenImage> get values => [
+    aiChatSelected,
+    aiChat,
     appleDark,
     apple,
     eyeOpenDark,
@@ -118,7 +159,13 @@ class $AssetsVectorsGen {
     eyeSlash,
     facebook,
     google,
+    homeSelected,
+    home,
+    librarySelected,
+    library,
     linkedin,
+    settingSelected,
+    setting,
   ];
 }
 

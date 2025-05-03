@@ -38,18 +38,29 @@ class ApiFormatter {
               }
             }
           }
-          final err = ErrorResponse.fromJson(
-            error.response?.data,
-          );
+          final err = ErrorResponse.fromJson(error.response?.data);
           if (error.response?.statusCode == 403) {
-            return ErrorModel(
-              message: err.message ?? l10n.somethingWentWrong,
+            final err = ErrorResponse.fromJson(
+              error.response?.data,
+              fromJsonT:
+                  (data) =>
+                      OTPExpiryResponse.fromJson(data as Map<String, dynamic>),
+            );
+            return ErrorModel<OTPExpiryResponse>(
+              message: err.message,
               type: DialogErrorType.auth,
+              statusCode: statusCode,
+              data: err.data,
+            );
+          } else if (error.response?.statusCode == 401) {
+            return ErrorModel(
+              message: err.message,
+              type: DialogErrorType.unauthorized,
               statusCode: statusCode,
             );
           }
           return ErrorModel(
-            message: err.message ?? l10n.somethingWentWrong,
+            message: err.message,
             type: DialogErrorType.error,
             statusCode: statusCode,
           );

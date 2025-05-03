@@ -6,8 +6,15 @@ part of 'error_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-ErrorResponse _$ErrorResponseFromJson(Map<String, dynamic> json) =>
-    ErrorResponse(message: json['message'] as String?);
+Map<String, dynamic> _$ErrorResponseToJson<T>(
+  ErrorResponse<T> instance,
+  Object? Function(T value) toJsonT,
+) => <String, dynamic>{
+  'message': instance.message,
+  'data': _$nullableGenericToJson(instance.data, toJsonT),
+};
 
-Map<String, dynamic> _$ErrorResponseToJson(ErrorResponse instance) =>
-    <String, dynamic>{'message': instance.message};
+Object? _$nullableGenericToJson<T>(
+  T? input,
+  Object? Function(T value) toJson,
+) => input == null ? null : toJson(input);

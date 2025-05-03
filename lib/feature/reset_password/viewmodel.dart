@@ -8,22 +8,20 @@ class ResetPasswordViewModel extends AuthViewModel {
       message: 'Please, enter a password',
     );
     passwordStrength = ValueNotifier(PasswordStrength.none);
-        focusNodes = List.generate(1, (_) => FocusNode());
-
+    focusNodes = List.generate(1, (_) => FocusNode());
   }
   final OTPExpiryResponse response;
   late ContentFormValidation passwordValidation;
   late TextEditingController passwordController;
   late ValueNotifier<PasswordStrength> passwordStrength;
-    late List<FocusNode> focusNodes;
-
+  late List<FocusNode> focusNodes;
 
   void resetNewPassword() async {
     isLoading.value = true;
     final reqResponse = await service.resetPassword(
       payload: ResetPasswordPayload(
         email: response.email,
-        verificationCode: 'passwordController.text',
+        verificationCode: response.verificationCode!,
         newPassword: passwordController.text,
       ),
     );
@@ -33,7 +31,15 @@ class ResetPasswordViewModel extends AuthViewModel {
         isLoading.value = false;
       },
       callback: (res) {
-        // Go to celebration and then Login screen
+        showSuccessFullModal(
+          context,
+          text: 'Password Reset Successful',
+          description:
+              'Your password has been successfully reset. You can now log in securely to continue using Nexquub.',
+          onProceed: () {
+            navigationService.goNamed(LoginScreen.name);
+          },
+        );
       },
     );
   }

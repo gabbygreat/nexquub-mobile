@@ -26,7 +26,7 @@ abstract class UserApiService extends NetworkBoundResources {
   Future<ApiResponse<LoginDataResponse>?> tokenLogin();
 
   Future<ApiResponse<OTPExpiryResponse>?> requestOTP({
-    required EmailPayload payload,
+    required RequestOTPPayload payload,
   });
 
   Future<ApiResponse<OTPExpiryResponse>?> forgotPassword({
@@ -37,7 +37,7 @@ abstract class UserApiService extends NetworkBoundResources {
     required ResetPasswordPayload payload,
   });
 
-  Future<ApiResponse?> logout();
+  Future<ApiMessageResponse?> logout();
 
   Future<ApiMessageResponse?> deleteAccount();
 
@@ -50,7 +50,11 @@ class DefaultUserApiService extends UserApiService {
   DefaultUserApiService(super.client);
 
   Future<String?> getMessagingToken() async {
-    return await FirebaseMessaging.instance.getToken();
+    try {
+      return await FirebaseMessaging.instance.getToken();
+    } catch (_) {
+      return null;
+    }
   }
 
   @override
@@ -169,7 +173,7 @@ class DefaultUserApiService extends UserApiService {
 
   @override
   Future<ApiResponse<OTPExpiryResponse>?> requestOTP({
-    required EmailPayload payload,
+    required RequestOTPPayload payload,
   }) async {
     return networkBoundNullableResponse(
       fromRemote: _client.requestOTP(payload: payload),
@@ -195,11 +199,11 @@ class DefaultUserApiService extends UserApiService {
   }
 
   @override
-  Future<ApiResponse?> logout() async {
+  Future<ApiMessageResponse?> logout() async {
     return networkBoundNullableResponse(
       fromRemote: _client.logout(),
       onRemoteDataFetched: (response) async {
-        return locator<ILocalStorage>().unSaveUser();
+        return locator<ILocalStorage>().logoutUser();
       },
     );
   }

@@ -5,6 +5,7 @@ class VerifyOTPViewModel extends BaseViewModel {
     service = locator<UserApiService>();
     pinController = TextEditingController();
     isLoading = ValueNotifier(false);
+    isExpired = ValueNotifier(false);
 
     passwordValidation = ContentFormValidation(
       message: 'Please, enter a password',
@@ -15,6 +16,7 @@ class VerifyOTPViewModel extends BaseViewModel {
   late ContentFormValidation passwordValidation;
   late TextEditingController pinController;
   late ValueNotifier<bool> isLoading;
+  late ValueNotifier<bool> isExpired;
   late final UserApiService service;
   final OTPExpiryResponse response;
   final navigation = locator<NavigationService>();
@@ -38,11 +40,23 @@ class VerifyOTPViewModel extends BaseViewModel {
         switch (response.type) {
           case OTPVerificationType.accountCreation:
             // Go to celebration and to Home page
+            await showSuccessFullModal(
+              context,
+              text: 'You are all set',
+              description:
+                  'Welcome to the future of intelligent reading. Your personalized AI-powered assistant is ready to go.',
+              onProceed: () async {
+                navigation.goNamed(HomeScreen.name);
+              },
+            );
             break;
           case OTPVerificationType.forgotPassword:
+            final data = response.updateVerificationCode(
+              code: pinController.text,
+            );
             await navigation.pushReplacementNamed(
               ResetPasswordScreen.name,
-              extra: response.toJson(),
+              extra: data.toJson(),
             );
             break;
         }
@@ -50,11 +64,16 @@ class VerifyOTPViewModel extends BaseViewModel {
     );
   }
 
+  void updateIsExpired(bool value) {
+    isExpired.value = value;
+  }
+
   void dispose() {
     for (var e in focusNodes) {
       e.dispose();
     }
     pinController.dispose();
+    isExpired.dispose();
     isLoading.dispose();
   }
 }

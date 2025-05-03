@@ -255,18 +255,42 @@ class _PakeTextInputState extends State<PakeTextInput> {
         focusNode: widget.focusNode,
         inputFormatters: [FilteringTextInputFormatter.digitsOnly],
         defaultPinTheme: PinTheme(
-          height: 42.spMin,
+          height: 45.spMin,
           width: 45.spMin,
-          decoration: BoxDecoration(border: Border()),
+          decoration: BoxDecoration(
+            color: PakeColors.neutralLight50.of(
+              context,
+              blackColor: PakeColors.primaryDark200,
+            ),
+            borderRadius: BorderRadius.circular(8.spMin),
+            border:
+                isDark
+                    ? Border.all(color: PakeColors.neutralDark100, width: 0.5)
+                    : null,
+          ),
+        ),
+        focusedPinTheme: PinTheme(
+          height: 45.spMin,
+          width: 45.spMin,
+          decoration: BoxDecoration(
+            color: PakeColors.neutralLight50.of(
+              context,
+              blackColor: PakeColors.primaryDark200,
+            ),
+            borderRadius: BorderRadius.circular(8.spMin),
+            border:
+                isDark
+                    ? Border.all(color: PakeColors.neutralDark100, width: 1.5)
+                    : null,
+          ),
         ),
         errorText: _errorText,
         errorPinTheme: PinTheme(
-          height: 42.spMin,
+          height: 45.spMin,
           width: 45.spMin,
           decoration: BoxDecoration(
-            border: Border(
-              bottom: BorderSide(width: 0.5, color: PakeColors.red400),
-            ),
+            borderRadius: BorderRadius.circular(8.spMin),
+            border: Border.all(width: 0.5, color: PakeColors.red500),
           ),
         ),
       );

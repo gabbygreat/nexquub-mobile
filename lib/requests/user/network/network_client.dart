@@ -33,7 +33,7 @@ abstract class UserApiClient {
 
   @POST('api/user/request-otp')
   Future<ApiResponse<OTPExpiryResponse>> requestOTP({
-    @Body() required EmailPayload payload,
+    @Body() required RequestOTPPayload payload,
   });
 
   @POST('api/user/verify-otp')
@@ -51,9 +51,9 @@ abstract class UserApiClient {
     @Body() required ResetPasswordPayload payload,
   });
 
-  @GET('auth/logout')
-  Future<ApiResponse> logout();
+  @GET('api/user/logout')
+  Future<ApiMessageResponse> logout();
 
-  @GET('auth/delete')
+  @GET('api/user/delete')
   Future<ApiMessageResponse> deleteAccount();
 }

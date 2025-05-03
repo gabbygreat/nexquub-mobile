@@ -9,6 +9,7 @@ class MainScreen extends StatefulWidget {
   State<MainScreen> createState() => _MainScreenState();
 }
 
+
 class _MainScreenState extends State<MainScreen> with SignalsMixin {
   late final MainViewModel _viewModel;
   late AppLocalizations l10n;
@@ -28,9 +29,25 @@ class _MainScreenState extends State<MainScreen> with SignalsMixin {
   @override
   Widget build(BuildContext context) {
     l10n = context.l10n;
-
+    bool isNormal = context.isNormal;
     return Scaffold(
-      body: Stack(children: [Positioned.fill(child: widget.shell)]),
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(backgroundColor: Colors.transparent),
+      drawer:
+          isNormal
+              ? null
+              : CustomDrawer(
+                index: widget.shell.currentIndex,
+                onChanged: _viewModel.change,
+              ),
+      body: widget.shell,
+      bottomNavigationBar:
+          isNormal
+              ? CustomBottomNavBar(
+                index: widget.shell.currentIndex,
+                onChanged: _viewModel.change,
+              )
+              : null,
     );
   }
 }

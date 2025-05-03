@@ -33,6 +33,7 @@ Future<void> showFormattedError({
     DialogErrorType.error => Assets.animation.error,
     DialogErrorType.noInternet => Assets.animation.noInternet,
     DialogErrorType.auth => Assets.animation.error,
+    DialogErrorType.unauthorized => Assets.animation.error,
   };
 
   await showDialog(
@@ -77,6 +78,15 @@ Future<void> showFormattedError({
       );
     },
   );
+  final navigation = locator<NavigationService>();
+  if (formattedError.type == DialogErrorType.auth) {
+    if (formattedError.data is OTPExpiryResponse) {
+      final data = formattedError.data as OTPExpiryResponse;
+      await navigation.pushNamed(VerifyOTPScreen.name, extra: data.toJson());
+    }
+  } else if (formattedError.type == DialogErrorType.unauthorized) {
+    navigation.goNamed(LoginScreen.name);
+  }
 }
 
 Future<void> showSuccessMessage({
@@ -188,6 +198,27 @@ Future<bool?> showConfirmationModal(
             ),
           ],
         ),
+      );
+    },
+  );
+}
+
+Future showSuccessFullModal(
+  BuildContext context, {
+  required String text,
+  required String description,
+  void Function()? onProceed,
+}) async {
+  await showModalBottomSheet(
+    context: context,
+    scrollControlDisabledMaxHeightRatio: 1,
+    isDismissible: false,
+    enableDrag: false,
+    builder: (context) {
+      return SuccessContent(
+        text: text,
+        description: description,
+        onProceed: onProceed,
       );
     },
   );

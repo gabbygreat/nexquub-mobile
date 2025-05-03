@@ -151,7 +151,7 @@ class _UserApiClient implements UserApiClient {
 
   @override
   Future<ApiResponse<OTPExpiryResponse>> requestOTP({
-    required EmailPayload payload,
+    required RequestOTPPayload payload,
   }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
@@ -279,28 +279,25 @@ class _UserApiClient implements UserApiClient {
   }
 
   @override
-  Future<ApiResponse<dynamic>> logout() async {
+  Future<ApiMessageResponse> logout() async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
-    final _options = _setStreamType<ApiResponse<dynamic>>(
+    final _options = _setStreamType<ApiMessageResponse>(
       Options(method: 'GET', headers: _headers, extra: _extra)
           .compose(
             _dio.options,
-            'auth/logout',
+            'api/user/logout',
             queryParameters: queryParameters,
             data: _data,
           )
           .copyWith(baseUrl: _combineBaseUrls(_dio.options.baseUrl, baseUrl)),
     );
     final _result = await _dio.fetch<Map<String, dynamic>>(_options);
-    late ApiResponse<dynamic> _value;
+    late ApiMessageResponse _value;
     try {
-      _value = ApiResponse<dynamic>.fromJson(
-        _result.data!,
-        (json) => json as dynamic,
-      );
+      _value = ApiMessageResponse.fromJson(_result.data!);
     } on Object catch (e, s) {
       errorLogger?.logError(e, s, _options);
       rethrow;
@@ -318,7 +315,7 @@ class _UserApiClient implements UserApiClient {
       Options(method: 'GET', headers: _headers, extra: _extra)
           .compose(
             _dio.options,
-            'auth/delete',
+            'api/user/delete',
             queryParameters: queryParameters,
             data: _data,
           )
