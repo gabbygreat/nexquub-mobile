@@ -194,6 +194,7 @@ class PakeColors {
   ///////////// -> Fixed Colors
   static Color get bgLight => Color(0xFFFAFAFA);
   static Color get bnbBg => Color(0xFF030F21);
+  static Color get white => Color(0xFFFFFFFF);
 
   /////////// -> Gradient Colors
   static const LinearGradient bgNight = LinearGradient(

@@ -1,13 +1,12 @@
 import 'dart:math';
 
-import 'package:flutter/material.dart';
+import 'package:nexquub/utils/utils.dart';
 
 extension NumExtension on num {
-  SizedBox get sbH => SizedBox(height: toDouble());
-  Widget get sliverbH =>
-      SliverToBoxAdapter(child: SizedBox(height: toDouble()));
-  SizedBox get sbW => SizedBox(width: toDouble());
-  Widget get sliverbW => SliverToBoxAdapter(child: SizedBox(width: toDouble()));
+  SizedBox get sbH => SizedBox(height: spMin);
+  Widget get sliverbH => SliverToBoxAdapter(child: SizedBox(height: spMin));
+  SizedBox get sbW => SizedBox(width: spMin);
+  Widget get sliverbW => SliverToBoxAdapter(child: SizedBox(width: spMin));
   double get toRadians => this * (pi / 180.0);
 
   Duration getDurationBasedOnWordLengthAndScrollSpeed({

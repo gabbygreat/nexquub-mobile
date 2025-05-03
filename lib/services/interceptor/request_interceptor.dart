@@ -26,18 +26,17 @@ class RequestInterceptor implements Interceptor {
     RequestInterceptorHandler handler,
   ) async {
     ILocalStorage storage = locator<ILocalStorage>();
-    String? token = await storage.getToken();
-    if (token != null) {
-      requestOptions.headers[HttpHeaders.authorizationHeader] = 'Bearer $token';
+    Token? mainToken = await storage.getToken();
+    if (mainToken != null) {
+      String type = mainToken.token.capitalize;
+      String token = mainToken.token;
+      requestOptions.headers[HttpHeaders.authorizationHeader] = '$type $token';
     }
     return handler.next(requestOptions);
   }
 
   @override
-  void onResponse(
-    Response response,
-    ResponseInterceptorHandler handler,
-  ) {
+  void onResponse(Response response, ResponseInterceptorHandler handler) {
     return handler.next(response);
   }
 }

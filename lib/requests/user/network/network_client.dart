@@ -12,7 +12,9 @@ abstract class UserApiClient {
   }) = _UserApiClient;
 
   @POST('api/user/register')
-  Future<ApiMessageResponse> signup({@Body() required SignupPayload payload});
+  Future<ApiResponse<OTPExpiryResponse>> signup({
+    @Body() required SignupPayload payload,
+  });
 
   @POST('api/user/login')
   Future<ApiResponse<LoginDataResponse>> login({
@@ -25,7 +27,9 @@ abstract class UserApiClient {
   });
 
   @POST('api/user/token-login')
-  Future<ApiResponse<LoginDataResponse>> tokenLogin();
+  Future<ApiResponse<LoginDataResponse>> tokenLogin({
+    @Body() String? messagingToken,
+  });
 
   @POST('api/user/request-otp')
   Future<ApiResponse<OTPExpiryResponse>> requestOTP({

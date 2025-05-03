@@ -1,13 +1,8 @@
 import 'package:nexquub/utils/utils.dart';
-
-enum PakeTextInputSize {
-  small(10),
-  medium(18),
-  big(56);
-
-  const PakeTextInputSize(this.size);
-  final double size;
-}
+import 'package:intl_phone_field/countries.dart';
+import 'package:intl_phone_field/country_picker_dialog.dart';
+import 'package:intl_phone_field/intl_phone_field.dart';
+import 'package:pinput/pinput.dart';
 
 class PakeTextInput extends StatefulWidget {
   const PakeTextInput({
@@ -24,8 +19,10 @@ class PakeTextInput extends StatefulWidget {
     this.maxLines = 1,
     this.minLines,
     this.isPinput = false,
+    this.isPhone = false,
     this.expands = false,
     this.maxLength,
+    this.autofillHints,
     this.onChanged,
     this.onEditingComplete,
     this.onSubmitted,
@@ -34,7 +31,7 @@ class PakeTextInput extends StatefulWidget {
     this.onTapOutside,
     this.prefixIcon,
     this.hintText,
-    this.titleText,
+    this.labelText,
     this.suffixIcon,
     this.titleRight,
     this.validator,
@@ -42,93 +39,49 @@ class PakeTextInput extends StatefulWidget {
     this.autovalidateMode,
     this.hintStyle,
     this.style,
+    this.titleText,
     this.fillColor,
     this.useDefaultContentPadding = false,
     this.inputBorder,
     this.inputFormatters,
-    this.size = PakeTextInputSize.small,
-    this.floatingLabelBehavior = FloatingLabelBehavior.always,
+    this.onCountryChanged,
   });
 
-  const PakeTextInput.size44({
-    super.key,
-    this.controller,
-    this.focusNode,
-    this.keyboardType,
-    this.textInputAction,
-    this.readOnly = false,
-    this.autofocus = false,
-    this.isPinput = false,
-    this.obscuringCharacter = '•',
-    this.obscureText = false,
-    this.enableSuggestions = true,
-    this.maxLines = 1,
-    this.minLines,
-    this.expands = false,
-    this.maxLength,
-    this.onChanged,
-    this.onEditingComplete,
-    this.onSubmitted,
-    this.enabled,
-    this.onTap,
-    this.onTapOutside,
-    this.prefixIcon,
-    this.hintText,
-    this.titleText,
-    this.suffixIcon,
-    this.titleRight,
-    this.validator,
-    this.textCapitalization = TextCapitalization.none,
-    this.autovalidateMode,
-    this.hintStyle,
-    this.style,
-    this.fillColor,
-    this.useDefaultContentPadding = false,
-    this.inputBorder,
-    this.inputFormatters,
-    this.size = PakeTextInputSize.medium,
-    this.floatingLabelBehavior = FloatingLabelBehavior.always,
-  });
+  const PakeTextInput.pin({
+    Key? key,
+    TextEditingController? controller,
+    FocusNode? focusNode,
+    FormValidation? validator,
+  }) : this(
+         key: key,
+         isPinput: true,
+         controller: controller,
+         focusNode: focusNode,
+         validator: validator,
+       );
 
-  const PakeTextInput.size56({
-    super.key,
-    this.controller,
-    this.isPinput = false,
-    this.focusNode,
-    this.keyboardType,
-    this.textInputAction,
-    this.readOnly = false,
-    this.autofocus = false,
-    this.obscuringCharacter = '•',
-    this.obscureText = false,
-    this.enableSuggestions = true,
-    this.maxLines = 1,
-    this.minLines,
-    this.expands = false,
-    this.maxLength,
-    this.onChanged,
-    this.onEditingComplete,
-    this.onSubmitted,
-    this.enabled,
-    this.onTap,
-    this.onTapOutside,
-    this.prefixIcon,
-    this.hintText,
-    this.titleText,
-    this.suffixIcon,
-    this.titleRight,
-    this.validator,
-    this.textCapitalization = TextCapitalization.none,
-    this.autovalidateMode,
-    this.hintStyle,
-    this.style,
-    this.fillColor,
-    this.useDefaultContentPadding = false,
-    this.inputBorder,
-    this.inputFormatters,
-    this.size = PakeTextInputSize.big,
-    this.floatingLabelBehavior = FloatingLabelBehavior.always,
-  });
+  const PakeTextInput.phone({
+    Key? key,
+    TextEditingController? controller,
+    FocusNode? focusNode,
+    FormValidation? validator,
+    String? hintText,
+    TextInputType? keyboardType,
+    TextInputAction? textInputAction,
+    List<TextInputFormatter>? inputFormatters,
+    void Function(Country)? onCountryChanged,
+  }) : this(
+         key: key,
+         isPhone: true,
+         controller: controller,
+         focusNode: focusNode,
+         validator: validator,
+         hintText: hintText,
+         keyboardType: keyboardType,
+         textInputAction: textInputAction,
+         inputFormatters: inputFormatters,
+         onCountryChanged: onCountryChanged,
+       );
 
   final TextEditingController? controller;
   final FocusNode? focusNode;
@@ -136,14 +89,16 @@ class PakeTextInput extends StatefulWidget {
   final TextInputAction? textInputAction;
   final bool readOnly;
   final bool isPinput;
-  final FloatingLabelBehavior floatingLabelBehavior;
+  final bool isPhone;
   final bool autofocus;
   final String obscuringCharacter;
+  final String? titleText;
   final bool obscureText;
   final bool enableSuggestions;
   final int? maxLines;
   final int? minLines;
   final bool expands;
+  final Iterable<String>? autofillHints;
   final int? maxLength;
   final void Function(String)? onChanged;
   final void Function()? onEditingComplete;
@@ -153,7 +108,7 @@ class PakeTextInput extends StatefulWidget {
   final void Function(PointerDownEvent)? onTapOutside;
   final Widget? prefixIcon;
   final String? hintText;
-  final String? titleText;
+  final String? labelText;
   final Widget? suffixIcon;
   final Widget? titleRight;
   final FormValidation? validator;
@@ -165,7 +120,7 @@ class PakeTextInput extends StatefulWidget {
   final bool useDefaultContentPadding;
   final InputBorder? inputBorder;
   final List<TextInputFormatter>? inputFormatters;
-  final PakeTextInputSize size;
+  final void Function(Country)? onCountryChanged;
 
   @override
   State<PakeTextInput> createState() => _PakeTextInputState();
@@ -176,11 +131,34 @@ class _PakeTextInputState extends State<PakeTextInput> {
   bool _hasUserTyped = false;
   late AppLocalizations l10n;
   final _debouncer = Debouncer();
+  bool? _obscureText;
 
   @override
   initState() {
     super.initState();
     widget.controller?.addListener(_errorListener);
+    if (widget.keyboardType == TextInputType.visiblePassword) {
+      _obscureText = true;
+    }
+  }
+
+  Widget get eyeIcon {
+    return GestureDetector(
+      onTap: _toggleObscureText,
+      child: AdaptiveSvg(
+        svg: switch (_obscureText) {
+          true => Assets.vectors.eyeOpen,
+          _ => Assets.vectors.eyeSlash,
+        },
+        fit: BoxFit.scaleDown,
+      ),
+    );
+  }
+
+  void _toggleObscureText() {
+    if (_obscureText == null) return;
+    _obscureText = !_obscureText!;
+    setState(() {});
   }
 
   @override
@@ -215,78 +193,156 @@ class _PakeTextInputState extends State<PakeTextInput> {
 
   @override
   Widget build(BuildContext context) {
-    final fieldSize = (widget.size.size) * 0.8;
+    double fieldSize = 15.0;
     l10n = context.l10n;
+    bool isDark = context.isDark;
 
-    return TextFormField(
-      inputFormatters: widget.inputFormatters,
-      controller: widget.controller,
-      focusNode: widget.focusNode,
-      textCapitalization: widget.textCapitalization,
-      keyboardType: widget.keyboardType,
-      textInputAction: widget.textInputAction,
-      readOnly: widget.readOnly,
-      autofocus: widget.autofocus,
-      obscuringCharacter: '●',
-      obscureText: widget.obscureText,
-      enableSuggestions: widget.enableSuggestions,
-      maxLength: widget.maxLength,
-      maxLines: widget.maxLines,
-      minLines: widget.minLines,
-      expands: widget.expands,
-      onChanged: (text) {
-        _hasUserTyped = true;
-        widget.onChanged?.call(text);
-      },
-      onEditingComplete: widget.onEditingComplete,
-      onTap: widget.onTap,
-      onTapOutside: widget.onTapOutside,
-      autovalidateMode: widget.autovalidateMode,
-      onFieldSubmitted: widget.onSubmitted,
-      enabled: widget.enabled,
-      style: PakeTextStyle.caption.red100.of(context),
-      cursorColor: PakeColors.red100,
-      decoration: InputDecoration(
-        errorText: _errorText,
-        errorMaxLines: 2,
-        floatingLabelBehavior: widget.floatingLabelBehavior,
-        contentPadding: EdgeInsets.only(
-          left: 10,
-          right: 10,
-          top: fieldSize,
-          bottom: fieldSize,
-        ),
-        hintStyle: PakeTextStyle.caption.red100.of(context),
-        fillColor: widget.fillColor,
-        prefixIcon: widget.prefixIcon,
-        suffixIcon: widget.suffixIcon,
-        hintText: widget.hintText,
-        floatingLabelStyle: PakeTextStyle.bodyText14.red100.of(context),
-        enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(width: 1.2, color: PakeColors.red100),
-          borderRadius: BorderRadius.circular(4),
-        ),
-        border: OutlineInputBorder(
-          borderSide: BorderSide(width: 1.2, color: PakeColors.red100),
-          borderRadius: BorderRadius.circular(4),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(width: 1.52, color: PakeColors.red100),
-          borderRadius: BorderRadius.circular(4),
-        ),
-        errorBorder: OutlineInputBorder(
-          borderSide: BorderSide(width: 1.2, color: PakeColors.red100),
-          borderRadius: BorderRadius.circular(4),
-        ),
-        disabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(width: 1.2, color: PakeColors.red100),
-          borderRadius: BorderRadius.circular(4),
-        ),
-        focusedErrorBorder: OutlineInputBorder(
-          borderSide: BorderSide(width: 1.2, color: PakeColors.red100),
-          borderRadius: BorderRadius.circular(4),
+    InputDecoration decoration = InputDecoration(
+      errorText: _errorText,
+      errorMaxLines: 2,
+      contentPadding: EdgeInsets.only(
+        left: 10,
+        right: 10,
+        top: fieldSize,
+        bottom: fieldSize,
+      ),
+      hintStyle: 14.regular.neutralLight200.of(
+        context,
+        blackColor: PakeColors.neutralDark400,
+      ),
+      fillColor: PakeColors.neutralLight50.of(
+        context,
+        blackColor: PakeColors.primaryDark200,
+      ),
+      filled: true,
+      prefixIcon: widget.prefixIcon,
+      suffixIcon: _obscureText != null ? eyeIcon : widget.suffixIcon,
+      hintText: widget.hintText,
+      labelText: widget.labelText,
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8.spMin),
+        borderSide:
+            isDark
+                ? BorderSide(color: PakeColors.neutralDark100, width: 0.5)
+                : BorderSide(),
+      ),
+      errorBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8.spMin),
+        borderSide: BorderSide(color: PakeColors.red500, width: 0.5),
+      ),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8.spMin),
+        borderSide: BorderSide(color: PakeColors.red500, width: 0.5),
+      ),
+      focusedErrorBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8.spMin),
+        borderSide: BorderSide(color: PakeColors.red500, width: 2),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8.spMin),
+        borderSide: BorderSide(
+          color:
+              isDark ? PakeColors.primaryDark500 : PakeColors.primaryLight500,
+          width: 2,
         ),
       ),
+    );
+
+    if (widget.isPinput) {
+      return Pinput(
+        length: 4,
+        controller: widget.controller,
+        focusNode: widget.focusNode,
+        inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+        defaultPinTheme: PinTheme(
+          height: 42.spMin,
+          width: 45.spMin,
+          decoration: BoxDecoration(border: Border()),
+        ),
+        errorText: _errorText,
+        errorPinTheme: PinTheme(
+          height: 42.spMin,
+          width: 45.spMin,
+          decoration: BoxDecoration(
+            border: Border(
+              bottom: BorderSide(width: 0.5, color: PakeColors.red400),
+            ),
+          ),
+        ),
+      );
+    }
+    if (widget.isPhone) {
+      return IntlPhoneField(
+        inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+        pickerDialogStyle: PickerDialogStyle(
+          searchFieldInputDecoration: InputDecoration(
+            hintText: 'Search Country',
+          ),
+        ),
+        showDropdownIcon: false,
+        onCountryChanged: widget.onCountryChanged,
+        controller: widget.controller,
+        focusNode: widget.focusNode,
+        textInputAction: widget.textInputAction,
+        readOnly: widget.readOnly,
+        autofocus: widget.autofocus,
+        obscureText: _obscureText ?? widget.obscureText,
+        onChanged: (text) {
+          _hasUserTyped = true;
+          widget.onChanged?.call(text.completeNumber);
+        },
+        onTap: widget.onTap,
+        autovalidateMode: widget.autovalidateMode,
+        style: 14.medium.neutralLight600.of(context),
+        cursorColor: PakeColors.neutralDark100,
+        decoration: decoration,
+      );
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        if (widget.titleText != null) ...[
+          Text(
+            widget.titleText!,
+            style: 14.medium.neutralLight800.of(
+              context,
+              blackColor: PakeColors.neutralDark700,
+            ),
+          ),
+          8.sbH,
+        ],
+        TextFormField(
+          inputFormatters: widget.inputFormatters,
+          controller: widget.controller,
+          focusNode: widget.focusNode,
+          textCapitalization: widget.textCapitalization,
+          keyboardType: widget.keyboardType,
+          textInputAction: widget.textInputAction,
+          readOnly: widget.readOnly,
+          autofocus: widget.autofocus,
+          obscureText: _obscureText ?? widget.obscureText,
+          enableSuggestions: widget.enableSuggestions,
+          maxLength: widget.maxLength,
+          maxLines: widget.maxLines,
+          minLines: widget.minLines,
+          expands: widget.expands,
+          autofillHints: widget.autofillHints,
+          onChanged: (text) {
+            _hasUserTyped = true;
+            widget.onChanged?.call(text);
+          },
+          onEditingComplete: widget.onEditingComplete,
+          onTap: widget.onTap,
+          onTapOutside: widget.onTapOutside,
+          autovalidateMode: widget.autovalidateMode,
+          onFieldSubmitted: widget.onSubmitted,
+          enabled: widget.enabled,
+          style: 14.medium.neutralLight600.of(context),
+          cursorColor: PakeColors.neutralDark100,
+          decoration: decoration,
+        ),
+      ],
     );
   }
 }

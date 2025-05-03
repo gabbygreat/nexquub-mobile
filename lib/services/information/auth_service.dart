@@ -2,12 +2,12 @@ import 'package:nexquub/utils/utils.dart';
 
 abstract class AuthService {
   Future<void> initialise();
-  String? get user;
-  late FlutterSignal<String?> userSignal;
-  set user(String? value);
+  UserResponse? get user;
+  late FlutterSignal<UserResponse?> userSignal;
+  set user(UserResponse? value);
 
-  String? get token;
-  set token(String? value);
+  Token? get token;
+  set token(Token? value);
 
   bool get isLoggedIn;
 
@@ -15,13 +15,13 @@ abstract class AuthService {
 }
 
 class AuthServiceImpl implements AuthService {
-  String? _token;
-  String? _user;
+  Token? _token;
+  UserResponse? _user;
 
   final storage = locator<ILocalStorage>();
 
   @override
-  late FlutterSignal<String?> userSignal;
+  late FlutterSignal<UserResponse?> userSignal;
 
   @override
   Future<void> initialise() async {
@@ -30,7 +30,7 @@ class AuthServiceImpl implements AuthService {
   }
 
   @override
-  String? get user {
+  UserResponse? get user {
     try {
       _user = storage.userInfo;
       return _user;
@@ -40,18 +40,18 @@ class AuthServiceImpl implements AuthService {
   }
 
   @override
-  set user(String? value) {
+  set user(UserResponse? value) {
     _user = value;
     userSignal.set(_user);
   }
 
   @override
-  String? get token {
+  Token? get token {
     return _token;
   }
 
   @override
-  set token(String? value) {
+  set token(Token? value) {
     _token = value;
   }
 

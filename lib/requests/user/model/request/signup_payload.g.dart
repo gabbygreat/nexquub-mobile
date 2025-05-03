@@ -12,7 +12,7 @@ SignupPayload _$SignupPayloadFromJson(Map<String, dynamic> json) =>
       password: json['password'] as String,
       firstName: json['firstName'] as String,
       lastName: json['lastName'] as String,
-      pushToken: json['pushToken'] as String?,
+      messagingToken: json['messagingToken'] as String?,
     );
 
 Map<String, dynamic> _$SignupPayloadToJson(SignupPayload instance) =>
@@ -21,5 +21,5 @@ Map<String, dynamic> _$SignupPayloadToJson(SignupPayload instance) =>
       'password': instance.password,
       'firstName': instance.firstName,
       'lastName': instance.lastName,
-      'pushToken': instance.pushToken,
+      'messagingToken': instance.messagingToken,
     };

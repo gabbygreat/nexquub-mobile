@@ -18,13 +18,15 @@ class _UserApiClient implements UserApiClient {
   final ParseErrorLogger? errorLogger;
 
   @override
-  Future<ApiMessageResponse> signup({required SignupPayload payload}) async {
+  Future<ApiResponse<OTPExpiryResponse>> signup({
+    required SignupPayload payload,
+  }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     final _data = <String, dynamic>{};
     _data.addAll(payload.toJson());
-    final _options = _setStreamType<ApiMessageResponse>(
+    final _options = _setStreamType<ApiResponse<OTPExpiryResponse>>(
       Options(method: 'POST', headers: _headers, extra: _extra)
           .compose(
             _dio.options,
@@ -35,9 +37,12 @@ class _UserApiClient implements UserApiClient {
           .copyWith(baseUrl: _combineBaseUrls(_dio.options.baseUrl, baseUrl)),
     );
     final _result = await _dio.fetch<Map<String, dynamic>>(_options);
-    late ApiMessageResponse _value;
+    late ApiResponse<OTPExpiryResponse> _value;
     try {
-      _value = ApiMessageResponse.fromJson(_result.data!);
+      _value = ApiResponse<OTPExpiryResponse>.fromJson(
+        _result.data!,
+        (json) => OTPExpiryResponse.fromJson(json as Map<String, dynamic>),
+      );
     } on Object catch (e, s) {
       errorLogger?.logError(e, s, _options);
       rethrow;
@@ -112,11 +117,14 @@ class _UserApiClient implements UserApiClient {
   }
 
   @override
-  Future<ApiResponse<LoginDataResponse>> tokenLogin() async {
+  Future<ApiResponse<LoginDataResponse>> tokenLogin({
+    String? messagingToken,
+  }) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
+    queryParameters.removeWhere((k, v) => v == null);
     final _headers = <String, dynamic>{};
-    const Map<String, dynamic>? _data = null;
+    final _data = messagingToken;
     final _options = _setStreamType<ApiResponse<LoginDataResponse>>(
       Options(method: 'POST', headers: _headers, extra: _extra)
           .compose(

@@ -1,8 +1,50 @@
 import 'package:nexquub/utils/utils.dart';
 
-class SignupViewModel {
+class AuthViewModel extends BaseViewModel {
+  final service = locator<UserApiService>();
+  late ValueNotifier<bool> isLoading;
+  late final NavigationService navigationService;
+
+  AuthViewModel({required super.context}) {
+    isLoading = ValueNotifier(false);
+    navigationService = locator<NavigationService>();
+  }
+
+  void otherLogin(SourceType type) async {
+    isLoading.value = true;
+    await service.otherLogin(source: type);
+    isLoading.value = false;
+  }
+
+  void useAsGuest() async {
+    await locator<ILocalStorage>().setUseAsGuest(true);
+    navigationService.goNamed(HomeScreen.name);
+  }
+
+  void dispose() {
+    isLoading.dispose();
+  }
+}
+
+class BaseViewModel {
   final BuildContext context;
-  SignupViewModel({required this.context}) {
+
+  BaseViewModel({required this.context});
+
+  void proceedIfMounted<T>({
+    required T? response,
+    required void Function(T) callback,
+    required void Function() resetCallback,
+  }) {
+    if (!context.mounted) return;
+    resetCallback.call();
+    if (response == null) return;
+    callback.call(response);
+  }
+}
+
+class SignupViewModel extends AuthViewModel {
+  SignupViewModel({required super.context}) {
     firstNameController = TextEditingController();
     lastNameController = TextEditingController();
     emailController = TextEditingController();
@@ -19,6 +61,7 @@ class SignupViewModel {
     );
     emailValidation = EmailFormValidation();
     passwordStrength = ValueNotifier(PasswordStrength.none);
+    focusNodes = List.generate(4, (_) => FocusNode());
   }
   late TextEditingController firstNameController;
   late ContentFormValidation firstNameValidation;
@@ -29,12 +72,11 @@ class SignupViewModel {
   late ContentFormValidation passwordValidation;
   late TextEditingController passwordController;
   late ValueNotifier<PasswordStrength> passwordStrength;
-  late ValueNotifier<bool> isLoading;
-  final service = locator<UserApiService>();
+  late List<FocusNode> focusNodes;
 
   void signUp() async {
     isLoading.value = true;
-    await service.signup(
+    final response = await service.signup(
       payload: SignupPayload(
         email: emailController.text,
         password: passwordController.text,
@@ -42,7 +84,18 @@ class SignupViewModel {
         lastName: lastNameController.text,
       ),
     );
-    isLoading.value = false;
+    proceedIfMounted(
+      response: response,
+      resetCallback: () {
+        isLoading.value = false;
+      },
+      callback: (res) async {
+        await navigationService.pushNamed(
+          VerifyOTPScreen.name,
+          extra: res.data.toJson(),
+        );
+      },
+    );
   }
 
   bool validateStrength(PasswordStrength strength) {
@@ -54,12 +107,20 @@ class SignupViewModel {
     passwordStrength.value = strength;
   }
 
+  void goToLoginScreen() async {
+    await navigationService.pushReplacementNamed(LoginScreen.name);
+  }
+
+  @override
   void dispose() {
+    for (var e in focusNodes) {
+      e.dispose();
+    }
     firstNameController.dispose();
     lastNameController.dispose();
     emailController.dispose();
     passwordController.dispose();
     passwordStrength.dispose();
-    isLoading.dispose();
+    super.dispose();
   }
 }

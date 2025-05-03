@@ -1,13 +1,12 @@
 part of 'button.dart';
 
-class BasePakeButton extends StatefulWidget with _$PakeButtonStyle {
+class BasePakeButton extends StatefulWidget {
   const BasePakeButton({
     required this.onPressed,
     required this.hasBorder,
     required this.isFilled,
     required this.expand,
     super.key,
-    this.size = PakeButtonSize.medium,
     this.text,
     this.radius,
     this.disabled = false,
@@ -29,7 +28,6 @@ class BasePakeButton extends StatefulWidget with _$PakeButtonStyle {
     required bool disabled,
     required PakeButtonPosition buttonPosition,
     Key? key,
-    PakeButtonSize size = PakeButtonSize.medium,
     bool expand = false,
     Widget? icon,
     Widget? secondaryIcon,
@@ -37,21 +35,20 @@ class BasePakeButton extends StatefulWidget with _$PakeButtonStyle {
     double? radius,
     EdgeInsets? buttonPadding,
   }) : this(
-          key: key,
-          size: size,
-          text: text,
-          onPressed: onPressed,
-          disabled: disabled,
-          hasBorder: true,
-          isFilled: false,
-          icon: icon,
-          secondaryIcon: secondaryIcon,
-          buttonPosition: buttonPosition,
-          borderColor: borderColor,
-          expand: expand,
-          buttonPadding: buttonPadding,
-          radius: radius,
-        );
+         key: key,
+         text: text,
+         onPressed: onPressed,
+         disabled: disabled,
+         hasBorder: true,
+         isFilled: false,
+         icon: icon,
+         secondaryIcon: secondaryIcon,
+         buttonPosition: buttonPosition,
+         borderColor: borderColor,
+         expand: expand,
+         buttonPadding: buttonPadding,
+         radius: radius,
+       );
 
   const BasePakeButton.filled({
     required String text,
@@ -59,25 +56,23 @@ class BasePakeButton extends StatefulWidget with _$PakeButtonStyle {
     required bool disabled,
     required PakeButtonPosition buttonPosition,
     Key? key,
-    PakeButtonSize size = PakeButtonSize.medium,
     bool expand = false,
     Color? fillColor,
     Widget? icon,
     Widget? secondaryIcon,
   }) : this(
-          key: key,
-          size: size,
-          text: text,
-          onPressed: onPressed,
-          disabled: disabled,
-          hasBorder: false,
-          isFilled: true,
-          fillColor: fillColor,
-          icon: icon,
-          secondaryIcon: secondaryIcon,
-          buttonPosition: buttonPosition,
-          expand: expand,
-        );
+         key: key,
+         text: text,
+         onPressed: onPressed,
+         disabled: disabled,
+         hasBorder: false,
+         isFilled: true,
+         fillColor: fillColor,
+         icon: icon,
+         secondaryIcon: secondaryIcon,
+         buttonPosition: buttonPosition,
+         expand: expand,
+       );
 
   const BasePakeButton.check({
     required void Function()? onPressed,
@@ -87,29 +82,26 @@ class BasePakeButton extends StatefulWidget with _$PakeButtonStyle {
     required bool isCheck,
     required void Function({bool isChecked}) onCheckChanged,
     Key? key,
-    PakeButtonSize size = PakeButtonSize.medium,
     bool expand = false,
     Color? fillColor,
     String? text,
     EdgeInsets? buttonPadding,
   }) : this(
-          key: key,
-          size: size,
-          onPressed: onPressed,
-          disabled: disabled,
-          hasBorder: hasBorder,
-          isFilled: isFilled,
-          text: text,
-          fillColor: fillColor,
-          buttonPosition: PakeButtonPosition.left,
-          isCheck: isCheck,
-          onCheckChanged: onCheckChanged,
-          expand: expand,
-          buttonPadding: buttonPadding,
-        );
+         key: key,
+         onPressed: onPressed,
+         disabled: disabled,
+         hasBorder: hasBorder,
+         isFilled: isFilled,
+         text: text,
+         fillColor: fillColor,
+         buttonPosition: PakeButtonPosition.left,
+         isCheck: isCheck,
+         onCheckChanged: onCheckChanged,
+         expand: expand,
+         buttonPadding: buttonPadding,
+       );
 
   const BasePakeButton.icon({
-    required PakeButtonSize size,
     required void Function()? onPressed,
     required bool disabled,
     required Widget icon,
@@ -120,25 +112,21 @@ class BasePakeButton extends StatefulWidget with _$PakeButtonStyle {
     bool isFilled = true,
     EdgeInsets? buttonPadding,
   }) : this(
-          key: key,
-          size: size,
-          onPressed: onPressed,
-          disabled: disabled,
-          hasBorder: hasBorder,
-          isFilled: isFilled,
-          fillColor: fillColor,
-          icon: icon,
-          buttonPosition: PakeButtonPosition.left,
-          expand: expand,
-          buttonPadding: buttonPadding ??
-              const EdgeInsets.symmetric(
-                vertical: 12,
-                horizontal: 12,
-              ),
-        );
+         key: key,
+         onPressed: onPressed,
+         disabled: disabled,
+         hasBorder: hasBorder,
+         isFilled: isFilled,
+         fillColor: fillColor,
+         icon: icon,
+         buttonPosition: PakeButtonPosition.left,
+         expand: expand,
+         buttonPadding:
+             buttonPadding ??
+             const EdgeInsets.symmetric(vertical: 12, horizontal: 12),
+       );
 
   const BasePakeButton.textButton({
-    required PakeButtonSize size,
     required void Function()? onPressed,
     required bool disabled,
     required String text,
@@ -146,20 +134,17 @@ class BasePakeButton extends StatefulWidget with _$PakeButtonStyle {
     bool expand = false,
     TextStyle? textStyle,
   }) : this(
-          key: key,
-          size: size,
-          onPressed: onPressed,
-          disabled: disabled,
-          hasBorder: false,
-          isFilled: false,
-          expand: expand,
-          myTextStyle: textStyle,
-          text: text,
-          isText: true,
-        );
+         key: key,
+         onPressed: onPressed,
+         disabled: disabled,
+         hasBorder: false,
+         isFilled: false,
+         expand: expand,
+         myTextStyle: textStyle,
+         text: text,
+         isText: true,
+       );
 
-  @override
-  final PakeButtonSize size;
   final String? text;
   final void Function()? onPressed;
   final bool disabled;
@@ -183,293 +168,153 @@ class BasePakeButton extends StatefulWidget with _$PakeButtonStyle {
 }
 
 class _BasePakeButtonState extends State<BasePakeButton> {
-  bool isChecked = false;
+  late bool isChecked;
   late bool isFilled;
-  late bool disabled;
+  late bool isDisabled;
 
   @override
   void initState() {
     super.initState();
-    isFilled = widget.isFilled;
-    if (widget.isCheck != null) {
-      isChecked = widget.isCheck!;
-    }
-    disabled = widget.disabled;
-  }
-
-  Widget get iconWidget {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        if ([PakeButtonPosition.right, PakeButtonPosition.both]
-                .contains(widget.buttonPosition) &&
-            widget.text != null)
-          const SizedBox(
-            width: 10,
-          ),
-        SizedBox(
-          child: widget.icon,
-        ),
-        if ([PakeButtonPosition.left, PakeButtonPosition.both]
-                .contains(widget.buttonPosition) &&
-            widget.text != null)
-          const SizedBox(
-            width: 10,
-          ),
-      ],
-    );
-  }
-
-  Widget get secondaryIconWidget {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        if ([PakeButtonPosition.right, PakeButtonPosition.both]
-            .contains(widget.buttonPosition))
-          const SizedBox(
-            width: 10,
-          ),
-        SizedBox(
-          child: widget.secondaryIcon,
-        ),
-        if ([PakeButtonPosition.left, PakeButtonPosition.both]
-            .contains(widget.buttonPosition))
-          const SizedBox(
-            width: 10,
-          ),
-      ],
-    );
-  }
-
-  Widget textWidget(TextStyle textStyle) {
-    if (widget.hasBorder &&
-        !isFilled &&
-        !disabled &&
-        widget.borderColor == null) {
-      return Text(
-        widget.text!,
-        style: textStyle,
-        overflow: TextOverflow.ellipsis,
-      );
-    } else {
-      return Text(
-        widget.text!,
-        style: textStyle,
-        overflow: TextOverflow.ellipsis,
-      );
-    }
-  }
-
-  Widget checkIcon(Color? textColor) {
-    if (widget.hasBorder && !isFilled && !disabled) {
-      return AnimatedCrossFade(
-        duration: const Duration(milliseconds: 200),
-        crossFadeState: widget.isCheck ?? isChecked
-            ? CrossFadeState.showFirst
-            : CrossFadeState.showSecond,
-        firstChild: Icon(
-          Icons.radio_button_checked,
-          color: textColor,
-        ),
-        secondChild: Icon(
-          Icons.radio_button_off,
-          color: textColor,
-        ),
-      );
-    } else {
-      return AnimatedCrossFade(
-        duration: const Duration(milliseconds: 200),
-        crossFadeState: widget.isCheck ?? isChecked
-            ? CrossFadeState.showFirst
-            : CrossFadeState.showSecond,
-        firstChild: Icon(
-          Icons.radio_button_checked,
-          color: textColor,
-        ),
-        secondChild: Icon(
-          Icons.radio_button_off,
-          color: textColor,
-        ),
-      );
-    }
+    isChecked = widget.isCheck ?? false;
   }
 
   void _toggleCheck() {
-    isChecked = !isChecked;
+    setState(() => isChecked = !isChecked);
     widget.onPressed?.call();
     widget.onCheckChanged?.call(isChecked: isChecked);
-    setState(() {});
   }
+
+  TextStyle get _textStyle {
+    final baseColor = _textColor;
+    return widget.myTextStyle ??
+        TextStyle(
+          fontSize: 14.spMin,
+          fontWeight: FontWeight.w500,
+          fontFamily: FontFamily.plusJakartaSans,
+          color: isDisabled ? Colors.grey : baseColor,
+        );
+  }
+
+  Color? get _textColor {
+    if (isDisabled) return PakeColors.neutralLight300.of(context);
+    if (widget.hasBorder) {
+      return widget.borderColor;
+    }
+    if (isFilled) return PakeColors.white;
+    return PakeColors.primaryDark100;
+  }
+
+  bool get isDark => Theme.of(context).brightness == Brightness.dark;
+
+  bool get isCheckable => widget.isCheck != null;
+
+  bool get hasText => widget.text != null;
+
+  bool get hasIcon => widget.icon != null;
+
+  bool get hasSecondaryIcon =>
+      widget.secondaryIcon != null &&
+      widget.buttonPosition == PakeButtonPosition.both;
+
+  void Function()? get _onTap =>
+      isCheckable ? _toggleCheck : (isDisabled ? null : widget.onPressed);
 
   @override
   Widget build(BuildContext context) {
-    final radius = widget.radius ?? 8.0;
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    Color? textColor;
-    var onTap = widget.onPressed;
-    if (widget.onPressed == null) {
-      disabled = true;
-    } else {
-      disabled = widget.disabled;
+    isFilled = isDark && widget.borderColor == null ? true : widget.isFilled;
+    isDisabled = widget.onPressed == null || widget.disabled;
+
+    if (widget.isText) {
+      return InkWell(
+        onTap: _onTap,
+        overlayColor: WidgetStateColor.resolveWith((_) => Colors.transparent),
+        child: Text(widget.text ?? '', style: _textStyle),
+      );
     }
 
-    if (isDark && widget.borderColor == null) {
-      isFilled = true;
-    } else {
-      isFilled = widget.isFilled;
-    }
-    if (isFilled) {
-      textColor = PakeColors.red100;
-    }
-    if (widget.hasBorder) {
-      textColor = PakeColors.red100;
-    }
-
-    if (disabled) {
-      textColor = PakeColors.red100;
-    }
-    if (disabled) {
-      onTap = null;
-    }
-    if (widget.isCheck != null) {
-      onTap = _toggleCheck;
-    }
-
-    final mainTextStyle = TextStyle(
-      fontSize: widget.textStyle.fontSize,
-      fontWeight: widget.textStyle.fontWeight,
-      fontFamily: widget.textStyle.fontFamily,
-      color: textColor,
+    return InkWell(
+      onTap: _onTap,
+      borderRadius: BorderRadius.circular(widget.radius ?? 8.spMin),
+      child: Container(
+        padding:
+            widget.buttonPadding ?? EdgeInsets.symmetric(vertical: 13.spMin),
+        alignment: widget.expand ? Alignment.center : null,
+        decoration: BoxDecoration(
+          color: _backgroundColor(context),
+          border: _buildBorder(),
+          borderRadius: BorderRadius.circular(widget.radius ?? 8.spMin),
+        ),
+        child: buildButtonChild(),
+      ),
     );
+  }
 
-    return Builder(
-      builder: (context) {
-        var style = widget.myTextStyle ?? mainTextStyle;
-        if (onTap == null) {
-          style = style.copyWith(color: Colors.grey);
-        }
-        if (widget.isText) {
-          return InkWell(
-            onTap: onTap,
-            overlayColor: WidgetStateColor.resolveWith(
-              (_) => Colors.transparent,
-            ),
-            child: Text(
-              widget.text!,
-              style: style,
-            ),
-          );
-        }
-        return InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(radius),
-          child: Container(
-            padding: widget.buttonPadding ?? widget.padding,
-            alignment: widget.expand ? Alignment.center : null,
-            decoration: BoxDecoration(
-              color: disabled
-                  ? isDark
-                      ? PakeColors.red100
-                      : PakeColors.red100
-                  : isFilled
-                      ? widget.fillColor
-                      : null,
-              border: (widget.fillColor != null &&
-                      !isFilled &&
-                      !disabled &&
-                      widget.hasBorder)
-                  ? Border.all(
-                      color: widget.fillColor!,
-                    )
-                  : (widget.borderColor != null && !disabled)
-                      ? Border.all(
-                          color: widget.borderColor!,
-                        )
-                      : null,
-              borderRadius: BorderRadius.circular(radius),
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                if (widget.isCheck != null) ...[
-                  Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      if (isChecked) ...[
-                        checkIcon(textColor),
-                      ] else ...[
-                        checkIcon(textColor),
-                      ],
-                      if (widget.text != null)
-                        const SizedBox(
-                          width: 5,
-                        ),
-                    ],
-                  ),
-                ] else ...[
-                  if (widget.icon != null &&
-                      (widget.buttonPosition == PakeButtonPosition.left ||
-                          widget.buttonPosition == PakeButtonPosition.both))
-                    iconWidget,
-                ],
-                if (widget.text != null)
-                  Flexible(
-                    child: textWidget(mainTextStyle),
-                  ),
-                if (widget.icon != null &&
-                    (widget.buttonPosition == PakeButtonPosition.right ||
-                        widget.buttonPosition == PakeButtonPosition.both))
-                  if (widget.secondaryIcon != null &&
-                      widget.buttonPosition == PakeButtonPosition.both)
-                    secondaryIconWidget
-                  else
-                    iconWidget,
-              ],
-            ),
+  Color? _backgroundColor(BuildContext context) {
+    if (isDisabled) return PakeColors.neutralLight100.of(context);
+    return isFilled ? widget.fillColor : null;
+  }
+
+  Border? _buildBorder() {
+    if (isDisabled || !widget.hasBorder) return null;
+
+    final color = widget.borderColor ?? widget.fillColor;
+    return color != null ? Border.all(color: color) : null;
+  }
+
+  Widget buildButtonChild() {
+    List<Widget> children = [];
+
+    if (isCheckable) {
+      children.add(_checkIcon());
+      if (hasText) children.add(const SizedBox(width: 5));
+    } else {
+      if (hasIcon &&
+          (widget.buttonPosition == PakeButtonPosition.left ||
+              widget.buttonPosition == PakeButtonPosition.both)) {
+        children.add(_iconWithSpacing(widget.icon!));
+      }
+    }
+
+    if (hasText) {
+      children.add(
+        Flexible(
+          child: Text(
+            widget.text!,
+            style: _textStyle,
+            overflow: TextOverflow.ellipsis,
           ),
-        );
-      },
+        ),
+      );
+    }
+
+    if (hasSecondaryIcon) {
+      children.add(_iconWithSpacing(widget.secondaryIcon!));
+    } else if (hasIcon &&
+        (widget.buttonPosition == PakeButtonPosition.right ||
+            widget.buttonPosition == PakeButtonPosition.both)) {
+      children.add(_iconWithSpacing(widget.icon!));
+    }
+
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: children,
     );
   }
-}
 
-mixin _$PakeButtonStyle on StatefulWidget {
-  PakeButtonSize get size;
-
-  EdgeInsets get padding {
-    return switch (size) {
-      PakeButtonSize.big => const EdgeInsets.symmetric(
-          horizontal: 35,
-          vertical: 18,
-        ),
-      PakeButtonSize.large => const EdgeInsets.symmetric(
-          horizontal: 35,
-          vertical: 14,
-        ),
-      PakeButtonSize.medium => const EdgeInsets.symmetric(
-          horizontal: 15,
-          vertical: 8,
-        ),
-      PakeButtonSize.small => const EdgeInsets.symmetric(
-          horizontal: 10,
-          vertical: 3,
-        ),
-    };
+  Widget _iconWithSpacing(Widget icon) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [const SizedBox(width: 10), icon, const SizedBox(width: 10)],
+    );
   }
 
-  TextStyle get textStyle {
-    late TextStyle style;
-    switch (size) {
-      case PakeButtonSize.big:
-      case PakeButtonSize.large:
-      case PakeButtonSize.medium:
-      case PakeButtonSize.small:
-        style = PakeTextStyle.bodyText16;
-    }
-    return style;
+  Widget _checkIcon() {
+    final icon =
+        isChecked ? Icons.radio_button_checked : Icons.radio_button_off;
+    return AnimatedSwitcher(
+      duration: const Duration(milliseconds: 200),
+      child: Icon(icon, key: ValueKey(isChecked), color: _textColor),
+    );
   }
 }

@@ -4,10 +4,15 @@ part 'other_login_payload.g.dart';
 
 @JsonSerializable()
 class OtherLoginPayload {
-  OtherLoginPayload({required this.accessToken, required this.type});
+  OtherLoginPayload({
+    required this.accessToken,
+    required this.type,
+    this.messagingToken,
+  });
 
   @JsonKey(name: 'access_token')
   final String accessToken;
+  final String? messagingToken;
   final SourceType type;
 
   factory OtherLoginPayload.fromJson(Map<String, dynamic> json) =>
@@ -16,4 +21,4 @@ class OtherLoginPayload {
 }
 
 @JsonEnum()
-enum SourceType { google, facebook, apple }
+enum SourceType { google, apple, facebook }

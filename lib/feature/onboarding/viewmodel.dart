@@ -24,14 +24,13 @@ class OnboardingViewModel {
         duration: const Duration(milliseconds: 500),
         curve: Curves.linear,
       );
-    } else {
-      // _navigationService.goNamed(SignupScreen.name);
     }
   }
 
   void goToLoginScreen() {
-    // _navigationService.goNamed(LoginScreen.name);
+    _navigationService.goNamed(LoginScreen.name);
   }
+
   void goToSignupScreen() {
     _navigationService.goNamed(SignupScreen.name);
   }

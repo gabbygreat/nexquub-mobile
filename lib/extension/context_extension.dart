@@ -11,7 +11,7 @@ extension BuildContextExtension on BuildContext {
     return Theme.of(this).brightness == Brightness.dark;
   }
 
-  BoxDecoration get appDecoration {
+  BoxDecoration get boxDecoration {
     return BoxDecoration(
       gradient: isDark ? PakeColors.bgNight : null,
       color: isDark ? null : PakeColors.bgLight,

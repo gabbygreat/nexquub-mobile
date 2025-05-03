@@ -117,6 +117,7 @@ extension TypoColor on TextStyle {
   // Fixed
   TextStyle get bgLight => copyWith(color: PakeColors.bgLight);
   TextStyle get bnbBg => copyWith(color: PakeColors.bnbBg);
+  TextStyle get white => copyWith(color: PakeColors.white);
 
   TextStyle of(BuildContext context, {Color? blackColor}) {
     final isDark = Theme.of(context).brightness == Brightness.dark;

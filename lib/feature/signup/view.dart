@@ -1,4 +1,4 @@
-import 'package:nexquub/feature/reuseable/state_button.dart';
+import 'package:flutter/gestures.dart';
 import 'package:nexquub/utils/utils.dart';
 
 class SignupScreen extends StatefulWidget {
@@ -33,6 +33,23 @@ class _SignupScreenState extends State<SignupScreen> {
     return AuthContainer(
       title: 'Welcome to NexQuub',
       description: 'Fill in the details to create your account',
+      focusNodes: _viewModel.focusNodes,
+      bottomWidget: RichText(
+        text: TextSpan(
+          children: [
+            TextSpan(
+              text: 'Already have an account? ',
+              style: 14.regular.neutralLight600.of(context),
+            ),
+            TextSpan(
+              text: 'Log In',
+              style: 14.regular.primaryDark500,
+              recognizer:
+                  TapGestureRecognizer()..onTap = _viewModel.goToLoginScreen,
+            ),
+          ],
+        ),
+      ),
       children: [
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,8 +60,11 @@ class _SignupScreenState extends State<SignupScreen> {
                 hintText: 'Enter your first name',
                 controller: _viewModel.firstNameController,
                 validator: _viewModel.firstNameValidation,
+                focusNode: _viewModel.focusNodes[0],
                 enableSuggestions: true,
                 textCapitalization: TextCapitalization.words,
+                autofillHints: [AutofillHints.givenName],
+                textInputAction: TextInputAction.next,
               ),
             ),
             16.sbW,
@@ -54,8 +74,11 @@ class _SignupScreenState extends State<SignupScreen> {
                 hintText: 'Enter your last name',
                 controller: _viewModel.lastNameController,
                 validator: _viewModel.lastNameValidation,
+                focusNode: _viewModel.focusNodes[1],
                 enableSuggestions: true,
                 textCapitalization: TextCapitalization.words,
+                autofillHints: [AutofillHints.familyName],
+                textInputAction: TextInputAction.next,
               ),
             ),
           ],
@@ -66,8 +89,11 @@ class _SignupScreenState extends State<SignupScreen> {
           hintText: 'Enter your email',
           controller: _viewModel.emailController,
           validator: _viewModel.emailValidation,
+          focusNode: _viewModel.focusNodes[2],
           enableSuggestions: true,
           keyboardType: TextInputType.emailAddress,
+          autofillHints: [AutofillHints.email],
+          textInputAction: TextInputAction.next,
         ),
         16.sbH,
         PakeTextInput(
@@ -75,8 +101,9 @@ class _SignupScreenState extends State<SignupScreen> {
           hintText: 'Enter your password',
           controller: _viewModel.passwordController,
           validator: _viewModel.passwordValidation,
-          enableSuggestions: true,
+          focusNode: _viewModel.focusNodes[3],
           keyboardType: TextInputType.visiblePassword,
+          autofillHints: [AutofillHints.password],
         ),
         PasswordStrengthWidget(
           controller: _viewModel.passwordController,
@@ -108,7 +135,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 _viewModel.validateStrength(passwordStrength);
             return StateButton(
               valueListenable: _viewModel.isLoading,
-              child: PakeButton.secondaryButton44.filled(
+              child: PakeButton.filled(
                 text: 'Continue',
                 disabled: !enable,
                 onPressed: _viewModel.signUp,
@@ -119,6 +146,13 @@ class _SignupScreenState extends State<SignupScreen> {
         40.sbH,
         OrWidget(),
         24.sbH,
+        SocialContainerGroup(onTap: _viewModel.otherLogin),
+        24.sbH,
+        PakeButton.border(
+          text: 'Use as guest',
+          onPressed: _viewModel.useAsGuest,
+          borderColor: PakeColors.neutralLight100.of(context),
+        ),
       ],
     );
   }

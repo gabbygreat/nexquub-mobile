@@ -6,15 +6,19 @@ part 'signin_payload.g.dart';
 class SigninPayload {
   final String email;
   final String password;
-  final String? pushToken;
+  final String? messagingToken;
 
-  SigninPayload({required this.email, required this.password, this.pushToken});
+  SigninPayload({
+    required this.email,
+    required this.password,
+    this.messagingToken,
+  });
 
-  SigninPayload updatePushToken({String? pushToken}) {
+  SigninPayload updatePushToken({String? messagingToken}) {
     return SigninPayload(
       email: email,
       password: password,
-      pushToken: pushToken,
+      messagingToken: messagingToken,
     );
   }
 

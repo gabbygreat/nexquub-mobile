@@ -43,7 +43,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
     return Scaffold(
       body: Container(
-        decoration: context.appDecoration,
+        decoration: context.boxDecoration,
         child: SafeArea(
           child: ValueListenableBuilder(
             valueListenable: _viewModel.pageIndex,
@@ -124,17 +124,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                 duration: Duration(milliseconds: 300),
                                 child:
                                     pageIndex == _viewModel.content.length - 1
-                                        ? PakeButton.secondaryButton44.filled(
+                                        ? PakeButton.filled(
                                           text: 'Log In',
                                           onPressed: _viewModel.goToLoginScreen,
                                         )
                                         : Opacity(
                                           opacity: 0,
-                                          child: PakeButton.secondaryButton44
-                                              .filled(
-                                                text: '',
-                                                onPressed: null,
-                                              ),
+                                          child: PakeButton.filled(
+                                            text: '',
+                                            onPressed: null,
+                                          ),
                                         ),
                               ),
                               15.sbH,
@@ -142,12 +141,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                 duration: Duration(milliseconds: 300),
                                 child:
                                     pageIndex == _viewModel.content.length - 1
-                                        ? PakeButton.secondaryButton44.border(
+                                        ? PakeButton.border(
                                           text: 'Create an account',
                                           onPressed:
                                               _viewModel.goToSignupScreen,
                                         )
-                                        : PakeButton.secondaryButton44.filled(
+                                        : PakeButton.filled(
                                           text: 'Next',
                                           onPressed: _viewModel.animateForward,
                                         ),

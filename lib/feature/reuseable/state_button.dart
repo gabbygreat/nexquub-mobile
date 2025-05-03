@@ -15,28 +15,36 @@ class StateButton extends StatefulWidget {
 }
 
 class _StateButtonState extends State<StateButton> {
+  final GlobalKey _key = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
-    // final buttonHeight = widget.child.height;
+    Widget child = SizedBox(key: _key, child: widget.child);
+    final box = context.findRenderObject() as RenderBox?;
+    final height = box?.size.height;
     return ValueListenableBuilder(
       valueListenable: widget.valueListenable,
       builder: (context, isLoading, _) {
         if (isLoading) {
           return IgnorePointer(
             ignoring: true,
-            child: Stack(
-              children: [
-                AnimatedOpacity(
-                  opacity: isLoading ? 0.5 : 1.0,
-                  duration: Duration(milliseconds: 200),
-                  child: Center(child: widget.child),
-                ),
-                if (isLoading) const CupertinoActivityIndicator(),
-              ],
+            child: SizedBox(
+              height: height,
+              child: Stack(
+                children: [
+                  AnimatedOpacity(
+                    opacity: isLoading ? 0.5 : 1.0,
+                    duration: Duration(milliseconds: 200),
+                    child: Center(child: child),
+                  ),
+                  if (isLoading)
+                    Center(child: const CupertinoActivityIndicator()),
+                ],
+              ),
             ),
           );
         }
-        return widget.child;
+        return child;
       },
     );
   }

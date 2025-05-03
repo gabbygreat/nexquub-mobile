@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:nexquub/utils/utils.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
@@ -10,7 +11,9 @@ abstract class UserApiService extends NetworkBoundResources {
 
   final UserApiClient _client;
 
-  Future<ApiMessageResponse?> signup({required SignupPayload payload});
+  Future<ApiResponse<OTPExpiryResponse>?> signup({
+    required SignupPayload payload,
+  });
 
   Future<ApiResponse<LoginDataResponse>?> login({
     required SigninPayload payload,
@@ -46,17 +49,18 @@ abstract class UserApiService extends NetworkBoundResources {
 class DefaultUserApiService extends UserApiService {
   DefaultUserApiService(super.client);
 
+  Future<String?> getMessagingToken() async {
+    return await FirebaseMessaging.instance.getToken();
+  }
+
   @override
-  Future<ApiMessageResponse?> signup({required SignupPayload payload}) async {
-    // final pushToken = await FirebaseMessaging.instance.getToken();
-    // payload = payload.updatePushToken(pushToken: pushToken);
+  Future<ApiResponse<OTPExpiryResponse>?> signup({
+    required SignupPayload payload,
+  }) async {
+    final messagingToken = await getMessagingToken();
+    payload = payload.updatePushToken(messagingToken: messagingToken);
     return networkBoundNullableResponse(
       fromRemote: _client.signup(payload: payload),
-      onRemoteDataFetched: (response) async {
-        // final storage = locator<ILocalStorage>();
-        // await storage.setTempEmail(response.data.email);
-        // await storage.setTokenLifeTime(response.data.tokenLifetime);
-      },
     );
   }
 
@@ -64,13 +68,13 @@ class DefaultUserApiService extends UserApiService {
   Future<ApiResponse<LoginDataResponse>?> login({
     required SigninPayload payload,
   }) async {
-    final pushToken = await FirebaseMessaging.instance.getToken();
-    payload = payload.updatePushToken(pushToken: pushToken);
+    final messagingToken = await getMessagingToken();
+    payload = payload.updatePushToken(messagingToken: messagingToken);
     return networkBoundNullableResponse(
       fromRemote: _client.login(payload: payload),
       onRemoteDataFetched: (response) async {
-        // final storage = locator<ILocalStorage>();
-        // await storage.saveUser(value: response.data);
+        final storage = locator<ILocalStorage>();
+        await storage.saveUser(value: response.data);
       },
     );
   }
@@ -83,13 +87,15 @@ class DefaultUserApiService extends UserApiService {
       final accessToken = await switch (source) {
         SourceType.apple => _getAppleAccessToken(),
         SourceType.google => _getGoogleAccessToken(),
-        SourceType.facebook => Future.value('Hello'),
+        SourceType.facebook => _getFacebookAccessToken(),
       };
       if (accessToken == null) return null;
+      final messagingToken = await getMessagingToken();
       return _otherLogin(
         payload: OtherLoginPayload(
           type: SourceType.google,
           accessToken: accessToken,
+          messagingToken: messagingToken,
         ),
       );
     } catch (_) {
@@ -111,6 +117,7 @@ class DefaultUserApiService extends UserApiService {
 
   Future<String?> _getGoogleAccessToken() async {
     final googleSignin = GoogleSignIn(
+      scopes: ['email', 'profile'],
       clientId:
           Platform.isIOS
               ? const String.fromEnvironment(AppConstant.appleGID)
@@ -126,25 +133,36 @@ class DefaultUserApiService extends UserApiService {
     return null;
   }
 
+  Future<String?> _getFacebookAccessToken() async {
+    final result = await FacebookAuth.instance.login();
+    if (result.status == LoginStatus.success) {
+      final accessToken = result.accessToken?.tokenString;
+      return accessToken;
+    } else {
+      return null;
+    }
+  }
+
   Future<ApiResponse<LoginDataResponse>?> _otherLogin({
     required OtherLoginPayload payload,
   }) async {
     return networkBoundNullableResponse(
       fromRemote: _client.otherLogin(payload: payload),
       onRemoteDataFetched: (response) async {
-        // final storage = locator<ILocalStorage>();
-        // await storage.saveUser(value: response.data);
+        final storage = locator<ILocalStorage>();
+        await storage.saveUser(value: response.data);
       },
     );
   }
 
   @override
   Future<ApiResponse<LoginDataResponse>?> tokenLogin() async {
+    final messagingToken = await getMessagingToken();
     return networkBoundNullableResponse(
-      fromRemote: _client.tokenLogin(),
+      fromRemote: _client.tokenLogin(messagingToken: messagingToken),
       onRemoteDataFetched: (response) async {
-        // final storage = locator<ILocalStorage>();
-        // await storage.saveUser(value: response.data);
+        final storage = locator<ILocalStorage>();
+        await storage.saveUser(value: response.data);
       },
     );
   }
@@ -155,10 +173,6 @@ class DefaultUserApiService extends UserApiService {
   }) async {
     return networkBoundNullableResponse(
       fromRemote: _client.requestOTP(payload: payload),
-      onRemoteDataFetched: (response) async {
-        // final storage = locator<ILocalStorage>();
-        // await storage.saveUser(value: response.data);
-      },
     );
   }
 
@@ -168,10 +182,6 @@ class DefaultUserApiService extends UserApiService {
   }) async {
     return networkBoundNullableResponse(
       fromRemote: _client.forgotPassword(payload: payload),
-      onRemoteDataFetched: (response) async {
-        // final storage = locator<ILocalStorage>();
-        // await storage.saveUser(value: response.data);
-      },
     );
   }
 
@@ -181,10 +191,6 @@ class DefaultUserApiService extends UserApiService {
   }) async {
     return networkBoundNullableResponse(
       fromRemote: _client.resetPassword(payload: payload),
-      onRemoteDataFetched: (response) async {
-        // final storage = locator<ILocalStorage>();
-        // await storage.saveUser(value: response.data);
-      },
     );
   }
 

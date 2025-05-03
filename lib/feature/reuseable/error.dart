@@ -21,17 +21,11 @@ class _ErrorScreenState extends State<ErrorScreen> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(
-        horizontal: 15,
-      ),
+      padding: EdgeInsets.symmetric(horizontal: 15),
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            _buildErrorMessage(),
-            20.sbH,
-            _buildRetryButton(),
-          ],
+          children: [_buildErrorMessage(), 20.sbH, _buildRetryButton()],
         ),
       ),
     );
@@ -50,7 +44,7 @@ class _ErrorScreenState extends State<ErrorScreen> {
     if (widget.error is DioException) {
       DioException dioError = widget.error as DioException;
       if (kDebugMode) {
-        return PakeButton.secondaryButton44.border(
+        return PakeButton.border(
           text: 'Retry',
           onPressed: () => widget.signal.reload(),
           expand: false,
@@ -64,7 +58,7 @@ class _ErrorScreenState extends State<ErrorScreen> {
     } else if (widget.error is CustomException) {
       return const SizedBox.shrink();
     }
-    return PakeButton.secondaryButton44.border(
+    return PakeButton.border(
       text: 'Retry',
       onPressed: () => widget.signal.reload(),
       expand: false,
@@ -87,20 +81,12 @@ class ErrorModal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ErrorModel appError = ApiFormatter.format(
-      error,
-      trace: trace,
-    );
+    ErrorModel appError = ApiFormatter.format(error, trace: trace);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        Center(
-          child: Text(
-            appError.message,
-            textAlign: TextAlign.center,
-          ),
-        ),
+        Center(child: Text(appError.message, textAlign: TextAlign.center)),
       ],
     );
   }

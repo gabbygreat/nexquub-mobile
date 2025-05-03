@@ -85,6 +85,20 @@ class $AssetsVectorsGen {
   /// File path: assets/vectors/apple.svg
   SvgGenImage get apple => const SvgGenImage('assets/vectors/apple.svg');
 
+  /// File path: assets/vectors/eye-open-dark.svg
+  SvgGenImage get eyeOpenDark =>
+      const SvgGenImage('assets/vectors/eye-open-dark.svg');
+
+  /// File path: assets/vectors/eye-open.svg
+  SvgGenImage get eyeOpen => const SvgGenImage('assets/vectors/eye-open.svg');
+
+  /// File path: assets/vectors/eye-slash-dark.svg
+  SvgGenImage get eyeSlashDark =>
+      const SvgGenImage('assets/vectors/eye-slash-dark.svg');
+
+  /// File path: assets/vectors/eye-slash.svg
+  SvgGenImage get eyeSlash => const SvgGenImage('assets/vectors/eye-slash.svg');
+
   /// File path: assets/vectors/facebook.svg
   SvgGenImage get facebook => const SvgGenImage('assets/vectors/facebook.svg');
 
@@ -98,6 +112,10 @@ class $AssetsVectorsGen {
   List<SvgGenImage> get values => [
     appleDark,
     apple,
+    eyeOpenDark,
+    eyeOpen,
+    eyeSlashDark,
+    eyeSlash,
     facebook,
     google,
     linkedin,
