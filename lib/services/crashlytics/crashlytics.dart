@@ -5,7 +5,7 @@ import 'package:retrofit/retrofit.dart';
 
 abstract class CrashlyticsService extends ParseErrorLogger {
   void init();
-  void setUserIdentifier({String? username, required String email});
+  void setUserIdentifier({required UserResponse user});
   bool logErrors(Object error, StackTrace stack);
   void logFlutterError(FlutterErrorDetails flutterErrorDetails);
 }
@@ -24,10 +24,10 @@ class FirebaseCrashlyticsService implements CrashlyticsService {
   }
 
   @override
-  void setUserIdentifier({String? username, required String email}) {
+  void setUserIdentifier({required UserResponse user}) {
     _crashlytics
-      ..setUserIdentifier(email)
-      ..setCustomKey('User name', username ?? email);
+      ..setUserIdentifier(user.email)
+      ..setCustomKey('User ID', user.id);
   }
 
   @override

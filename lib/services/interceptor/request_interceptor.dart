@@ -5,18 +5,6 @@ import 'package:nexquub/utils/utils.dart';
 class RequestInterceptor implements Interceptor {
   @override
   void onError(DioException error, ErrorInterceptorHandler handler) async {
-    // if (error.response?.statusCode == 401) {
-    //   try {
-    //     final authService = locator<AuthApiService>();
-    //     await authService.refreshToken();
-    //     RequestOptions options = error.requestOptions;
-    //     final dio = locator<Dio>();
-    //     final newResponse = await dio.fetch(options);
-    //     return handler.resolve(newResponse);
-    //   } catch (_) {
-    //     return handler.reject(error);
-    //   }
-    // }
     return handler.next(error);
   }
 

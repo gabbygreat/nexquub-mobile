@@ -18,7 +18,6 @@ Future<void> setupDeps() async {
       await auth.initialise();
       return auth;
     }, dependsOn: [ILocalStorage])
-    // Register async dependencies
     ..registerSingletonAsync<Dio>(
       () async => AppDio.getInstance(),
       dependsOn: [ILocalStorage],
@@ -28,7 +27,7 @@ Future<void> setupDeps() async {
       ThemeViewModel.new,
       dependsOn: [ILocalStorage],
     )
-    // Register Theme dependancy
+    // Register Navigation dependancy
     ..registerSingleton<NavigationService>(GoRouterNavigationService())
     // Register Locale
     ..registerSingletonWithDependencies<LanguageViewModel>(

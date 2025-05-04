@@ -5,7 +5,6 @@ class MainViewModel {
 
   MainViewModel(StatefulNavigationShell navShell) {
     shell = navShell;
-
     _initiateUserServices();
   }
 
@@ -15,16 +14,8 @@ class MainViewModel {
 
     final user = locator<AuthService>().user;
     if (user == null) return;
-    analytic.setUserIdentifier(
-      // id: user.id,
-      email: user.email,
-      // fullname: user.fullname,
-    );
-    crashlytic.setUserIdentifier(
-      // id: user.id,
-      email: user.email,
-      // fullname: user.fullname,
-    );
+    analytic.setUserIdentifier(user: user);
+    crashlytic.setUserIdentifier(user: user);
   }
 
   void change(int index) {

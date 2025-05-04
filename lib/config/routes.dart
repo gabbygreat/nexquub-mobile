@@ -4,21 +4,21 @@ final GoRouter routes = GoRouter(
   debugLogDiagnostics: true,
   initialLocation: OnboardingScreen.path,
   observers: [locator<AnalyticsService>().observer],
-  // redirect: (context, state) {
-  //   final storage = locator<ILocalStorage>();
-  //   if (state.matchedLocation == OnboardingScreen.path) {
-  //     if (storage.getOpenedBefore()) {
-  //       final authService = locator<AuthService>();
-  //       if (authService.isLoggedIn) {
-  //         return HomeScreen.path;
-  //       } else if (storage.getUseAsGuest()) {
-  //         return HomeScreen.path;
-  //       }
-  //       return LoginScreen.path;
-  //     }
-  //   }
-  //   return null;
-  // },
+  redirect: (context, state) {
+    final storage = locator<ILocalStorage>();
+    if (state.matchedLocation == OnboardingScreen.path) {
+      if (storage.getOpenedBefore()) {
+        final authService = locator<AuthService>();
+        if (authService.isLoggedIn) {
+          return HomeScreen.path;
+        } else if (storage.getUseAsGuest()) {
+          return HomeScreen.path;
+        }
+        return LoginScreen.path;
+      }
+    }
+    return null;
+  },
   routes: [
     GoRoute(
       path: OnboardingScreen.path,

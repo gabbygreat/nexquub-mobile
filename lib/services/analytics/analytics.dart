@@ -3,10 +3,7 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 
 abstract class AnalyticsService {
   // Method to set user identifier
-  void setUserIdentifier({
-    required String email,
-    String? username,
-  });
+  void setUserIdentifier({required UserResponse user});
 
   // Method to get an analytics observer
   NavigatorObserver get observer;
@@ -16,14 +13,8 @@ class FirebaseAnalyticsImpl implements AnalyticsService {
   static final FirebaseAnalytics _analytics = FirebaseAnalytics.instance;
 
   @override
-  void setUserIdentifier({
-    required String email,
-    String? username,
-  }) {
-    _setUserIdentifier(
-      email: email,
-      username: username,
-    );
+  void setUserIdentifier({required UserResponse user}) {
+    _setUserIdentifier(user: user);
   }
 
   @override
@@ -31,18 +22,15 @@ class FirebaseAnalyticsImpl implements AnalyticsService {
     return FirebaseAnalyticsObserver(analytics: _analytics);
   }
 
-  static void _setUserIdentifier({
-    required String email,
-    String? username,
-  }) {
+  static String _nonAlphaNumeric(String value) {
     // Ensure there are no non-alphanumeric characters
-    final nonAlphaNumericName = username?.replaceAll(
-      RegExp('[^a-zA-Z0-9_]'),
-      '',
-    );
+    return value.replaceAll(RegExp('[^a-zA-Z0-9_]'), '');
+  }
+
+  static void _setUserIdentifier({required UserResponse user}) {
     _analytics.setUserProperty(
-      name: nonAlphaNumericName ?? email,
-      value: email,
+      name: user.id,
+      value: _nonAlphaNumeric(user.email),
     );
   }
 }

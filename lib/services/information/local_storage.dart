@@ -128,6 +128,7 @@ class LocalStorage implements ILocalStorage {
     await _storage.delete(key: _user);
     await _storage.delete(key: _token);
   }
+
   @override
   Future<void> logoutUser() async {
     locator<AuthService>().logout();
@@ -137,14 +138,13 @@ class LocalStorage implements ILocalStorage {
 
   @override
   Future<void> saveUser({required LoginDataResponse value}) async {
-    final user = value;
-    userInfo = user.user;
-    await saveToken(value.token);
-    await _prefs.remove(_asGuest);
+    userInfo = value.user;
     final authService = locator<AuthService>();
     authService.user = value.user;
     authService.token = value.token;
-    await _storage.write(key: _user, value: jsonEncode(value));
+    await _prefs.remove(_asGuest);
+    await saveToken(value.token);
+    await _storage.write(key: _user, value: jsonEncode(value.user));
   }
 
   @override
